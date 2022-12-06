@@ -1,0 +1,14 @@
+Begin3
+Title:          Lineakd 
+Version:        0.8
+Entered-date:   
+Description:    User space daemon for handling multimedia or easy access keys.
+Keywords:       keyboard easy access multimedia 
+Author:         Sheldon Lee Wen <leewsb@hotmail.com> 
+Maintained-by:  Sheldon Lee Wen <leewsb@hotmail.com> 
+Primary-site:   	        
+Home-page:      http://lineak.sourceforge.net 
+Original-site:  
+Platforms:       Linux and other Unices
+Copying-policy: GNU Public License
+End

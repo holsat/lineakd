@@ -1,0 +1,832 @@
+lineakd (1:0.9-6) unstable; urgency=low
+
+  * QA upload.
+  * Put the usr/lib/linkeakd empty dir back in.
+    + External plugins expect to place files here.
+  * Re-add missing .8 manpages.
+    + I only moved the .1 manpages in the last upload.
+
+ -- Barry deFreese <bdefreese@debian.org>  Sat, 12 Sep 2009 11:55:28 -0400
+
+lineakd (1:0.9-5) unstable; urgency=low
+
+  * QA upload.
+  * Move old source changes to quilt.
+    + Add quilt build-dep and add to rules.
+  * Add Dell Precision M90 keyboard. (Closes: #436063).
+    + Thanks to Manoj Srivastava.
+  * Modify build-system and call autoreconf. (Closes: #542446).
+    + Some fixes taken from Christoph Egger, thanks.
+  * Drop extern int err. (Closes: #543787).
+    + Thanks to Christoph Egger for the patch!
+  * Remove duplicate section from lineakd package.
+  * Change package short description for liblineak-0.9-0 package.
+  * Don't build-dep on -1 revision packages.
+  * Some rules clean up.
+  * Add watch file.
+  * Bump debhelper build-dep and compat to 5.
+  * Bump Standards Version to 3.8.3.
+
+ -- Barry deFreese <bdefreese@debian.org>  Wed, 09 Sep 2009 11:30:40 -0400
+
+lineakd (1:0.9-4) unstable; urgency=low
+
+  * QA Upload
+  * Build-depend on automake instead of automake1.8, fix admin/cvs.sh
+    to recognise automake 1.10
+  * Change section of library to libs, according to override
+  * Move Homepage from description to dedicated field
+  * Don't ignore errors in clean
+  * use ${binary:Version} instead of the deprecated ${Source-Version}
+  * Apply patch by Martin Michlmayr to build with gcc-4.3
+    (Closes: #417373). Additional fixes by me.
+  * Add additional copyright holder
+
+ -- Frank Lichtenheld <djpig@debian.org>  Sun, 10 Feb 2008 15:04:22 +0100
+
+lineakd (1:0.9-3) unstable; urgency=low
+
+  * Orphaning this package, setting maintainer field to
+    packages@qa.debian.org.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 15 Oct 2006 02:35:09 +0200
+
+lineakd (1:0.9-2) unstable; urgency=low
+
+  * Fixed a silly test of the autoconf version in the KDE scripts.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 20 Jul 2006 23:42:11 +0200
+
+lineakd (1:0.9-1) unstable; urgency=low
+
+  * New upstream version. 
+  * Bumped Standards-Version to 3.7.2 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 26 May 2006 23:08:54 +0200
+
+lineakd (1:0.8.4-3) unstable; urgency=low
+
+  * Added a build-dependency on libxkbfile-dev (closes: bug#365156). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 28 Apr 2006 13:42:00 +0200
+
+lineakd (1:0.8.4-2) unstable; urgency=low
+
+  * Fixed installation of manpages on arches without sendkeycode. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  9 Jan 2006 20:59:57 +0100
+
+lineakd (1:0.8.4-1) unstable; urgency=low
+
+  * New upstream version.
+  * lineakd-dev: don't depends on xlibs-dev (closes: bug#347157).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  6 Jan 2006 16:36:51 +0100
+
+lineakd (1:0.8.3-8) unstable; urgency=low
+
+  * Replace build-dependency on xlibs-dev by libx11-dev, libxmu-dev,
+    libxext-dev, libxss-dev.
+  * lineakkb.def: changed D800 into D800/D810. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  3 Dec 2005 00:02:38 +0100
+
+lineakd (1:0.8.3-7) unstable; urgency=low
+
+  * libstdc++ allocator transition: split out the library from lineakd 
+    and create liblineak0. That would make this C++ transition easier, 
+    and also ease the next ones (closes: bug#339227).
+  * Renamed lineak-dev to liblineak0-dev.
+  * Conflicts with all current versions of packages using lineakd.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 14 Nov 2005 21:43:45 +0100
+
+lineakd (1:0.8.3-6) unstable; urgency=low
+
+  * Don't fail to purge the package is ucf is not installed anymore
+    (closes: bug#333315).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 11 Oct 2005 13:42:01 +0200
+
+lineakd (1:0.8.3-5) unstable; urgency=low
+
+  * C++ transition: rebuilt with gcc-4.0.
+  * Bumped Standards-Version to 3.6.2 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 18 Aug 2005 14:32:20 +0200
+
+lineakd (1:0.8.3-4) unstable; urgency=low
+
+  * Relitoolized to support GNU/kFreeBSD.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 27 Apr 2005 15:22:44 +0200
+
+lineakd (1:0.8.3-3) unstable; urgency=low
+
+  * Added support for GNU/kFreeBSD. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  4 Apr 2005 23:30:14 +0200
+
+lineakd (1:0.8.3-2) unstable; urgency=medium
+
+  * dvb-utils also provides evtest, and it seems they are identical. So,
+    divert the version provided by dvb-utils to make both installable at
+    the same time (closes: bug#299273).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 13 Mar 2005 17:08:21 +0100
+
+lineakd (1:0.8.3-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 11 Mar 2005 18:44:51 +0100
+
+lineakd (1:0.8.2-4) unstable; urgency=low
+
+  * Pulled 64-bit fixes from CVS (closes: bug#297304).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 28 Feb 2005 17:18:23 +0100
+
+lineakd (1:0.8.2-3) unstable; urgency=low
+
+  * Fixed lineakd(1) manpage. Thanks to Achim Bohnet for the patch 
+    (closes: bug#293199).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu,  3 Feb 2005 17:51:47 +0100
+
+lineakd (1:0.8.2-2) unstable; urgency=low
+
+  * Patch pulled from CVS: exit if the display cannot be opened (closes: 
+    bug#278299).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed,  1 Dec 2004 23:08:42 +0100
+
+lineakd (1:0.8.2-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 11 Nov 2004 14:54:00 +0100
+
+lineakd (1:0.8.1-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 26 Oct 2004 16:20:04 +0000
+
+lineakd (1:0.8-3) unstable; urgency=low
+
+  * Added a note to explain how modifier keys are handled in version 0.8
+    (closes: bug#254190).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 12 Oct 2004 15:50:12 +0200
+
+lineakd (1:0.8-2) unstable; urgency=critical
+
+  * More strict dependencies in shlibs.
+  * Urgency set to critical as this new version is necessary to fix a bug
+    on lineak-defaultplugin, lineak-xosdplugin (upload to unstable), and
+    on lineak-kdeplugins (upload to testing-proposed-update).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  8 Oct 2004 20:45:47 +0200
+
+lineakd (1:0.8-1) unstable; urgency=low
+
+  * New upstream version.
+  * Added support for "Compaq EAK8 Silver" (closes: bug#256102).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 13 Sep 2004 14:41:46 +0200
+
+lineakd (0.8beta4-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  2 Aug 2004 11:14:30 +0200
+
+lineakd (0.8beta3-4) unstable; urgency=low
+
+  * Allow empty lines in /etc/lineakkb.def (closes: bug#254952).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 18 Jun 2004 01:12:33 +0200
+
+lineakd (0.8beta3-3) unstable; urgency=low
+
+  * Updated the admin/ directory using cvs.kde.org:
+    - Fixes build on arm;
+    - Fixes build on pure 64-bit architectures (closes: bug#253523).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 11 Jun 2004 17:22:08 +0200
+
+lineakd (0.8beta3-2) unstable; urgency=low
+
+  * Think this package is ready for unstable.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  7 Jun 2004 00:33:52 +0200
+
+lineakd (0.8beta3-1) experimental; urgency=low
+
+  * New upstream beta version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 28 Apr 2004 09:21:29 +0200
+
+lineakd (0.8beta2-1) experimental; urgency=low
+
+  * New upstream beta version:
+    - Based on a plugin infrastructure.
+    - Changed X handling code (closes: bug#175574, bug#202338).
+    - A lot of new keyboard descriptions
+  * Updated Policy standard compliance to 3.6.1
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 19 Feb 2004 11:25:57 +0100
+
+lineakd (0.7.2-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 11 Nov 2003 10:00:05 +0100
+
+lineakd (0.7-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 30 Sep 2003 18:34:52 +0200
+
+lineakd (0.6.1-5) unstable; urgency=low
+
+  * Added a patch to disable xosd if there is an error when initializing
+    it (closes: bug#211367).
+  * Changed the font to a most common one, which is available in 
+    ISO-8859-1, -2, -3, -4, -9, 10, -13, -14, -15 and in ISO-10646.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 20 Sep 2003 16:16:38 +0200
+
+lineakd (0.6.1-4) unstable; urgency=low
+
+  * Depends on libxosd-dev (>= 2.2.4-1.2) to make it build on s390.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 11 Sep 2003 10:33:26 +0200
+
+lineakd (0.6.1-3) unstable; urgency=low
+
+  * Rebuilt with libxosd2. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue,  2 Sep 2003 15:43:41 +0200
+
+lineakd (0.6.1-2) unstable; urgency=low
+
+  * Removed an ugly hack from cdromctrl.cpp, as include/cdrom.h has been
+    fixed in glibc-2.3.2-2.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  9 Aug 2003 08:52:25 +0200
+
+lineakd (0.6.1-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu,  7 Aug 2003 18:01:45 +0200
+
+lineakd (0.6-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue,  5 Aug 2003 09:50:22 +0200
+
+lineakd (0.5.99.cvs20030726-4) unstable; urgency=low
+
+  * Updated /usr/share/doc/lineakd/README.Debian (closes: bug#203343).
+  * Also provide README and TODO in /usr/share/doc/lineakd.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 30 Jul 2003 10:19:37 +0200
+
+lineakd (0.5.99.cvs20030726-3) unstable; urgency=low
+
+  * Fixed an error in /etc/lineakkb.def. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 28 Jul 2003 02:16:29 +0200
+
+lineakd (0.5.99.cvs20030726-2) unstable; urgency=low
+
+  * Removed use of /dev/tty in postinst (closes: bug#203070). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 27 Jul 2003 17:23:52 +0200
+
+lineakd (0.5.99.cvs20030726-1) unstable; urgency=low
+
+  * New version from CVS rewritten from scratch in C++.
+    - Parser doesn't segfault anymore with an unknown key (closes: 
+      bug#196242).
+    - kill -HUP now works correctly (closes: bug#202991).
+    - Added support for HP Omnibook XE3-GF (closes: bug#202258).
+  * /etc/lineakkb.def is now managed with ucf (closes: bug#177449).
+  * Bumped Standards-Version to 3.6.0.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 27 Jul 2003 12:15:03 +0200
+
+lineakd (0.5-4) unstable; urgency=low
+
+  * Fixed a bug which causes a segfault (closes: bug#184456). Thanks to Mika
+    Fischer for the patch.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 12 Mar 2003 15:55:25 +0100
+
+lineakd (0.5-3) unstable; urgency=low
+
+  * Added homepage to the description.
+  * Depends on ${misc:Depends}.
+  * Uses debian/compat instead of DH_COMPAT.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 11 Mar 2003 09:48:43 +0100
+
+lineakd (0.5-2) unstable; urgency=low
+
+  * Fixed a bug which causes a segfault. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  8 Feb 2003 14:43:10 +0100
+
+lineakd (0.5-1) unstable; urgency=low
+
+  * New upstream release including a lot of new keyboards. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  7 Feb 2003 14:31:08 +0100
+
+lineakd (0.4pre3-8) unstable; urgency=low
+
+  * Added support for Logitech's Navigator SE. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue,  4 Feb 2003 17:09:57 +0100
+
+lineakd (0.4pre3-7) unstable; urgency=low
+
+  * Added suppport for Compaq Presario 90x.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 18 Jan 2003 13:05:35 +0100
+
+lineakd (0.4pre3-6) unstable; urgency=low
+
+  * Remove xosd support as it causes memory leak. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 14 Jan 2003 18:13:51 +0100
+
+lineakd (0.4pre3-5) unstable; urgency=low
+
+  * Built with libxosd.
+  * Use dpatch for patches.
+  * Bumped Standards-Version to 3.5.8.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu,  9 Jan 2003 20:31:47 +0100
+
+lineakd (0.4pre3-4) unstable; urgency=low
+
+  * Updated copyright, so lintian will be happy... 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 20 Dec 2002 03:13:30 +0100
+
+lineakd (0.4pre3-3) unstable; urgency=low
+
+  * Removed debian/conffiles, this is handled by dh_installdeb automatically ;
+    otherwise we end up with each conffile being listed twice...
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 17 Dec 2002 01:51:42 +0100
+
+lineakd (0.4pre3-2) unstable; urgency=low
+
+  * Uses absolute path for sysconfig dir. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 10 Nov 2002 15:40:15 +0100
+
+lineakd (0.4pre3-1) unstable; urgency=low
+
+  * New upstream version.
+  * Updated Policy standard compliance to 3.5.7 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  9 Nov 2002 17:19:37 +0100
+
+lineakd (0.3.5-1) unstable; urgency=low
+
+  * New upstream version. Changelog:
+    - Fixed a number of critical segfault bugs
+    - Fixed grep bug in pid code (thanks Sheldon)
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 11 Jun 2002 17:10:38 +0200
+
+lineakd (0.3.4-1) unstable; urgency=low
+
+  * Initial Release. (closes: bug#149571)
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 10 Jun 2002 18:11:09 +0200
+
+lineakd (1:0.9-6) unstable; urgency=low
+
+  * QA upload.
+  * Put the usr/lib/linkeakd empty dir back in.
+    + External plugins expect to place files here.
+  * Re-add missing .8 manpages.
+    + I only moved the .1 manpages in the last upload.
+
+ -- Barry deFreese <bdefreese@debian.org>  Sat, 12 Sep 2009 11:55:28 -0400
+
+lineakd (1:0.9-5) unstable; urgency=low
+
+  * QA upload.
+  * Move old source changes to quilt.
+    + Add quilt build-dep and add to rules.
+  * Add Dell Precision M90 keyboard. (Closes: #436063).
+    + Thanks to Manoj Srivastava.
+  * Modify build-system and call autoreconf. (Closes: #542446).
+    + Some fixes taken from Christoph Egger, thanks.
+  * Drop extern int err. (Closes: #543787).
+    + Thanks to Christoph Egger for the patch!
+  * Remove duplicate section from lineakd package.
+  * Change package short description for liblineak-0.9-0 package.
+  * Don't build-dep on -1 revision packages.
+  * Some rules clean up.
+  * Add watch file.
+  * Bump debhelper build-dep and compat to 5.
+  * Bump Standards Version to 3.8.3.
+
+ -- Barry deFreese <bdefreese@debian.org>  Wed, 09 Sep 2009 11:30:40 -0400
+
+lineakd (1:0.9-4) unstable; urgency=low
+
+  * QA Upload
+  * Build-depend on automake instead of automake1.8, fix admin/cvs.sh
+    to recognise automake 1.10
+  * Change section of library to libs, according to override
+  * Move Homepage from description to dedicated field
+  * Don't ignore errors in clean
+  * use ${binary:Version} instead of the deprecated ${Source-Version}
+  * Apply patch by Martin Michlmayr to build with gcc-4.3
+    (Closes: #417373). Additional fixes by me.
+  * Add additional copyright holder
+
+ -- Frank Lichtenheld <djpig@debian.org>  Sun, 10 Feb 2008 15:04:22 +0100
+
+lineakd (1:0.9-3) unstable; urgency=low
+
+  * Orphaning this package, setting maintainer field to
+    packages@qa.debian.org.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 15 Oct 2006 02:35:09 +0200
+
+lineakd (1:0.9-2) unstable; urgency=low
+
+  * Fixed a silly test of the autoconf version in the KDE scripts.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 20 Jul 2006 23:42:11 +0200
+
+lineakd (1:0.9-1) unstable; urgency=low
+
+  * New upstream version. 
+  * Bumped Standards-Version to 3.7.2 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 26 May 2006 23:08:54 +0200
+
+lineakd (1:0.8.4-3) unstable; urgency=low
+
+  * Added a build-dependency on libxkbfile-dev (closes: bug#365156). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 28 Apr 2006 13:42:00 +0200
+
+lineakd (1:0.8.4-2) unstable; urgency=low
+
+  * Fixed installation of manpages on arches without sendkeycode. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  9 Jan 2006 20:59:57 +0100
+
+lineakd (1:0.8.4-1) unstable; urgency=low
+
+  * New upstream version.
+  * lineakd-dev: don't depends on xlibs-dev (closes: bug#347157).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  6 Jan 2006 16:36:51 +0100
+
+lineakd (1:0.8.3-8) unstable; urgency=low
+
+  * Replace build-dependency on xlibs-dev by libx11-dev, libxmu-dev,
+    libxext-dev, libxss-dev.
+  * lineakkb.def: changed D800 into D800/D810. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  3 Dec 2005 00:02:38 +0100
+
+lineakd (1:0.8.3-7) unstable; urgency=low
+
+  * libstdc++ allocator transition: split out the library from lineakd 
+    and create liblineak0. That would make this C++ transition easier, 
+    and also ease the next ones (closes: bug#339227).
+  * Renamed lineak-dev to liblineak0-dev.
+  * Conflicts with all current versions of packages using lineakd.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 14 Nov 2005 21:43:45 +0100
+
+lineakd (1:0.8.3-6) unstable; urgency=low
+
+  * Don't fail to purge the package is ucf is not installed anymore
+    (closes: bug#333315).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 11 Oct 2005 13:42:01 +0200
+
+lineakd (1:0.8.3-5) unstable; urgency=low
+
+  * C++ transition: rebuilt with gcc-4.0.
+  * Bumped Standards-Version to 3.6.2 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 18 Aug 2005 14:32:20 +0200
+
+lineakd (1:0.8.3-4) unstable; urgency=low
+
+  * Relitoolized to support GNU/kFreeBSD.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 27 Apr 2005 15:22:44 +0200
+
+lineakd (1:0.8.3-3) unstable; urgency=low
+
+  * Added support for GNU/kFreeBSD. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  4 Apr 2005 23:30:14 +0200
+
+lineakd (1:0.8.3-2) unstable; urgency=medium
+
+  * dvb-utils also provides evtest, and it seems they are identical. So,
+    divert the version provided by dvb-utils to make both installable at
+    the same time (closes: bug#299273).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 13 Mar 2005 17:08:21 +0100
+
+lineakd (1:0.8.3-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 11 Mar 2005 18:44:51 +0100
+
+lineakd (1:0.8.2-4) unstable; urgency=low
+
+  * Pulled 64-bit fixes from CVS (closes: bug#297304).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 28 Feb 2005 17:18:23 +0100
+
+lineakd (1:0.8.2-3) unstable; urgency=low
+
+  * Fixed lineakd(1) manpage. Thanks to Achim Bohnet for the patch 
+    (closes: bug#293199).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu,  3 Feb 2005 17:51:47 +0100
+
+lineakd (1:0.8.2-2) unstable; urgency=low
+
+  * Patch pulled from CVS: exit if the display cannot be opened (closes: 
+    bug#278299).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed,  1 Dec 2004 23:08:42 +0100
+
+lineakd (1:0.8.2-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 11 Nov 2004 14:54:00 +0100
+
+lineakd (1:0.8.1-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 26 Oct 2004 16:20:04 +0000
+
+lineakd (1:0.8-3) unstable; urgency=low
+
+  * Added a note to explain how modifier keys are handled in version 0.8
+    (closes: bug#254190).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 12 Oct 2004 15:50:12 +0200
+
+lineakd (1:0.8-2) unstable; urgency=critical
+
+  * More strict dependencies in shlibs.
+  * Urgency set to critical as this new version is necessary to fix a bug
+    on lineak-defaultplugin, lineak-xosdplugin (upload to unstable), and
+    on lineak-kdeplugins (upload to testing-proposed-update).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  8 Oct 2004 20:45:47 +0200
+
+lineakd (1:0.8-1) unstable; urgency=low
+
+  * New upstream version.
+  * Added support for "Compaq EAK8 Silver" (closes: bug#256102).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 13 Sep 2004 14:41:46 +0200
+
+lineakd (0.8beta4-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  2 Aug 2004 11:14:30 +0200
+
+lineakd (0.8beta3-4) unstable; urgency=low
+
+  * Allow empty lines in /etc/lineakkb.def (closes: bug#254952).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 18 Jun 2004 01:12:33 +0200
+
+lineakd (0.8beta3-3) unstable; urgency=low
+
+  * Updated the admin/ directory using cvs.kde.org:
+    - Fixes build on arm;
+    - Fixes build on pure 64-bit architectures (closes: bug#253523).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 11 Jun 2004 17:22:08 +0200
+
+lineakd (0.8beta3-2) unstable; urgency=low
+
+  * Think this package is ready for unstable.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  7 Jun 2004 00:33:52 +0200
+
+lineakd (0.8beta3-1) experimental; urgency=low
+
+  * New upstream beta version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 28 Apr 2004 09:21:29 +0200
+
+lineakd (0.8beta2-1) experimental; urgency=low
+
+  * New upstream beta version:
+    - Based on a plugin infrastructure.
+    - Changed X handling code (closes: bug#175574, bug#202338).
+    - A lot of new keyboard descriptions
+  * Updated Policy standard compliance to 3.6.1
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 19 Feb 2004 11:25:57 +0100
+
+lineakd (0.7.2-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 11 Nov 2003 10:00:05 +0100
+
+lineakd (0.7-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 30 Sep 2003 18:34:52 +0200
+
+lineakd (0.6.1-5) unstable; urgency=low
+
+  * Added a patch to disable xosd if there is an error when initializing
+    it (closes: bug#211367).
+  * Changed the font to a most common one, which is available in 
+    ISO-8859-1, -2, -3, -4, -9, 10, -13, -14, -15 and in ISO-10646.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 20 Sep 2003 16:16:38 +0200
+
+lineakd (0.6.1-4) unstable; urgency=low
+
+  * Depends on libxosd-dev (>= 2.2.4-1.2) to make it build on s390.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 11 Sep 2003 10:33:26 +0200
+
+lineakd (0.6.1-3) unstable; urgency=low
+
+  * Rebuilt with libxosd2. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue,  2 Sep 2003 15:43:41 +0200
+
+lineakd (0.6.1-2) unstable; urgency=low
+
+  * Removed an ugly hack from cdromctrl.cpp, as include/cdrom.h has been
+    fixed in glibc-2.3.2-2.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  9 Aug 2003 08:52:25 +0200
+
+lineakd (0.6.1-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu,  7 Aug 2003 18:01:45 +0200
+
+lineakd (0.6-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue,  5 Aug 2003 09:50:22 +0200
+
+lineakd (0.5.99.cvs20030726-4) unstable; urgency=low
+
+  * Updated /usr/share/doc/lineakd/README.Debian (closes: bug#203343).
+  * Also provide README and TODO in /usr/share/doc/lineakd.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 30 Jul 2003 10:19:37 +0200
+
+lineakd (0.5.99.cvs20030726-3) unstable; urgency=low
+
+  * Fixed an error in /etc/lineakkb.def. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 28 Jul 2003 02:16:29 +0200
+
+lineakd (0.5.99.cvs20030726-2) unstable; urgency=low
+
+  * Removed use of /dev/tty in postinst (closes: bug#203070). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 27 Jul 2003 17:23:52 +0200
+
+lineakd (0.5.99.cvs20030726-1) unstable; urgency=low
+
+  * New version from CVS rewritten from scratch in C++.
+    - Parser doesn't segfault anymore with an unknown key (closes: 
+      bug#196242).
+    - kill -HUP now works correctly (closes: bug#202991).
+    - Added support for HP Omnibook XE3-GF (closes: bug#202258).
+  * /etc/lineakkb.def is now managed with ucf (closes: bug#177449).
+  * Bumped Standards-Version to 3.6.0.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 27 Jul 2003 12:15:03 +0200
+
+lineakd (0.5-4) unstable; urgency=low
+
+  * Fixed a bug which causes a segfault (closes: bug#184456). Thanks to Mika
+    Fischer for the patch.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 12 Mar 2003 15:55:25 +0100
+
+lineakd (0.5-3) unstable; urgency=low
+
+  * Added homepage to the description.
+  * Depends on ${misc:Depends}.
+  * Uses debian/compat instead of DH_COMPAT.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 11 Mar 2003 09:48:43 +0100
+
+lineakd (0.5-2) unstable; urgency=low
+
+  * Fixed a bug which causes a segfault. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  8 Feb 2003 14:43:10 +0100
+
+lineakd (0.5-1) unstable; urgency=low
+
+  * New upstream release including a lot of new keyboards. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  7 Feb 2003 14:31:08 +0100
+
+lineakd (0.4pre3-8) unstable; urgency=low
+
+  * Added support for Logitech's Navigator SE. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue,  4 Feb 2003 17:09:57 +0100
+
+lineakd (0.4pre3-7) unstable; urgency=low
+
+  * Added suppport for Compaq Presario 90x.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 18 Jan 2003 13:05:35 +0100
+
+lineakd (0.4pre3-6) unstable; urgency=low
+
+  * Remove xosd support as it causes memory leak. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 14 Jan 2003 18:13:51 +0100
+
+lineakd (0.4pre3-5) unstable; urgency=low
+
+  * Built with libxosd.
+  * Use dpatch for patches.
+  * Bumped Standards-Version to 3.5.8.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu,  9 Jan 2003 20:31:47 +0100
+
+lineakd (0.4pre3-4) unstable; urgency=low
+
+  * Updated copyright, so lintian will be happy... 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 20 Dec 2002 03:13:30 +0100
+
+lineakd (0.4pre3-3) unstable; urgency=low
+
+  * Removed debian/conffiles, this is handled by dh_installdeb automatically ;
+    otherwise we end up with each conffile being listed twice...
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 17 Dec 2002 01:51:42 +0100
+
+lineakd (0.4pre3-2) unstable; urgency=low
+
+  * Uses absolute path for sysconfig dir. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 10 Nov 2002 15:40:15 +0100
+
+lineakd (0.4pre3-1) unstable; urgency=low
+
+  * New upstream version.
+  * Updated Policy standard compliance to 3.5.7 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat,  9 Nov 2002 17:19:37 +0100
+
+lineakd (0.3.5-1) unstable; urgency=low
+
+  * New upstream version. Changelog:
+    - Fixed a number of critical segfault bugs
+    - Fixed grep bug in pid code (thanks Sheldon)
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 11 Jun 2002 17:10:38 +0200
+
+lineakd (0.3.4-1) unstable; urgency=low
+
+  * Initial Release. (closes: bug#149571)
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 10 Jun 2002 18:11:09 +0200
+

@@ -1,0 +1,104 @@
+dnl    This file is part of the Lineak libraries/packages
+dnl    Copyright (C) 2003 Sheldon Lee-Wen (leewsb@hotmail.com)
+
+dnl    This file is free software; you can redistribute it and/or
+dnl    modify it under the terms of the GNU Library General Public
+dnl    License as published by the Free Software Foundation; either
+dnl    version 2 of the License, or (at your option) any later version.
+
+dnl    This library is distributed in the hope that it will be useful,
+dnl    but WITHOUT ANY WARRANTY; without even the implied warranty of
+dnl    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+dnl    Library General Public License for more details.
+
+dnl    You should have received a copy of the GNU Library General Public License
+dnl    along with this library; see the file COPYING.LIB.  If not, write to
+dnl    the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+dnl    Boston, MA 02111-1307, USA.
+
+dnl ------------------------------------------------------------------------
+dnl Find the lineak plugin directory.
+dnl ------------------------------------------------------------------------
+dnl
+AC_DEFUN([AC_LINEAK_FIND_PLUGINDIR],
+[
+AC_ARG_WITH(lineak_plugindir,[  --with-lineak-plugindir=DIR           Location of the lineak plugins directory],
+         [lineakplugins=${withval}])
+AC_MSG_CHECKING(Looking for the plugin directory)
+if test "$lineakplugins" = ""; then
+   for i in /usr /usr/local / /opt
+   do
+      if test -d "${i}/lib/lineakd/plugins" ; then
+         pdir="${i}/lib/lineakd/plugins"
+         AC_MSG_RESULT(${pdir})
+         break
+      fi
+   done
+else
+   pdir="$lineakplugins"
+   AC_MSG_RESULT(${pdir})
+fi
+
+if test ! -d $pdir ; then
+   AC_MSG_ERROR(Lineak plugin directory not found. Please install lineakd version 0.8 or higher.)
+   exit 0
+fi
+
+if test "$pdir" != ""; then
+   AC_DEFINE_UNQUOTED(PLUGINDIR, "$pdir", [Define the plugin directory])
+   PLUGINDIR="${pdir}"
+   AC_SUBST(PLUGINDIR)
+else
+   echo The lineakd plugin directory could not be found. Please install lineakd version 0.8 or higher.
+   exit 0
+fi
+])
+
+AC_DEFUN([AC_LINEAK_CHECK_LIBS],
+[
+   AC_PATH_X
+   LDFLAGS="$all_libraries -L${x_libraries} $X_LDFLAGS -lX11 -lXext -ldl"
+   CPPFLAGS="$all_includes -I${x_includes} ${CPPFLAGS} "
+   dnl $X_INCLUDES $X_LIBS $X_LDFLAGS
+   AC_CHECK_LIB(lineak,ac_check_lineak, [LIBLINEAK="-llineak"],[AC_MSG_ERROR([lib lineak not found. Please install lineakd 0.8 or later.])])
+   if test "x$LIBLINEAK" != "x"; then
+      LIBS="-llineak"
+   AC_DEFINE(HAVE_LIBLINEAK,1,[Define if you have liblineak installed])
+   dnl AC_MSG_RESULT(found)
+   fi
+   AC_SUBST(LIBLINEAK)
+])
+
+AC_DEFUN([AC_LINEAK_CHECK_INCLUDES],
+[
+   AC_ARG_WITH(lineak-includedir,[  --with-lineak-includedir=DIR           location of the lineak include directory], [lineakincludes=${withval}])
+
+AC_MSG_CHECKING(Looking for lineak headers)
+   if test "$lineakincludes" = ""; then
+      for i in /usr/include /usr/local/include /opt/include $lineakincludes
+      do
+         if test -f "${i}/lineak/lconfig.h" ; then
+            lineak_includedir="${i}/lineak"
+            CPPFLAGS="${CPPFLAGS} -I${lineak_includedir} -I${i}"
+            AC_MSG_RESULT(${lineak_includedir})
+            break
+         fi
+      done
+   else
+      lineak_includedir="$lineakincludes"
+      CPPFLAGS="${CPPFLAGS} -I${lineak_includedir} -I${i}"
+      AC_MSG_RESULT(${lineak_includedir})
+   fi
+   if test ! -d "$lineak_includedir" ; then
+      AC_MSG_ERROR(Lineak includes not found. Check your installation or try ./configure --with-lineak-includedir=)
+      exit 0
+   fi
+
+   if test "$lineak_includedir" != ""; then
+      AC_DEFINE_UNQUOTED(INCLUDEDIR, "$lineak_includedir", [Define the plugin directory])
+      AC_SUBST(INCLUDEDIR)
+   else
+      echo The lineak development headers could not be found. Please install lineakd version 0.8 or higher.
+      exit 0
+  fi
+])

@@ -1,0 +1,26 @@
+Index: lineakd-0.9/lineakd/Makefile.am
+===================================================================
+--- lineakd-0.9.orig/lineakd/Makefile.am	2009-09-11 13:23:01.000000000 -0400
++++ lineakd-0.9/lineakd/Makefile.am	2009-09-11 13:33:19.000000000 -0400
+@@ -20,7 +20,7 @@
+ 	$(mkinstalldirs) ${DESTDIR}$(mandir)/man1/
+ 	$(mkinstalldirs) ${DESTDIR}$(pkglibdir)/plugins/
+ 	$(INSTALL_DATA) $(srcdir)/lineakkb.def ${DESTDIR}$(sysconfdir)/lineakkb.def
+-	$(INSTALL_DATA) $(srcdir)/lineakd.1.bz2 ${DESTDIR}$(mandir)/man1/lineakd.1.bz2
++	$(INSTALL_DATA) $(srcdir)/lineakd.1 ${DESTDIR}$(mandir)/man1/lineakd.1.bz2
+ 	 if test "$(SETKEYCODES_SUID)" != "no" ; then \
+            chown root `which setkeycodes` ; \
+            chmod +s `which setkeycodes` ; \
+Index: lineakd-0.9/lineakd/Makefile.am
+===================================================================
+--- lineakd-0.9.orig/lineakd/Makefile.am	2009-09-11 13:23:01.000000000 -0400
++++ lineakd-0.9/lineakd/Makefile.am	2009-09-11 13:33:19.000000000 -0400
+@@ -20,7 +20,7 @@
+ 	$(mkinstalldirs) ${DESTDIR}$(mandir)/man1/
+ 	$(mkinstalldirs) ${DESTDIR}$(pkglibdir)/plugins/
+ 	$(INSTALL_DATA) $(srcdir)/lineakkb.def ${DESTDIR}$(sysconfdir)/lineakkb.def
+-	$(INSTALL_DATA) $(srcdir)/lineakd.1.bz2 ${DESTDIR}$(mandir)/man1/lineakd.1.bz2
++	$(INSTALL_DATA) $(srcdir)/lineakd.1 ${DESTDIR}$(mandir)/man1/lineakd.1.bz2
+ 	 if test "$(SETKEYCODES_SUID)" != "no" ; then \
+            chown root `which setkeycodes` ; \
+            chmod +s `which setkeycodes` ; \

@@ -1,0 +1,32 @@
+.TH XSENDKEYCODE 8 "March 2, 2005"
+.\" NAME should be all caps, SECTION should be 1-8, maybe w/ subsection
+.\" other parms are allowed: see man(7), man(1)
+.SH NAME
+xsendkeycode \- send a key event to X using a keycode
+.SH SYNOPSIS
+.B xsendkeycode keycode 1|0
+
+.SH "DESCRIPTION"
+xsendkeycode is a simple program which allows you to send a keycode to X specifying a KeyPress or KeyRelease type of event. 
+.PP
+A KeyPress event tells X that the key is being held down. A KeyRelease event tells X that the key has been released. A KeyRelease event is not as critical if you are sending a single alpha-numeric character. However, if you are sending modifier keys such as Shift, Control or Alt then make sure that you send the corresponding key up event or you will proceed as if those keys are being held down.
+.PP
+For example:
+.B  xsendkeycode 38 1
+.PP
+will send the letter 'a'. If you wanted to send a capital letter a 'A' you would run these commands at the shell:
+.PP
+.B  xsendkeycode 50 1; xsendkeycode 38 1; xsendkeycode 38 0; xsendkeycode 50 0;
+.PP
+The first command sends keycode 50 as a KeyPress. Keycode 50 is the left shift 'Shift_L' key. The second command sends a KeyPress 'a' event. The last two commands send the corresponding KeyRelease events. Notice the order. The 'a' key comes up before the 'Shift_L' key.
+
+This helper application is not used from lineakd(1) but is included to allow scripts to send keys. This is especially helpful for people who's keyboards send ACPI events instead of actual KeyCodes.
+
+.SH SEE ALSO
+evtest(8),
+send_to_keyboard(8),
+xsendkeys(8),
+lineakd(1).
+.SH AUTHOR
+.B xsendkeycode
+was written by Aivils <aivils@unibanka.lv>.

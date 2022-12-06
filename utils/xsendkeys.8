@@ -1,0 +1,25 @@
+.TH XSENDKEYS 8 "March 2, 2005"
+.\" NAME should be all caps, SECTION should be 1-8, maybe w/ subsection
+.\" other parms are allowed: see man(7), man(1)
+.SH NAME
+xsendkeys \- send a named key combination to X using strings
+.SH SYNOPSIS
+.B xsendkeys keystring 
+
+.SH "DESCRIPTION"
+xsendkeys is a simple program which allows you to send a key or key combination to X. For example:
+.B  xsendkeys "a"
+will send the letter a. If you wanted to send a capital a 'A' you would have to send:
+.B  xsendkeys "Shift_L+a"
+.PP
+.B  xsendkeys "Shift_L+Right" 
+will send the key combination shift+right arrow. The names of the keys must be the exact names X would expect (use xev to see keynames when in doubt). Unlike xsendkeycode xsendkeys automatically sends corresponding keydown and keyup events. This helper application is not used from lineakd(1) but is included to allow scripts to send keys to X. 
+
+.SH SEE ALSO
+evtest(8),
+send_to_keyboard(8),
+xsendkeycode(8),
+lineakd(1).
+.SH AUTHOR
+.B xsendkeys
+was written by Sheldon Lee-Wen <leewsb@hotmail.com>.

@@ -1,0 +1,80 @@
+lineakd (1:0.8-3) unstable; urgency=low
+
+  Lineak now supports modifier keys with your easy access keys. It supports
+  the control, alt, shift and mod2-mod5 keys.
+
+  To use a modifier, do something like this in the config file:
+  Sleep+control = something
+  Sleep+alt = something different
+  Sleep+shift = something more different
+  Sleep = sleepiness
+
+  For more information on that change, please see 
+  /usr/share/doc/lineakd/README.gz.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 12 Oct 2004 15:50:12 +0200
+ 
+lineakd (0.8beta2-1) unstable; urgency=low
+                
+  The X handling code has been ripped out and recoded in a much 
+  simplified manner, and is now able to handle normal keys such as the
+  Windows key. 
+                
+  All macros and display functions have been moved into plugins that need 
+  to be installed seperately:
+  
+  * The previous macros of the form EAK_ are now in the package 
+    lineak-defaultplugin.
+  * The XOSD display functionality is now in the package
+    lineak-xosdplugin. In order to get the xosd plugin working now, you 
+    need to define "Display_plugin = xosd" in your config file. Also, 
+    all previous "XOSD_" configuration directives have now been replaced
+    by "Display_". 
+    Examples: "XOSD_font"  -> "Display_font"
+              "XOSD_color" -> "Display_color"
+
+  Plugins can now be written by third parties. For an example of plugin
+  architecture (since it is not yet documented) see the source code of
+  the plugins themselves. You will need to install lineak-dev
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 19 Feb 2004 11:05:11 +0100
+lineakd (1:0.8-3) unstable; urgency=low
+
+  Lineak now supports modifier keys with your easy access keys. It supports
+  the control, alt, shift and mod2-mod5 keys.
+
+  To use a modifier, do something like this in the config file:
+  Sleep+control = something
+  Sleep+alt = something different
+  Sleep+shift = something more different
+  Sleep = sleepiness
+
+  For more information on that change, please see 
+  /usr/share/doc/lineakd/README.gz.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 12 Oct 2004 15:50:12 +0200
+ 
+lineakd (0.8beta2-1) unstable; urgency=low
+                
+  The X handling code has been ripped out and recoded in a much 
+  simplified manner, and is now able to handle normal keys such as the
+  Windows key. 
+                
+  All macros and display functions have been moved into plugins that need 
+  to be installed seperately:
+  
+  * The previous macros of the form EAK_ are now in the package 
+    lineak-defaultplugin.
+  * The XOSD display functionality is now in the package
+    lineak-xosdplugin. In order to get the xosd plugin working now, you 
+    need to define "Display_plugin = xosd" in your config file. Also, 
+    all previous "XOSD_" configuration directives have now been replaced
+    by "Display_". 
+    Examples: "XOSD_font"  -> "Display_font"
+              "XOSD_color" -> "Display_color"
+
+  Plugins can now be written by third parties. For an example of plugin
+  architecture (since it is not yet documented) see the source code of
+  the plugins themselves. You will need to install lineak-dev
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 19 Feb 2004 11:05:11 +0100

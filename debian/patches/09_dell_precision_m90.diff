@@ -1,0 +1,50 @@
+Index: lineakd-0.9/lineakd/lineakkb.def
+===================================================================
+--- lineakd-0.9.orig/lineakd/lineakkb.def	2009-09-11 14:55:29.000000000 -0400
++++ lineakd-0.9/lineakd/lineakkb.def	2009-09-11 14:56:28.000000000 -0400
+@@ -2145,6 +2145,20 @@
+    [END KEYS]
+ [END DELL-LT-D800]
+ 
++[DELL-M90]
++  brandname = "Dell"
++  modelname = "Precision M90"
++  [KEYS]
++    Mute|Unmute = 160
++    VolumeDown  = 174
++    VolumeUp    = 176
++    Play|Pause  = 162
++    Back        = 144
++    Forward     = 153
++    Stop        = 164
++    WWW         = 178
++  [END KEYS]
++[END DELL-M90]
+ 
+ #### END Dell Keyboards ####
+ 
+Index: lineakd-0.9/lineakd/lineakkb.def
+===================================================================
+--- lineakd-0.9.orig/lineakd/lineakkb.def	2009-09-11 14:55:29.000000000 -0400
++++ lineakd-0.9/lineakd/lineakkb.def	2009-09-11 14:56:28.000000000 -0400
+@@ -2145,6 +2145,20 @@
+    [END KEYS]
+ [END DELL-LT-D800]
+ 
++[DELL-M90]
++  brandname = "Dell"
++  modelname = "Precision M90"
++  [KEYS]
++    Mute|Unmute = 160
++    VolumeDown  = 174
++    VolumeUp    = 176
++    Play|Pause  = 162
++    Back        = 144
++    Forward     = 153
++    Stop        = 164
++    WWW         = 178
++  [END KEYS]
++[END DELL-M90]
+ 
+ #### END Dell Keyboards ####
+ 

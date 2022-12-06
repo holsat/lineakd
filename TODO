@@ -1,0 +1,20 @@
+
+Fix old Xkb handling code. The original code, that could do some of the things listed below, has been ripped out.
+
+Make sure to restore the keysyms for keys we've configured when exiting. Then we can potentially bind any key to any set of commands.
+(i.e. we can add a macro EAK_EMITKEYS(x,y,z) to emit keycodes for keys x, y and z. However, were we to do this now, once
+we exit lineakd, that key would cease to function.
+
+Assign real symbols to each and every key. Currently, when mapped, we have a valid keysym and keycode, but no actual symbol.
+A real symbol should allow us to not bind a key to a command, but also use it in keybindings w/ other programs, like in KDE or
+GNOME.
+
+#IDEA
+Have a command line utility that:
+
+Gets the scancode from a key that is pressed and asks the user for the definition of the key
+ from input.h (input.h has all of the defines for keys and their corresponding keycodes in decimal.)
+ With this information you can create a keymap for loadkeys or manually run a setkeycodes type function.
+ This may have to be run on every boot, unless there is a way to map raw scan codes to keycodes or normal
+ scancodes into some sort of map permanently.
+

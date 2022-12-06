@@ -1,0 +1,52 @@
+lineakd for Debian
+------------------
+
+lineakd uses a configuration file per user. Quick start for Debian:
+
+* run 'lineakd -l' to see a list of available keyboards.
+
+* to create a new configuration file for your keyboard run 'lineakd -c TYPE'
+  where TYPE could be found from 'lineakd -l' as mentioned above
+
+* add '/usr/bin/lineakd &' to ~/.xsession if you use XSession or put it in 
+  the list of 'startup programs' of your Window Manager (i.e. Gnome or KDE)
+
+* bind commands to the keys by using lineakconfig (GTK+ GUI included in the 
+  package lineakconfig), or edit the .conf file by hand and issue either a 
+  SIGHUP signal (i.e. 'killall -HUP lineakd') or run 'lineakd -r'.
+
+
+For more information please see the file README in the same directory as
+this file
+
+
+Some users ask me how to add new keys, for example the windows key. For that, 
+simply add the corresponding key to /etc/lineakkb.def
+
+ -- Aurelien Jarno <aurel32@debian.org>, Mon, 10 Jun 2002 17:54:50 +0200
+lineakd for Debian
+------------------
+
+lineakd uses a configuration file per user. Quick start for Debian:
+
+* run 'lineakd -l' to see a list of available keyboards.
+
+* to create a new configuration file for your keyboard run 'lineakd -c TYPE'
+  where TYPE could be found from 'lineakd -l' as mentioned above
+
+* add '/usr/bin/lineakd &' to ~/.xsession if you use XSession or put it in 
+  the list of 'startup programs' of your Window Manager (i.e. Gnome or KDE)
+
+* bind commands to the keys by using lineakconfig (GTK+ GUI included in the 
+  package lineakconfig), or edit the .conf file by hand and issue either a 
+  SIGHUP signal (i.e. 'killall -HUP lineakd') or run 'lineakd -r'.
+
+
+For more information please see the file README in the same directory as
+this file
+
+
+Some users ask me how to add new keys, for example the windows key. For that, 
+simply add the corresponding key to /etc/lineakkb.def
+
+ -- Aurelien Jarno <aurel32@debian.org>, Mon, 10 Jun 2002 17:54:50 +0200

@@ -1,0 +1,100 @@
+Source: lineakd
+Section: x11
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>> 5.0.0), quilt, autotools-dev, autoconf, automake, libtool, bzip2 (>= 1.0.2), libx11-dev, libxmu-dev, libxext-dev, libxss-dev, libxtst-dev, libxkbfile-dev
+Build-Conflicts: autoconf2.13
+Standards-Version: 3.8.3
+Homepage: http://lineak.sourceforge.net
+
+Package: lineakd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ucf (>= 0.12)
+Conflicts: klineakconfig (<= 0.8-beta2-3), lineak-defaultplugin (<< 1:0.9-1), lineak-xosdplugin (<< 1:0.9-1), lineak-kdeplugins (<< 2:0.9-1)
+Recommends: lineak-defaultplugin, lineak-xosdplugin
+Suggests: lineak-kdeplugins
+Description: Linux support for Easy Access and Internet Keyboards
+ LinEAK, Linux support for Easy Access and Internet Keyboards, features X11 
+ support, windowmanager independence, ability to configure all keys through 
+ GUI or .conf file, volume control and sound controls.
+ .
+ lineakd is the daemon that runs in the background of an X session and listens 
+ to incoming events from multimedia buttons.
+
+Package: liblineak-0.9-0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: lineakd (<< 0.8.3-7)
+Replaces: lineakd
+Recommends: lineakd
+Description: LinEAK libraries
+ LinEAK, Linux support for Easy Access and Internet Keyboards, features X11
+ support, windowmanager independence, ability to configure all keys through 
+ GUI or .conf file, volume control and sound controls.
+ .
+ This package contains the shared library.
+
+Package: liblineak-dev
+Section: libdevel
+Architecture: any
+Depends: liblineak-0.9-0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Conflicts: lineak-dev
+Replaces: lineak-dev
+Description: LinEAK development files
+ LinEAK, Linux support for Easy Access and Internet Keyboards, features X11
+ support, windowmanager independence, ability to configure all keys through 
+ GUI or .conf file, volume control and sound controls.
+ .
+ This package contains the static library and header files required to compile
+ lineakd plugins.
+Source: lineakd
+Section: x11
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>> 5.0.0), quilt, autotools-dev, autoconf, automake, libtool, bzip2 (>= 1.0.2), libx11-dev, libxmu-dev, libxext-dev, libxss-dev, libxtst-dev, libxkbfile-dev
+Build-Conflicts: autoconf2.13
+Standards-Version: 3.8.3
+Homepage: http://lineak.sourceforge.net
+
+Package: lineakd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ucf (>= 0.12)
+Conflicts: klineakconfig (<= 0.8-beta2-3), lineak-defaultplugin (<< 1:0.9-1), lineak-xosdplugin (<< 1:0.9-1), lineak-kdeplugins (<< 2:0.9-1)
+Recommends: lineak-defaultplugin, lineak-xosdplugin
+Suggests: lineak-kdeplugins
+Description: Linux support for Easy Access and Internet Keyboards
+ LinEAK, Linux support for Easy Access and Internet Keyboards, features X11 
+ support, windowmanager independence, ability to configure all keys through 
+ GUI or .conf file, volume control and sound controls.
+ .
+ lineakd is the daemon that runs in the background of an X session and listens 
+ to incoming events from multimedia buttons.
+
+Package: liblineak-0.9-0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: lineakd (<< 0.8.3-7)
+Replaces: lineakd
+Recommends: lineakd
+Description: LinEAK libraries
+ LinEAK, Linux support for Easy Access and Internet Keyboards, features X11
+ support, windowmanager independence, ability to configure all keys through 
+ GUI or .conf file, volume control and sound controls.
+ .
+ This package contains the shared library.
+
+Package: liblineak-dev
+Section: libdevel
+Architecture: any
+Depends: liblineak-0.9-0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Conflicts: lineak-dev
+Replaces: lineak-dev
+Description: LinEAK development files
+ LinEAK, Linux support for Easy Access and Internet Keyboards, features X11
+ support, windowmanager independence, ability to configure all keys through 
+ GUI or .conf file, volume control and sound controls.
+ .
+ This package contains the static library and header files required to compile
+ lineakd plugins.

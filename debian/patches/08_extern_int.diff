@@ -1,0 +1,72 @@
+Index: lineakd-0.9/lineak/msgpasser.h
+===================================================================
+--- lineakd-0.9.orig/lineak/msgpasser.h	2009-09-09 11:55:11.000000000 -0400
++++ lineakd-0.9/lineak/msgpasser.h	2009-09-09 11:55:39.000000000 -0400
+@@ -79,7 +79,6 @@
+ /**Pass messages via a message queue.
+   *@author Sheldon Lee Wen
+   */
+-extern int errno;
+ 
+ class msgPasser {
+ public: 
+Index: lineakd-0.9/lineak/lineak_core_functions.h
+===================================================================
+--- lineakd-0.9.orig/lineak/lineak_core_functions.h	2009-09-09 11:55:59.000000000 -0400
++++ lineakd-0.9/lineak/lineak_core_functions.h	2009-09-09 11:56:16.000000000 -0400
+@@ -32,7 +32,6 @@
+ class LConfig;
+ class LDef;
+ class ConfigDirectives;
+-extern int errno;
+ 
+ namespace lineak_core_functions {
+ 
+Index: lineakd-0.9/lineakd/lineakd_core_functions.h
+===================================================================
+--- lineakd-0.9.orig/lineakd/lineakd_core_functions.h	2009-09-09 11:56:38.000000000 -0400
++++ lineakd-0.9/lineakd/lineakd_core_functions.h	2009-09-09 11:56:56.000000000 -0400
+@@ -32,7 +32,6 @@
+ class LConfig;
+ class LDef;
+ class ConfigDirectives;
+-extern int errno;
+ 
+ namespace lineakd_core_functions {
+ 
+Index: lineakd-0.9/lineak/msgpasser.h
+===================================================================
+--- lineakd-0.9.orig/lineak/msgpasser.h	2009-09-09 11:55:11.000000000 -0400
++++ lineakd-0.9/lineak/msgpasser.h	2009-09-09 11:55:39.000000000 -0400
+@@ -79,7 +79,6 @@
+ /**Pass messages via a message queue.
+   *@author Sheldon Lee Wen
+   */
+-extern int errno;
+ 
+ class msgPasser {
+ public: 
+Index: lineakd-0.9/lineak/lineak_core_functions.h
+===================================================================
+--- lineakd-0.9.orig/lineak/lineak_core_functions.h	2009-09-09 11:55:59.000000000 -0400
++++ lineakd-0.9/lineak/lineak_core_functions.h	2009-09-09 11:56:16.000000000 -0400
+@@ -32,7 +32,6 @@
+ class LConfig;
+ class LDef;
+ class ConfigDirectives;
+-extern int errno;
+ 
+ namespace lineak_core_functions {
+ 
+Index: lineakd-0.9/lineakd/lineakd_core_functions.h
+===================================================================
+--- lineakd-0.9.orig/lineakd/lineakd_core_functions.h	2009-09-09 11:56:38.000000000 -0400
++++ lineakd-0.9/lineakd/lineakd_core_functions.h	2009-09-09 11:56:56.000000000 -0400
+@@ -32,7 +32,6 @@
+ class LConfig;
+ class LDef;
+ class ConfigDirectives;
+-extern int errno;
+ 
+ namespace lineakd_core_functions {
+ 

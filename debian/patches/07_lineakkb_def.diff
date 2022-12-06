@@ -1,0 +1,26 @@
+Index: lineakd-0.9/lineakd/lineakkb.def
+===================================================================
+--- lineakd-0.9.orig/lineakd/lineakkb.def	2009-09-09 11:51:23.000000000 -0400
++++ lineakd-0.9/lineakd/lineakkb.def	2009-09-09 11:54:48.000000000 -0400
+@@ -2137,7 +2137,7 @@
+ 
+ [DELL-LT-D800]
+    brandname = "Dell"
+-   modelname = "Latitude D800"
++   modelname = "Latitude D800/D810"
+    [KEYS]
+      Mute = 160
+      VolumeUp = 176
+Index: lineakd-0.9/lineakd/lineakkb.def
+===================================================================
+--- lineakd-0.9.orig/lineakd/lineakkb.def	2009-09-09 11:51:23.000000000 -0400
++++ lineakd-0.9/lineakd/lineakkb.def	2009-09-09 11:54:48.000000000 -0400
+@@ -2137,7 +2137,7 @@
+ 
+ [DELL-LT-D800]
+    brandname = "Dell"
+-   modelname = "Latitude D800"
++   modelname = "Latitude D800/D810"
+    [KEYS]
+      Mute = 160
+      VolumeUp = 176

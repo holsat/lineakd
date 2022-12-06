@@ -1,0 +1,20 @@
+.TH EVTEST 1 "March 2, 2005"
+.\" NAME should be all caps, SECTION should be 1-8, maybe w/ subsection
+.\" other parms are allowed: see man(7), man(1)
+.SH NAME
+evtest \- Event device test program 
+.SH SYNOPSIS
+.B evtest 
+.I "/dev/input/eventX"
+
+.SH "DESCRIPTION"
+evtest allows you to see the event layer events your keyboard is generating. This 
+is for debugging to help you determine if indeed your keyboard is sending events, 
+and which events it is sending. It uses the new event layer.
+
+.SH SEE ALSO
+send_to_keyboard(8),
+lineakd(1).
+.SH AUTHOR
+.B evtest
+was written by Vojtech Pavlik <vojtech@suse.cz>.

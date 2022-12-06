@@ -1,0 +1,316 @@
+.TH LINEAKD 1 "July 27, 2003"
+.\" NAME should be all caps, SECTION should be 1-8, maybe w/ subsection
+.\" other parms are allowed: see man(7), man(1)
+.SH NAME
+lineakd \- GUI configurable support for multimedia keyboards 
+.SH SYNOPSIS
+.B lineakd
+.I "[options...]"
+
+.SH "DESCRIPTION"
+LinEAK, Linux support for Easy Access and Internet Keyboards, features X11
+support, windowmanager independence, ability to configure all keys through GUI
+or .conf file, volume control and sound controls.
+.PP
+lineakd is the daemon that runs in the background of an X session and listens
+to incoming events from multimedia buttons.
+
+.SH OPTIONS
+The programs follow the usual GNU command line syntax, with long
+options starting with two dashes (`\-').
+A summary of options are included below.
+.TP
+.B "\-l, \-\-kbd\-list"
+Show all supported keyboard types.
+.TP
+.B "\-L, \-\-plugin\-list"
+Show all plugins and macros.
+.TP
+.B "\-D, \-\-directives\-list"
+Show all of the default, implicit configuration directives.
+.TP
+.BI "\-f" " FILE" ", \-\-conffile=" "FILE"
+Specify the .conf file.
+.TP
+.BI "\-e" " FILE" ", \-\-deffile=" "FILE"
+Specify the .def file.
+.TP
+.BI "\-d" " DEVICE" ", \-\-cdrom\-dev=" "DEVICE"
+Specify the CDROM device.
+.TP
+.BI "\-m" " DEVICE" ", \-\-mixer\-dev=" "DEVICE"
+Specify the mixer device.
+.TP
+.BI "\-c" " TYPE" ", \-\-config=" "TYPE"        
+Create a new lineakd.conf file for keyboard TYPE (warning: old one will be overwritten!).
+.TP
+.B "\-x, \-\-exit"
+Tell the daemon to exit.
+.TP
+.B "\-r, \-\-reload"
+Reload the configuration files.
+.TP
+.B "\-z, \-\-sleep"
+Stop the daemon from processing keyboard events.
+.TP
+.B "\-k, \-\-awaken"
+Resume processing of keyboard events.
+.TP
+.B "\-v, \-\-verbose"
+Print verbose messages.
+.TP
+.B "\-vv, \-\-very\-verbose"
+Print very verbose messages. Mostly for debugging purposes.
+.TP
+.B "\-h, \-\-help"
+Show summary of options.
+.PP
+.SH NOTE
+if 
+.B "\-f, \-e, \-d," 
+or
+.B "\-m"
+parameters are used in conjunction with 
+.B "\-c\c"
+\&, please make sure you specify those BEFORE 
+.B "\-c"
+!
+
+.SH QUICK SETUP
+For those who want to setup their configuration quickly, here are the steps:
+.PP
+  run 'lineakd -l' to see a list of available keyboards.
+.PP
+  run 'lineakd -c TYPE' to create a standard configuration file for the keyboard with an identifier of TYPE that you found by
+running 
+.B lineakd -l
+.PP
+  The configuration file will be $HOME/.lineak/lineakd.conf
+.PP
+Edit the config file to specify commands for the keys. The commands will initially be empty. This file can be modified to suit your needs. Do NOT, however, add extra keys or keynames! You can only change the values of the keys that are already present! If you have a key on your keyboard that is not in the file, please post it on the mailing list lineak-devel@lists.sourceforge.net 
+
+.SH CONFIGURATION
+
+Lineak uses two types of configuration files: lineakkb.def files and lineakd.conf files.
+.TP
+.SH lineakkb.def
+
+lineakkb.def files contain keyboard descriptions that map key and button names, to keycodes and button codes respectively. A lineakkb.def file can be placed either in a system directory, or in a users home directory (in the .lineak/ subdirectory). The lineakd daemon will first read the system lineakkb.def file, usually at /etc/lineakkb.def and then read the ~/.lineak/lineakkb.def file. It will attempt to reconcile the entries, using the local entries to override the system entries.
+
+Here is an example of a keyboard definition from a lineakkb.def 
+
+[LTCDP]
+   brandname = "Logitech"
+   modelname = "Cordless Desktop Pro"
+
+   [KEYS]
+      Sleep                 = 223
+      Internet              = 178
+      Mail                  = 236
+   [END KEYS]
+
+   [BUTTONS]
+      Thumb                 = 2
+   [END BUTTONS]
+
+[END LTCDP]
+
+The structure is important. Adding a new keyboard is as easy as determining the special keys that you keyboard has, using something like xev, and writing your own definition file. Note that the daemon will only register keys that you also have defined in your lineakd.conf file.
+
+
+.SH lineakd.conf
+
+lineakd.conf files can live either in a system directory, or in the users home directory under the .lineak subdirectory. lineakd will attempt to load a users config file before looking for a system wide configuration file.
+
+.SH Directives
+
+Lineakd supports various configuration file directives. Plugins also can specify their own directives. The standard directives that are supported follow with their defaults:
+
+.B KeyboardType = ""
+.PP
+.B CdromDevice = "/dev/cdrom"
+.PP
+.B MixerDevice = "/dev/mixer"
+.PP
+.B Display_plugin = internal
+.PP
+.B Display_font = -adobe-helvetica-bold-r-normal-*-*-240-*-*-p-*-*-*
+.PP
+.B Display_color = 0aff00
+.PP
+.B Display_timeout = 3
+.PP
+.B Display_pos = bottom
+.PP
+.B Display_align = center
+.PP
+.B Display_hoffset = 0
+.PP
+.B Display_voffset = 50
+.PP
+.B Display_soffset = 1
+.PP
+.B keystate_capslock = ""
+.PP
+.B keystate_numlock = ""
+.PP
+.B keystate_scrolllock = ""
+.PP
+
+KeyboardType is the only mandatory defintion. If KeyboardType is not defined, the daemon will not function properly.
+
+The CdromDevice and MixerDevice settings specify the device files to use. These are only useful when used in conjunction with a plugin that requires them. One such plugin is the defaultplugin.
+
+The Display_* directives control the functioning of the on screen display.
+    Display_plugin specifies with of the installed display plugins to use. Currently the only OSD plugin is the xosd plugin.
+
+    Display_font specifies which font name to use for the on screen display. Currently the xosd plugin requires font names in X format.
+
+    Display_color specifies the color of the font. As xosd currently requires the color in a numeric format, that is the default. You can use something like kcolorchooser or the gimp to get color values for you.
+
+    Display_timeout specifies the amount of time the display should remain on screen. After this number of seconds the display will be removed.
+
+    Display_pos specifies the vertical position for the OSD. Possible values are bottom, middle and top.
+
+    Display_align specifies the horizontal position for the OSD. Possible values are left, center and right.
+
+The keystate_* directives control modifiers. By default, lineakd does not pay attention to the modifiers NumLock, CapsLock and ScrollLock. Set these directives to "enable" to use modifiers. (Note: as of beta3, these options do nothing. We automatically use modifiers if they are defined on a per command basis.)
+
+.SH TOGGLEABLE KEYS
+
+lineakd supports toggle keys. A toggleable key is one that can have a various number of states for each push of the key. For example, on many keyboards the Play and Pause keys are the same. When you push the key once it plays, the next time it pauses. The same thing goes for the Mute key. You must define a toggle key as key1|key2 in the definition (lineakkb.def) file. We can define a single action for this key in the config file by specifying the keyname in the form key1|key2 - this effectively treats the toggleable key as a normal key. It tells lineakd that we don't want to use this a a toggleable key, maybe because the command we are going to bind to it supports the notion of toggling. We can also specify seperate actions for the Play and Pause states by assigning actions to key1 and key2. eg.
+.PP
+        On the LTCDP there is the key 'Play|Pause' In my
+        config file I can specify either:
+.PP
+.B        Play|Pause     = "/usr/bin/xmms -t"
+.PP
+        To treat this as a normal key, or, if I want seperate functions for the play and pause states:
+.PP
+.B        Play            = "/usr/bin/xmms -p"
+.PP
+.B        Pause           = "/usr/bin/xmms -u"
+.PP
+Note that there can be more than two states for a toggleable key. For example key1|key2|key3 could be defined.
+.PP
+.SH MODIFIERS
+
+lineakd now supports a variable number of modifiers to a key. However, this only applies to non-toggleable keys so a key such as Play|Pause will not work with modifiers if you use it as a toggleable key by putting entries like this:
+.PP
+.B        Play = something
+.PP
+.B        Pause = something else
+.PP
+In your config file. However, if you use the key as a non-toggleable key, i.e. like this:
+.PP
+.B        Play|Pause = something
+.PP
+Then it becomes possible to use modifiers.
+.PP
+Currently we support the following modifiers:
+        control
+        alt
+        shift
+        mod2
+        mod3
+        mod4
+        mod5
+To use a modifier, we do something like this in the config 
+        Sleep+control = something
+        Sleep+alt = something different
+        Sleep+shift = something more different
+        Sleep = sleepiness
+        etc.
+
+Modifiers to buttons, if they are defined in the lineakkb.def file, work the same way.
+
+.SH ON-SCREEN DISPLAY
+
+lineakd supports custom on screen display messages through the configuration file. However, some plugins may choose to disregard custom on screen display messages if they feel it does not apply. Currently you specify the on screen display message for a command by placing it within square brackets at the beginning of the line. E.g.
+        [On Screen Message] Go = some command
+        [Another Message] Home+alt = some command
+        [Boring Message] Home = some command
+
+.SH PLUGINS
+
+The lineakd daemon does not contain any internal macros or actual on screen display functionality. This functionality is implemented in plugins that are loaded when the lineakd daemon is first run. NOTE: Restarts of the daemon with lineakd -r will not reload plugins, or load new plugins.
+
+The previous functionality that existed in versions of lineakd up uptin 0.8 has been moved into two plugins: lineak_defaultplugin, which contains all of the EAK_* macros and lineak_xosdplugin which contains all of the XOSD on screen display functionality. There is now also a lineak_kdeplugin plugin that brings with it a total of 23 macros or more for handling KDE funtionality via dcop. Some of these macros themselves take arguments which expands their functionality. See the respective plugin packages for more information on MACRO usage.
+
+.SH HELPER APPLICATIONS
+
+The lineakd package now installs two helper applications, send_to_keyboard and evtest.
+.PP
+evtest: Allows you to see the event layer events your keyboard is generating. This is for debugging to help you determine if indeed your keyboard is sending events, and which events it is sending. It uses the new event layer.
+.PP
+send_to_keyboard (only for arm, x86 and x86_64): This is a simple program which, for now is just for the IBM keyboards. It allows you to send actual control codes to the keyboard device to enable or disable certain functions. For example, some of the IBM keyboards require:
+  send_to_keyboard ea 17
+.PP
+in order to enable the extra keys. This helper application is actually used from lineakd. Within your lineakkb.def file you can specify a configuration option after the keyboard and model name to initialize the keyboard with. As requirements for this sort of thing increases I'll enable the handling of different options. So far we only look for INITIALIZE.
+.PP
+e.g.
+.PP
+[IBMRA7993]
+  brandname = "IBM"
+  modelname = "Rapid Access Keyboard"
+  RAWCOMMAND[INITIALIZE] = "ea 71"   # <--- lineakd will at this point fork and execute: `send_to_keyboard ea 17`
+  [KEYS]
+    WWW              = 178
+    WorldBook        = 151
+    Option           = 176
+    Help             = 166
+    Standby          = 165
+    AudioMute        = 146
+    AudioStop        = 164
+    AudioPlay|Pause  = 153
+    Back             = 163
+    Forward          = 161
+    AudioLowerVolume = 158
+    AudioRaiseVolume = 160
+    Custom1          = 174
+  [END KEYS]
+
+[END IBMRA7993]
+.PP
+
+.SH KNOWN BUGS
+
+Linux 2.6 can cause changes in how the keycodes are interpreted from the 2.4 version of the kernel. In some cases, keys that use to work, no longer work at all. If this happens to you try the following:
+.PP
+1) Run xev and see if X reports any keycodes for the keys that are not working. If there are keycodes being produced, you'll have to update the lineakkb.def file (usually in /etc) with the correct keycodes for your keyboard.
+.PP
+2) If xev does not report any keycodes for one or more of your keys, then try looking in /var/log/messages. If you have error messages in that file from atkbd.c about unknown scancodes then try binding those scancodes to keycodes with the setkeycodes command as root. If you are in doubt over which keycode to bind it to just use the keycode from your /etc/lineakkb.def file. If X then produces keycodes for that key then put those setkeycodes commands somewhere in your startup scripts (at the end of /etc/rc.sysinit for example) so that they run at boot time. You'll notice that X produces a different keycode for the key that what you set it as. Follow the steps under the procedure 1 above to get lineak to recognize the new keycodes.
+.PP
+3) If you see nothing in your /var/log/messages, and xev produces no keycodes, you can try running showkey -s as root and see if the keypresses show any scancodes. If they do, follow the setkeycodes part of procedure 2 above. If not, see 4.
+.PP
+4) If still nothing happens, try the evtest command included in the package. You'll have to run it as root, but it can tell you if it sees any events at all. If not, it is likely that your keys may require a low level command to be sent to the keyboard (like in the example of the IBM Rapid Access Keyboard above.) You can check this website: http://www.win.tue.nl/~aeb/linux/kbd/scancodes-5.html to see if there is any further information. 
+.PP
+5) If none of the above work, send an email to the linux-usb mailing list (if your keyboard is USB) or to the atkbd.c maintainer and pray they do something about it. Otherwise your screwed. Take your POS keyboard back to the store and get a supported one. :(
+.PP
+
+The EAK_SLEEP action has no functionality yet.
+
+Due to the fact that not all IDE CD-ROM drives provide status info on the tray position, the following can occur:
+.PP
+   If lineakd is started with the cdrom tray in open position, the eject button has to be pressed twice the first time to close it.
+.PP
+   If you opened the cdrom tray with the eject button and let the tray close automatically after a while (hardware timer), the eject button has to be pressed twice to open it again.
+
+.SH FILES
+.TP
+.I /etc/lineakkb.def
+Keyboard definitions file.
+.TP
+.I $HOME/.lineak/lineakd.conf
+Personal configuration file.
+.TP
+.I $HOME/.lineak/lineakkb.conf
+Personal keyboard configuration file.
+.SH SEE ALSO
+lineakconfig(1),
+lineak_defaultplugin(1),
+lineak_xosdplugin(1),
+lineak_kdeplugins(1).
+.SH AUTHOR
+.B lineakd
+was written by Sheldon Lee-Wen <leewsb@hotmail.com> and Mark Smulders <Mark@PIRnet.nl>.

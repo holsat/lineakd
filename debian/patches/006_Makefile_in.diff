@@ -1,0 +1,48 @@
+Index: lineakd-0.9/Makefile.am
+===================================================================
+--- lineakd-0.9.orig/Makefile.am	2009-09-10 17:11:37.000000000 -0400
++++ lineakd-0.9/Makefile.am	2009-09-11 09:58:34.000000000 -0400
+@@ -1,5 +1,8 @@
+ COMPILE_FIRST = lineak
+ COMPILE_LAST = lineakd
++
++ACLOCAL_AMFLAGS=-I m4
++
+ ####### kdevelop will overwrite this part!!! (begin)##########
+ 
+ SUBDIRS = lineak utils lineakd
+@@ -22,8 +25,8 @@
+ $(top_srcdir)/subdirs:
+ 	cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common subdirs
+ 
+-$(top_srcdir)/acinclude.m4: $(top_srcdir)/admin/acinclude.m4.in $(top_srcdir)/admin/libtool.m4.in $(top_srcdir)/admin/lineak.m4.in
+-	@cd $(top_srcdir) && cat admin/acinclude.m4.in admin/libtool.m4.in $(top_srcdir)/admin/lineak.m4.in > acinclude.m4
++$(top_srcdir)/acinclude.m4: $(top_srcdir)/admin/acinclude.m4.in $(top_srcdir)/admin/lineak.m4.in
++	@cd $(top_srcdir) && cat admin/acinclude.m4.in $(top_srcdir)/admin/lineak.m4.in > acinclude.m4
+ 
+ MAINTAINERCLEANFILES = subdirs configure.in acinclude.m4 configure.files
+ 
+Index: lineakd-0.9/Makefile.am
+===================================================================
+--- lineakd-0.9.orig/Makefile.am	2009-09-10 17:11:37.000000000 -0400
++++ lineakd-0.9/Makefile.am	2009-09-11 09:58:34.000000000 -0400
+@@ -1,5 +1,8 @@
+ COMPILE_FIRST = lineak
+ COMPILE_LAST = lineakd
++
++ACLOCAL_AMFLAGS=-I m4
++
+ ####### kdevelop will overwrite this part!!! (begin)##########
+ 
+ SUBDIRS = lineak utils lineakd
+@@ -22,8 +25,8 @@
+ $(top_srcdir)/subdirs:
+ 	cd $(top_srcdir) && $(MAKE) -f admin/Makefile.common subdirs
+ 
+-$(top_srcdir)/acinclude.m4: $(top_srcdir)/admin/acinclude.m4.in $(top_srcdir)/admin/libtool.m4.in $(top_srcdir)/admin/lineak.m4.in
+-	@cd $(top_srcdir) && cat admin/acinclude.m4.in admin/libtool.m4.in $(top_srcdir)/admin/lineak.m4.in > acinclude.m4
++$(top_srcdir)/acinclude.m4: $(top_srcdir)/admin/acinclude.m4.in $(top_srcdir)/admin/lineak.m4.in
++	@cd $(top_srcdir) && cat admin/acinclude.m4.in $(top_srcdir)/admin/lineak.m4.in > acinclude.m4
+ 
+ MAINTAINERCLEANFILES = subdirs configure.in acinclude.m4 configure.files
+ 

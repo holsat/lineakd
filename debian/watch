@@ -1,0 +1,6 @@
+version=3
+
+http://sf.net/lineak/lineakd-([\d.]+)\.tar\.gz
+version=3
+
+http://sf.net/lineak/lineakd-([\d.]+)\.tar\.gz

@@ -1,0 +1,320 @@
+June 9 2006     Sheldon Lee-Wen
+		Fix bug in Makefile.am that causes duplicate DESTDIR's when
+		DESTDIR is specified. This bug is triggered under newer
+		autotools when creating RPMS.
+
+		Fix bug that caused a segfault after a lineakd -r was issued
+		and lineakd attempted to run a command that was not a plugin.
+
+		Fix a bug that caused lineak to revert to the internal display
+		plugin when a MappingNotify event is recieved.
+		
+May 24 2006     Sheldon Lee-Wen
+		Released 0.9. Adds more supported keyboards. Fixes bugs.
+		Provides API required by KlineakConfig.
+
+March 13 2006   Sheldon Lee-Wen
+                Many bug fixes within the lineak library and API. Some API
+		changes to support KlineakConfig as well as to fix borked
+		APIs. Many keyboards added.
+
+July 22 2005    Sheldon Lee-Wen
+		lineakd 0.8.4-rc1. We now have support for RAWCOMMAND[SETKEYCODES] = 
+		directives in the lineakkb.def file. If setkeycodes is suid root
+		then lineakd will run setkeycodes for us. The reason for this is two fold.
+		1) Convienience for the user. 2) A documented place to keep
+		scancodes for devices which are not recognized. Once we start
+		getting these, I am going to look at contributing them to the kernel to
+		fix the problem where is should be fixed.
+
+May 26 2005     Sheldon Lee-Wen
+		lineakd 0.8.4 development Fixed some bugs, introduced helper applications 
+                xsendkeys and xsendkey.
+
+February 25 2005 Sheldon Lee-Wen
+                Several bugs have been fixed. Most seriously the AMD64 bugs. 
+		The code is now much more portable. I've also begun
+		implementing support for an external helper application, but
+		this has to be run as suid root, and can send commands
+		directly to the keyboard, so it's a little dangerous. The
+		helper command sends commands directly to the keyboard, and
+		the keyboard definition can be configured to support this with
+		a RAWCOMMANDS[INITIALIZE] = <commands> entry. It's just in the
+		initial stages of support, so may not work for everything.
+
+		We've also updated the lineakkd.def file with more keyboards.
+
+November  8 2004 Sheldon Lee-Wen
+                Finally fixed a long standing bug with the PluginManager class 
+		that would segfault if you tried to unload plugins. Turns out
+		it was in the initializeDisplay method of the class. I added
+		many diagnostics functions in order to track this down.
+
+November  2 2004 Sheldon Lee-Wen
+                Posting lineakd 0.8.2. Nothing has really changed except some
+		compile time fixes for SUSE 9.1, which has to do with which
+		headers are included where, and in which order.
+
+October  23 2004 Sheldon Lee-Wen 
+                Lineak 0.8.1 is ready to go out. In this release we have bug
+		fixes, and versioning in the plugin structures so that we
+		don't load an inappropriate version. I'm also going to begin 
+		converting the plugin structure to use strings instead of 
+		char*. Seeing that this is C++ anyway.
+		   The big new feature for 0.8.1 is the inclusion of a
+		   Media-Detect macro, but that is in the defaultplugins
+		   package.
+
+September 4 2004 Sheldon Lee-Wen
+                I'm preparing to release 0.8 final. In doing that I've added a
+                last minute feature for custom on screen display messages.
+                In the config file you can now do the following:
+                 [On Screen Message] key+modifier = command
+                To have the "On Screen Message" appear on the screen when the
+                key in question has been pressed.
+
+April 24 2004 Sheldon Lee-Wen
+                I'm about to release the third beta of lineakd 0.8
+                We now support buttons and keys. Currently to bind to a button, you have to place a custom
+                lineakkb.def file in your home directory. In the definition for your keyboard, you must add
+                a section for buttons like in the following example: 
+                [LTCDP]
+                   brandname = "Logitech"
+                   modelname = "Cordless Desktop Pro"
+                   [KEYS]
+                      Sleep                 = 223
+                      Internet              = 178
+                      Mail                  = 236
+                   [END KEYS]
+                   [BUTTONS]
+                      Thumb                 = 2
+                   [END BUTTONS]
+               [END LTCDP]
+           
+               We also now support a variable number of modifiers to a key. This only applies to non-toggleable keys
+               however, so a key such as Play|Pause will not work with modifiers if you use it as a toggleable key,
+               by putting entries like this:
+                  Play = something
+                  Pause = something else
+               in your config file. However, if you use the key as a non-toggleable key, i.e. like this:
+                  Play|Pause = something
+               then it becomes possible to use modifiers.
+
+               Currently we support the following modifiers:
+                  control 
+                  alt 
+                  shift 
+                  mod2 
+                  mod3 
+                  mod4 
+                  mod5
+               To use a modifier, we do something like this in the config file:
+                  Sleep+control = something
+                  Sleep+alt = something different
+                  Sleep+shift = something more different
+                  Sleep = sleepiness
+               etc.
+
+               
+
+February 2 2004 Sheldon Lee-Wen
+		This is the second public beta release of lineakd 0.8
+                The X handling code has been ripped out and recoded in a much simplified manner.
+                However, it needs a lot of testing to determine if it will work properly.
+                Also, on exit and restarts, we are not closing and unloading the plugins from the plugin manager. 
+                I still have to track down a bug wrt plugin unloading, which means that a restart of
+                the daemon will not reload plugins. To reload plugins, you will have to stop and start the daemon.
+
+December 24 2003 Sheldon Lee-Wen
+		This is the first public beta release of lineakd 0.8 All macros and display
+		functions have been moved into modules that need to be installed seperately.
+		The previous macros of the form EAK_ are now in the package lineak_defaultplugin.
+		The XOSD display funcitonality is now in the plugin lineak_xosdplugin. In order
+		to get the xosd plugin working now, you need to define Display_plugin = xosd in
+		your config file. Also, all previous XOSD_ configuration directives have now
+		been replaced by Display_ eg.
+		XOSD_font -> Display_font
+		XOSD_color -> Display_color
+		etc.
+		
+		While I don't know of any major issues that remain, there likely are as I believe I'm
+		the only person who has tested or used this package at all.
+
+		Plugins can now be written by third parties. For an example of plugin architecture (since
+		it is not yet documented) see the source code of the plugins themselves.
+
+December 24 2003 Sheldon Lee-Wen
+
+                Huge code base changes. The lineakd daemon is now stripped of internal macros
+		and actual on screen display functionality. There is not a plugin
+		infrastructure that can at start or reload time, load external plugins to
+		handle macros and on screen display. The previous functionality has been moved
+		into two plugins: lineak_defaultplugin, which contains all of the EAK_* macros
+		and lineak_xosdplugin which contains all of the XOSD on screen display
+		functionality. I have also added to it a lineak_kdeplugin plugin that brings
+		with it a total of 23 macros for handling KDE funtionality via dcop. Some of
+		these macros themselves take arguments which expands their functionality.
+		
+		The bug where a key would not work did reappear. I hope that I have it fixed
+		once and for all by issuing a clear on the key before attempting to map it.
+		YMMV.
+
+October 1 2003
+
+		Applied a patch by Aurelien Jarno. He writes:
+		
+		I have just tried the Lineakd version 0.7, and I found a bug in the
+		configuration loader: when not specified in the configuration file,
+		XOSD_timeout, XOSD_hoffset, XOSD_voffset and XOSD_soffset are
+		initialized to 0 instead of the default value specified in
+		definitions.h. This is not very important for the last 3 one, but having
+		XOSD_timeout set to 0 prevent OSD messages to be hide.
+
+
+		
+September 13 2003 Sheldon Lee-Wen
+		In CVS lineakd now has many bugs fixed. However, I have refactored the code
+		to use a command class to hold commands and arguments instead of strings. Some
+		of this refactoring and associated changes may have caused some regressions.
+
+		However, for now, the config file does not require the definition of a cdrom or mixer device.
+		These can defined in the macros.
+
+		Macro definitions are as follows.
+		For the EAK_MUTE macro. We have three forms that are acceptible.
+		EAK_MUTE - This is the default and original macro form. In this form you require a directive in your config
+			file such as:  MixerDevice = /dev/mixer in order for the macro to know which mixer device to
+			adjust.
+		EAK_MUTE(X) - Here X is a number. The number is a volume to mute to. Currently this needs revisiting. If the
+			number is too low it will merely change the balance. I suggest a value around 10000. I will fix this
+			later so that it's a relative value from the minimum. In this form you require a directive in your config
+			file such as:  MixerDevice = /dev/mixer in order for the macro to know which mixer device to
+			adjust.
+		EAK_MUTE(X,device,X2,device2,X3,device3,...) - Here X is a volume to mute to, and device is a string name of a
+			mixer device (e.g. "/dev/mixer" to mute to. As with the previous macro, you will have to experiment
+			with a good value.
+
+		For the EAK_VOLUP and EAK_VOLDOWN macros. Each have the following three forms.
+		EAK_VOLUP or EAK_VOLDOWN - Increment or decrement the sound by the default amount. In this form you require a
+			directive in your config file such as:  MixerDevice = /dev/mixer in order for the macro to know
+			which mixer device to adjust.
+		EAK_VOLUP(X) or EAK_VOLDOWN(X) - Increment or decrement the sound by X. This value is best used between 1 and 5, and the
+			sound modification code scales the value, unlike the MUTE macro. In this form you require a directive in your
+			config file such as:  MixerDevice = /dev/mixer in order for the macro to know which mixer device to adjust.
+		EAK_VOLUP(X,device,X2,device2,X3,device3,...) or EAK_VOLDOWN(X,device,X2,device2,X3,device3,...) - Here X is the volume to
+			adjust the following device by. Like the previous form of this macro, a value of 1-5 is best.
+
+		For the EAK_EJECT macros. There are two forms.
+		EAK_EJECT - This is the default macro. It will eject the device defined in your config file as:
+			CdromDevice = /dev/cdrom
+		EAK_EJECT(device1,device2,device3,...) - This macro form allows you to choose the device to eject. You can have a list of
+			one or more devices separated by a comma.
+
+		For the EAK_SLEEP macro. It currently does nothing. In the future I will probably look into it.
+		
+    EAK_SCREEN_LOCK(X) Where X is either KDE, GNOME or XSCREENSAVER
+    The values GNOME or XSCREENSAVER do the same thing. They invoke the Xscreensaver program to lock the desktop.
+
+August 19 2003 Sheldon Lee-Wen
+    In CVS lineakd now has configuration file options for xosd.
+    e.g.
+    XOSD_font = -bitstream-charter-black-r-normal-*-*-240-*-*-p-*-iso8859-1
+    XOSD_color = 45daff
+    XOSD_timeout = 3
+    XOSD_pos = bottom   ( possible values are: bottom, middle, top)
+    XOSD_align = center  ( possible values are: left, center, right)
+    XOSD_hoffset = 0
+    XOSD_voffset = 50
+    XOSD_soffset = 1
+
+    Allow EAK_ macros to contain arguments. Currently, we only support one argument.
+    E.g.
+      VolumeUp = EAK_VOLUP(1)
+      VolumeDown = EAK_VOLDOWN(-1)
+    With the above defininitions, we only increment/decrement the volume by 1 each time.
+
+    Some bugs have been fixed. We now use proc for finding out if we are the only lineakd process
+    running. Some definition file fixes. There were contributed by the lineakd community.
+
+    Proper detection of the compiler major version is done now by making use of compiler defined
+     ___GNUC__ .
+
+August 4 2003 Sheldon Lee-Wen
+	Releasing lineakd-0.6. This release will break previous use
+	config files. I've cleaned up all of the key names for use with xosd.
+	xosd displays the name of the key pressed, not the command executed. I suppose I
+	could configure that, but I'm not that ambitious.
+
+	This is the last lineakd I'm releasing. The next major one will be klineakd and be
+	KDE only. It will make use of dcop, and the KDE libs to function.
+
+	Only bugs reports and patches will be accepted for lineakd from here on out.
+
+March 2 2003 Sheldon Lee-Wen
+	First alpha release of new codebase. XOSD v2 is fully 
+	integrated now, as well as message passing.
+	In order to get lineakd to reread it's config files, 
+	don't HUP it, execute:
+	lineakd -r      
+	To stop the daemon, execute:
+        lineakd -x
+
+	We support toggle keys now. i.e. on the LTCDP the 
+	play and pause key are the same. We define a toggle
+	key as key1|key2 in the definition file. We can define 
+	a single action for this key in the config file by
+	specifying the keyname in the for key1|key2. We can
+	also specify seperate actions for the play and pause 
+	states by assigning actions to key1 and key2. eg. 
+	On the LTCDP there is the key 'play|pause' In my
+	config file I can specify either:
+	
+	play|pause     = "kstart --desktop 8 /usr/bin/xmms -t"
+
+	Or, if I want seperate functions for the play and pause 
+	states:
+
+	play            = "kstart --desktop 8 /usr/bin/xmms -p"
+	pause           = "kstart --desktop 8 /usr/bin/xmms -u"
+
+	To compile with xosd, install xosd libs and configure with:
+	./configure --with-xosd
+
+	In the event that lineakd hangs (which it probably will 
+	at some point), you have to kill all of the processes
+	manually. You can do this by executing the following
+	command:
+
+	kill -9 `ps -ef | grep lineakd | grep -v grep | awk ' { print $2 }'`
+
+	Then, after a hang or crash (or segfault, etc) you should
+	clean up the shared message queue.
+
+	Execute:
+	
+	ipcs -q
+
+	To see any queues that are hanging around. You'll see something
+	like this (but be relatively sure it's not part of another process,
+	if unsure, look at which queues are there before you run lineakd,
+	or just forget about this step):
+
+	------ Message Queues --------
+	key        msqid      owner      perms      used-bytes   messages
+	0x0000050c 884736     sheldonl   640        0            0
+
+	To get rid of the queue, type:
+
+	ipcrm msg <msqid>
+
+	so, for the example type:
+
+	ipcrm msg 884736
+
+	If you have a keyboard defined in lineakkb.def that has a toggle key
+	like the one for the LTCDP keyboard, please update the file with the
+	new key format and send it back to me.
+
+
+        Thanks. Sheldon. <leewsb@hotmail.com>
+	

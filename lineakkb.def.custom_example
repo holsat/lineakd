@@ -1,0 +1,60 @@
+# LinEAK - Linux Support for Easy Access and Internet Keyboards
+#  Copyright (C) 2001,2002 Mark Smulders <Mark@PIRnet.nl>
+# 		and Sheldon Lee-Wen <leewsb@hotMail.com>
+#
+# keyboard definition file:
+#   this file defines the extra keys of the keyboard types,
+#   and the corresponding keycode.
+#
+# if your keyboard is not in here, please send me an e-Mail so
+# I can add Support for it.
+#
+# WARNING: this definition file is NOT compatible with
+#          lineakd 0.1 and 0.2
+#          lineakconfig 0.1
+
+[LTCDP]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Pro"
+  [KEYS]
+    Sleep                 = 223
+    Internet              = 178
+    Mail                  = 236
+    Search                = 229
+    Go                    = 230
+    Mute                  = 160
+    VolumeDown            = 174
+    VolumeUp              = 176
+    Play|Pause            = 162
+    Stop                  = 164
+    Previous              = 144
+    Next                  = 153
+    VendorHome            = 161
+  [END KEYS]
+  [BUTTONS]
+    Thumb                 = 2
+  [END BUTTONS]
+[END LTCDP]
+# end Logitech Cordless Desktop Pro
+
+[LTCDPa]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Pro (alternate option)"
+  [KEYS]
+    Sleep                 = 223
+    Internet              = 130
+    Mail                  = 236
+    Search                = 229
+    Go                    = 230
+    Mute                  = 166
+    VolumeDown            = 165
+    VolumeUp              = 158
+    Play                  = 159
+    Stop                  = 151
+    Previous              = 164
+    Next                  = 162
+    VendorHome            = 161
+  [END KEYS]
+[END LTCDPa]
+# end Logitech Cordless Desktop Pro (alternate option)
+

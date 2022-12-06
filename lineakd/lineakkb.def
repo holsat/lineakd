@@ -1,0 +1,8379 @@
+# LinEAK - Linux Support for Easy Access and Internet Keyboards
+#  Copyright (C) 2001,2002 Mark Smulders <Mark@PIRnet.nl>
+# 		and Sheldon Lee-Wen <leewsb@hotMail.com>
+#
+# Keyboard definition file:
+#   This file defines the extra keys of the keyboard types,
+#   and the corresponding keycode.
+#
+# If your keyboard is not in here, please send me an e-Mail so
+# I can add Support for it.
+#
+# WARNING: This definition file is NOT compatible with
+#          Lineakd 0.1 and 0.2
+#          Lineakconfig 0.1
+
+
+#### A4Tech Keyboards ####
+
+[A4-KBS21]
+  brandname = "A4Tech"
+  modelname = "KBS-21533RP Wireless & Office/Multimedia Keyboard"
+  [KEYS]
+    AudioBack        = 234
+    Favorites        = 230
+    WWW              = 178
+    Mail             = 236
+    Mute             = 160
+    MyComputer       = 235
+    Next             = 153
+    Play|Pause       = 162
+    Previous         = 144
+    Search           = 229
+    Stop             = 164
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Forward          = 233
+    Refresh          = 231
+    WebStop          = 232
+  [END KEYS]
+[END A4-KBS21]
+
+[A4-KBS8]
+  brandname = "A4Tech"
+  modelname = "KBS-8"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop          = 232
+    Refresh          = 231
+    Search           = 229
+    Favorites        = 230
+    WWW              = 178
+    Mail             = 236
+    Mute             = 160    
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Play|Pause       = 162
+    Stop             = 164
+    Previous         = 144
+    Next             = 153
+    Media            = 237
+    MyComputer       = 235
+    Calculator       = 161
+    Sleep            = 223
+  [END KEYS]
+[END A4-KBS8]
+
+[A4-iKey]
+  brandname = "A4Tech"
+  modelname = "iKeyWorks"
+  [KEYS]
+    Abrechen         = 232
+    Datei            = 230
+    Fullscreen       = 235
+    Inet             = 229
+    Lala             = 237
+    Lauter           = 176
+    Leiser           = 174
+    Mail             = 236
+    Mute             = 160
+    Refresh          = 231
+    Stop             = 164
+    Taschenrechner   = 161
+    Zuhause          = 178
+  [END KEYS]
+[END A4-iKey]
+
+[A4-RFKB23]
+  brandname = "A4Tech"
+  modelname = "RFKB-23"
+  [KEYS]
+    Calculator      = 161
+    Down            = 233
+    Exit            = 232
+    Folder          = 230
+    Forward         = 153
+    WWW             = 178
+    Less            = 174
+    Magnifier       = 229
+    Mail            = 236
+    More            = 176
+    Mute       = 160
+    Play|Pause = 162
+    Reload          = 231
+    Rewind          = 144
+    Shell           = 235
+    Sleep           = 223
+    Sound           = 237
+    Stop       = 164
+    Up              = 234
+  [END KEYS]
+[END A4-RFKB23]
+
+[A4-RFKB25]
+  brandname = "A4Tech"
+  modelname = "RFKB-25 (KBS-2548RP & KBS-2548RPC)"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    Search           = 229
+    Favorites        = 230
+    WWW              = 178
+    Mail             = 236
+    Mute             = 160
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Play|Pause       = 162
+    Stop             = 164
+    Previous         = 144
+    Next             = 153
+    Media            = 237
+    Eject            = 231
+    Sleep            = 223
+    PowerOff         = 232
+    Community        = 235
+    Documents        = 226
+    Go               = 161
+## EXPERIMENTAL - If You Fix The following Please E-mail
+## 'Have no luck to put scroll well to work
+## 'keyboard lock-up at the keycode 139
+#   ScrollUp         = 172
+#   ScrollDown       = 139
+  [END KEYS]
+[END A4-RFKB25]
+
+[A4-KBS21]
+  brandname = "A4Tech"
+  modelname = "Wireless Desktop KBS-21533RP & Office/Multimedia Keyboard"
+  [KEYS]
+    Back        = 234
+    WebForward  = 233
+    WebStop     = 232
+    WebRefresh  = 231
+    Home        = 178
+    Search      = 229
+    Stop        = 164
+    Play|Pause  = 162
+    Next        = 153
+    Previous    = 144
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Favorites   = 230
+    Mail        = 236
+    MyComputer  = 235
+  [END KEYS]
+[END A4-KBS21]
+
+[A4-RFKBS26]
+  brandname = "A4tech"
+  modelname = "Wireless Keyboard w/scroll wheel RFKBS-26"
+  [KEYS]
+    #Top-Left
+    New              =  214
+    Word             =  196
+    Excel            =  197
+    WWW              =  130
+    Mail             =  236
+    
+    #Left
+    PowerOff         =  222
+    Sleep            =  223
+    Toggle           =  101
+    Close            =  217
+    Back             =  234
+    Forward          =  233
+    Undo             =  184
+    Copy             =  248
+    Paste            =  192
+    Cut              =  188
+    
+    #Top
+    My Computer      =  198
+    Calculator       =  161
+    Calendar         =  110
+    Logoff           =  202
+    Search           =  229
+    Mute             =  166
+    Stop             =  151
+    Play|Pause       =  159
+    VolumeUp         =  158
+    VolumeDown       =  165
+    Next             =  162
+    Previous         =  164
+
+    #Top-Right
+    WebStop          =  232
+    Refresh          =  209
+    Favorites        =  230
+
+    #Office - Fs after activating "office" function
+    Help             =  226
+    New_F            =  215
+    Open             =  216
+    Save             =  218
+    Redo             =  237
+    Spell            =  213
+    Replace          =  231
+    Reply            =  240
+    Reply_All        =  241
+    FastForward      =  242
+    Send             =  243
+  [END KEYS]
+[END A4-RFKBS26]
+
+#### END A4Tech Keyboards ####
+
+
+#### Acer Keyboards ####
+
+[ACER-1350]
+  brandname = "Acer"
+  modelname = "1350 Keyboard"
+  [KEYS]
+    UserDefined1     = 203
+    UserDefined2     = 198
+    UserDefined3     = 134
+    UserDefined4     = 135
+    WWW              = 178
+    Mail             = 236
+    Help             = 237
+    Properties       = 133
+    Option           = 248
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+  [END KEYS]
+[END ACER-1350]
+
+[ACER-3020]
+# Contributed by George Michalopoulos (george@linux4u.co.uk)
+#
+# All hotkeys and Fn+key combinations functional except Fn+F4 [sleep] - code unknown, probably hardwired.
+# Fn+ (F6, F7, F7, up, down, left, right) hardwired.
+
+   brandname = "Acer"
+   modelname = "Aspire 3020/5020 series"
+   [KEYS]
+      Mail                    = 236
+      WWW                     = 178
+      UserDefined1            = 159   # E key
+      UserDefined2            = 151   # P key
+    
+      Help                    = 245
+      Properties              = 129
+      PowerMan                = 222
+      Display                 = 237
+    
+      AudioPlay|Pause         = 162    
+      AudioStop               = 164
+      AudioPrev               = 144
+      AudioNext               = 153
+ 
+      BlueUp|BlueDown         = 146   # Bluetooth key 
+      Wireless                = 147
+
+      LWindows                = 115
+   [END KEYS]
+[END ACER-3020]
+
+[ACE-6512UV]
+  brandname = "Acer"
+  modelname = "6512-UV"
+  [KEYS]
+    WWW         = 130
+    Mail        = 236
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Sleep       = 223
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END ACE-6512UV]
+
+[ACEAKV12]
+  brandname = "Acer"
+  modelname = "AirKey V (12 keys)"
+  [KEYS]
+    Previous    = 152
+    Play|Pause  = 149
+    Stop|Eject  = 177
+    Next        = 147
+    VolumeUp    = 173
+    VolumeDown  = 166
+    Mute        = 153
+    Internet    = 164
+    Mail        = 150
+    Terminal    = 175
+    Sleep       = 227
+    Power       = 222
+  [END KEYS]
+[END ACEAKV12]
+
+[ACER-1682]
+  brandname = "Acer"
+  modelname = "Aspire 1682 Wlmi"
+  RAWCOMMAND[SETKEYCODES] = "e025 138 e026 139 e027 116 e029 214 e073 148 e074 149"
+  [KEYS]
+    Help		= 245 # Fn + F1	Help		KEY_HELP (138/e025)
+    Setup		= 158 # Fn + F2	Acer eSetting	KEY_MENU (139/e026)
+    PowerMan		= 222 # Fn + F3	Acer ePower Mgt	KEY_POWER (116/e027)
+    AudioMute 		= 160 # Fn + F8	Mute
+    AudioPlay|Pause 	= 162 # Fn + Home	Play
+    AudioStop	 	= 164 # Fn + PgUp	Stop
+    AudioPrev		= 144 # Fn + PgDn	Next Song
+    AudioNext		= 153 # Fn + End	Previous Song
+    AudioRaiseVolume	= 176 # Fn + ArrUp	Volume Up
+    AudioLowerVolume	= 174 # Fn + ArrDn	Volume Down
+    UserDefined1	= 159 # Top 'P'	Custom App.	KEY_PROG1 (148/e073)
+    UserDefined2	= 151 # Top 'e'	Acer eMgr/Cust.	KEY_PROG2 (149/e074)
+    WWW			= 178 # Top Web	Web Browser
+    Mail		= 236 # Top Mail	Email Client
+  [END KEYS]
+[END ACER-1682]
+
+# For ACER ASPIRE 1682 Wlmi
+# Note : Num Pad already works, it doesnt need to be configured
+# 
+# Other hot keys :
+#
+# -KEY-----------------KEY CODE--------KEYB.---------FUNCTION--------ABOUT INPUT. H (CODES)----------REMARKS-----
+# Sleep		=  ?		# Fn + F4	Sleep		:				:
+# Video		= 214		# Fn + F5	Display (ext.?)	KEY_SWITCHVIDEOMODE (227/e029)	Never tested
+# 			=  ?		# Fn + F6	Screen on/off	:				Works anyway
+#			=  ?		# Fn + F7	Touchpad on/off	:				Works anyway
+# Calculator	= 77		# Fn + F11	Num Lock	:				Works anyway
+# Lock 		= 78		# Fn + F12	Scroll Lock	:				Never tested
+# BrightnessLower	= 239		# Fn + ArrLe	Brightness Up	:				Works anyway
+# BrightnessHigher	= 212		# Fn + ArrRi	Brightness Down	KEY_BRIGHTNESSUP (225/e06e)	Works anyway
+# 			= (e033)	# Euro Key	Euro Symbol	:				Doesnt work
+# 			= (e034)	# US $ Key	Dollar Symbol	:				Doesnt work
+
+[ACEASPIRE3613]
+  brandname = "Acer"
+  modelname = "Aspire 3613WLMi laptop keyboard"
+  [KEYS]
+    WWW              = 178
+    Mail             = 236
+    UserDefined3     = 244 #eManager Key, works in kubuntu, not in mandriva 2006
+    UserDefined4     = 241 #'P' Key, not in mandriva
+    Help             = 152 #?  key Fn+F1, not in mandriva
+    Sleep            = 223 #Zz key Fn+F4
+    AudioMute        = 160
+    AudioLowerVolume = 174
+    AudioRaiseVolume = 176
+    AudioPlay|Pause  = 162
+    AudioStop        = 164
+    AudioPrev        = 144
+    AudioNext        = 153
+  [END KEYS]
+[END Aspire3613]
+
+[ACEASPIRE-5020]
+  brandname = "Acer"
+  modelname = "Aspire 5020"
+  [KEYS]
+    Windowskey       = 115
+    MenuKB           = 117
+    Wirelessup       = 122
+    EuroSign         = 140
+    Prev             = 144
+    Next             = 153
+    Esettings        = 158
+    Mute|Unmute      = 160
+    Powersaving      = 161
+    Play|Pause       = 162
+    Stop             = 164
+    VolumeDown       = 174
+    VolumeUp         = 176
+    WWW              = 178
+    Bluetooht        = 188
+    Pbutton          = 191
+    Ebutton          = 192
+    Changevga        = 193
+    Touchdown        = 198
+    Wirelessdown     = 199
+    Sleep            = 223
+    Touchup          = 227
+    Mail             = 236
+    Help             = 245
+    dollar           = 248
+  [END KEYS]
+[END ACEASPIRE-5020]
+
+[ACE-TM240]
+  brandname = "Acer"
+  modelname = "TravelMate 242FX"
+  [KEYS]
+    Help             = 245
+    Setup            = 129
+    PowerMan         = 222
+    Mute        = 160
+    VolumeUp = 176
+    VolumeDown = 174
+    Mail             = 178
+    WWW              = 236
+    Custom1          = 159
+    Custom2          = 151
+    Wirless          = 147
+  [END KEYS]
+[END ACE-TM240]
+
+[ACE-TM243LC]
+  brandname = "ACER"
+  modelname = "TravelMate 243LC"
+  [KEYS]
+    WWW              = 236
+    Mail             = 178
+    Custom1          = 159
+    Custom2          = 151
+    Wireless         = 147
+    FnF1             = 245
+    FnF2             = 129
+    FnF3             = 222
+    VolumeDown = 174
+    VolumeUp = 176
+    AudioMut         = 160
+  [END KEYS]
+[END ACE-TM243LC]
+
+[ACE-TM254]
+     brandname = "Acer"
+     modelname = "TravelMate 254"
+     [KEYS]
+          Mail          = 236
+          WWW           = 178
+          Calculator    = 159
+          Terminal      = 151
+          My Computer   = 146
+          Mute          = 160
+          VolumeDown    = 174
+          VolumeUp      = 176
+	  Sleep         = 245
+     [END KEYS]
+[END ACE-TM254]
+
+[ACE-TM290]
+  brandname = "Acer Laptop/Notebook"
+  modelname = "Travelmate 290LCi"
+  [KEYS]
+    Mute        = 160
+    VolumeUp = 176
+    VolumeDown = 174
+    WWW              = 236
+    Mail             = 178
+    Sleep            = 223
+  [ENDKEYS]
+[END ACE-TM290]
+
+[ACERTM630]
+   brandname = "Acer"
+   modelname = "TravelMate 630"
+   [KEYS]
+      # [FN] + F1
+      Questionmark          = 245
+      # Button with the 'dish'
+      Dish                  = 147
+      # [FN] + F2
+      Clock                 = 129
+      # [FN] + F3
+      OkSign                = 222
+      # [FN] + [Cursor Up]
+      VolumeUp              = 176
+      # [FN] + [Cursor Down]
+      VolumeDown            = 174
+      # [FN] + F8
+      Mute                  = 160
+      # Button with mailled
+      Mail                  = 236
+      # Button with P1
+      P1                    = 159
+      # Button with P2
+      P2                    = 151
+      # Button with P3
+      P3                    = 171
+      # Button with 'planet'
+      Internet              = 178
+   [END KEYS]
+[END ACERTM630]
+
+[ACE-TM800LCI]
+  brandname = "Acer"
+  modelname = "Travelmate 800Lci"
+  [KEYS]
+    WWW              = 178
+    Mail             = 236
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+  [END KEYS]
+[END ACE-TM800LCI]
+
+[ACE-TM4002]
+     brandname = "Acer"
+     modelname = "Travelmate 4002"
+     [KEYS]
+          Mail       = 236
+          Internet   = 178
+          VolumeUp   = 176
+          VolumeDown = 174
+          Mute       = 160
+     [END KEYS]
+[END SK6200]
+
+[ACE-AS1500]
+  brandname = "ACER"
+  modelname = "Laptop Aspire 1500"
+  [KEYS]
+    WWW              = 178
+    Mail             = 236
+    Custom1          = 159
+    Custom2          = 151
+    Bluetooth        = 146
+    Wireless         = 147
+    FnF1             = 245
+    FnF2             = 129
+    FnF3             = 222
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Mute             = 160
+  [END KEYS]
+[END ACE-AS1500]
+
+#### END Acer Keyboards ####
+
+
+#### Adesso Keyboards ####
+
+[ADEL-9805]
+  brandname = "Adesso"
+  modelname = "EL-9805"
+  [KEYS]
+    WWW              = 178
+    Mail             = 236
+    Back             = 234
+    Forward          = 233
+    Search           = 229
+    Refresh          = 231
+    Favorites        = 230
+    WebStop          = 232
+    Media            = 237
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Mute             = 160
+    Stop        = 164
+    Previous         = 144
+    Play|Pause       = 162
+    Next             = 153
+    PowerOff         = 235
+    Sleep            = 223
+  [END KEYS]
+[END ADEL-9805]
+
+#### END Adesso Keyboards ####
+
+#### AOpen Keyboards ####
+
+
+[AOpen-1557]
+  brandname = "AOpen"
+  modelname = "Aopen1557 (Laptop)"
+  [KEYS]
+    WWW              = 178
+    Mail             = 236
+    Mute        = 160
+    P1               = 159
+    P2               = 151
+    Wireless         = 147
+  [END KEYS]
+[END AOpen-1557]
+
+#### END AOpen Keyboards ####
+
+### Apple Keyboards ###
+
+[APK7]
+  brandname = "Apple"
+  modelname = "Pro Keyboard (7 keys)"
+  [KEYS]
+    VolumeDown  = 165
+    VolumeUp    = 158
+    Mute        = 166
+    Eject       = 116
+    F13         = 93
+    F14         = 123
+    F15         = 127
+  [END KEYS]
+[END APK7]
+
+[APK9]
+  brandname = "Apple"
+  modelname = "Pro Keyboard (9 keys)"
+  [KEYS]
+    VolumeDown = 174
+    VolumeUp = 176
+    Mute        = 160
+    MediaEject       = 204
+    F13              = 182
+    F14              = 183
+    F15              = 184
+    Sleep            = 93   #F16 key
+    Shell            = 157  #'=' key
+  [END KEYS]
+[END APK9]
+
+#### END Apple Keyboards ####
+
+
+#### Belkin Keyboards ####
+
+[BLKN-9012AF1101]
+  brandname = "Belkin"
+  modelname = "9012AF1101"
+  [KEYS]
+    WWWW             = 178
+    VolumeDown = 174
+    Mail             = 236
+    VolumeUp = 176
+    Mute        = 160
+    Favorites        = 230
+    Play|Pause  = 162
+    Refresh          = 231
+    Search           = 229
+  [END KEYS]
+[END BLKN-9012AF1101]
+
+
+[BLKN-GALAXY-Mini]
+  brandname = "Belkin"
+  modelname = "Galaxy Minikeyboard"
+  [KEYS]
+    Previous    = 144
+    Stop        = 164
+    Play|Pause  = 162
+    Next        = 153
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Home        = 130
+    Mail        = 236
+    Back        = 234
+    Forward     = 233
+    Sleep       = 223
+  [END KEYS]
+[END BLKN-GALAXY-Mini]
+
+[BLKN-F8E837]
+   brandname = "Belkin Internet Keyboard w/Multimedia Keys"
+   modelname = "F8E837"
+   [KEYS]
+     MediaLeft        = 233
+     MediaRight       = 234
+     Stop             = 232
+     Refresh          = 231
+     Search           = 122
+     Favorites        = 230
+     WWWW             = 130
+     Mail             = 236
+     Mute             = 160
+     Sleep            = 223
+     VolumeDown       = 174
+     VolumeUp         = 176
+     Play|Pause       = 162
+     Audiostop        = 164
+     Rewind           = 144
+     Forward          = 153
+     Play             = 129
+     MyComputer       = 198
+     Calculator       = 161
+   [END KEYS]
+[END BLKN-F8E837]
+
+[BLKN-F8E858BNDL]
+  brandname = "Belkin"
+  modelname = "Wireless Optical Desktop Kit"
+  [KEYS]
+    # Audio - At left
+    AudioPlay|Pause  = 162
+    AudioNext        = 153
+    AudioPrev        = 144
+    AudioStop        = 164
+    AudioLowerVolume = 174
+    AudioRaiseVolume = 176
+    AudioMute        = 160
+    CD               = 129
+
+    # Central keys
+    Back             = 234
+    Forward          = 233
+    Stop             = 232
+    Refresh          = 231
+    WWWW             = 122
+    Favorites        = 230
+    Home             = 130
+    Mail             = 236
+
+    # Right Keys
+    WakeUp           = 227
+    MyComputer       = 198
+    Calculator       = 161
+    Sleep            = 223
+  [END KEYS]
+[END BLKN-F8E858BNDL]
+
+#### END Belkin Keyboards ####
+
+#### BenQ Keyboards ####
+
+[BEN-6511MP]
+  brandname = "BenQ"
+  modelname = "6511-MP"
+  [KEYS]
+    WWW              = 178
+    Mail             = 236
+    Sleep            = 223
+    VolumeDown       = 174
+    VolumeUp         = 176
+  [END KEYS]
+[END BEN-6511MP]
+
+[BEN-A122]
+  brandname = "BenQ"
+  modelname = "A122 (6 keys)"
+  [KEYS]
+    Sleep            = 223
+    Back             = 234
+    Forward          = 233
+    Home             = 178
+    Mail             = 236
+    Favorites        = 230
+  [END KEYS]
+[END BEN-A122]
+
+[BEN-AM805]
+  brandname = "BenQ"
+  modelname = "AM805"
+  [KEYS]
+    Mail             = 236
+    Next             = 153
+    Mute             = 160
+    Play|Pause       = 162
+    Power            = 223
+    Previous         = 144
+    Stop             = 164
+    VolumeDown       = 174
+    VolumeUp         = 176
+  [END KEYS]
+[END BEN-AM805]
+
+[BEN-XT800]
+  brandname = "BenQ"
+  modelname = "X-Touch 800"
+  [KEYS]
+    WWW              = 178
+    Mail             = 236
+    Standby          = 223
+    Wake             = 227
+    Power            = 222
+  [END KEYS]
+[END BEN-XT800]
+
+[BENQX500]
+  brandname= "BenQ"
+  modelname ="X-Touch 500" 
+  [KEYS]
+    Magnifier        = 229
+    Bookmark         = 230
+    WWW              = 178
+    Mail             = 236
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Mute             = 160
+    Previous         = 144
+    Stop             = 164
+    Play|Pause       = 162
+    Next             = 153
+    Sleep            = 223
+  [END KEYS]
+[END BENQ-x500]
+
+#### END BenQ Keyboards ####
+
+#### BTC keyboards ####
+
+[BTC5107] # Alexander Ciobanu
+  brandname = "BTC"
+  modelname = "5107"
+  [KEYS]
+    PowerDown   = 222
+    Sleep       = 223
+    Wake        = 227
+  [END KEYS]
+[END BTC5107]
+
+[BTC5109] # by Maurizio Tancredi IK5WWX
+  brandname = "BTC"
+  modelname = "5109"
+  [KEYS]
+    Sleep       = 223
+    VolumeDown  = 176
+    VolumeUp    = 174
+    Mute        = 160
+  [END KEYS]
+[END BTC5109]
+
+[BTC5113RF]
+  brandname = "BTC"
+  modelname = "5113RF MultiMedia"
+  [KEYS]
+    Internet    = 176
+    WebBack     = 166
+    Favorites   = 160
+    Search      = 178
+    VolumeDown  = 165
+    VolumeUp    = 158
+    Mute        = 146
+    Previous    = 162
+    Play        = 153
+    Stop        = 144
+    Next        = 164
+    Eject       = 161
+    Power       = 222
+    Sleep       = 223
+    Wake        = 227
+  [END KEYS]
+[END BTC5113RF]
+
+[BTC5126T]
+  brandname = "BTC"
+  modelname = "5126T"
+  [KEYS]
+    Internet    = 176
+    Sleep       = 223
+    Mail        = 171
+  [END KEYS]
+[END BTC5126T]
+
+[BTC-8190]
+  brandname = "BTC"
+  modelname = "8190"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop          = 232
+    Refresh          = 231
+    WWW              = 178
+    Search           = 229
+    Favorites        = 230
+    Mail             = 236
+    LogOff           = 36
+    Mute             = 160
+    VolumeUp         = 176
+    VolumeDown       = 174
+    PowerOff         = 222
+    Standby          = 223
+    Stop             = 164
+    Previous         = 144
+    Next             = 153
+    Play|Pause       = 162
+   [END KEYS]
+[END BTC-8190]
+
+[BTC-8190A]
+  brandname = "BTC"
+  modelname = "8190A"
+  [KEYS]
+    WordProcessor    = 40
+    Spreadsheet      = 26
+    Presentation     = 33
+    Calendar         = 32
+    Back             = 234
+    Forward          = 233
+    WebStop          = 232
+    Refresh          = 231
+    WWW              = 178
+    Search           = 229
+    Favorites        = 230
+    Mail             = 236
+    MyComputer       = 26
+    Calculator       = 54
+    LogOff           = 115
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Mute             = 160
+    Stop             = 164
+    Previous         = 144
+    Next             = 153
+    Play|Pause       = 162
+    Sleep            = 223
+    Power            = 222
+   [END KEYS]
+[END BTC-8190A]
+
+[BTC-9000A]
+  brandname = "BTC"
+  modelname = "9000A Alternate"
+  [KEYS]
+    Favorites   = 160
+    Bookmark    = 166
+    Eject       = 161
+    Search      = 178
+    Help        = 174
+    Home        = 176
+    Mute        = 146
+    Next        = 164
+    Play|Pause  = 153
+    Power       = 222
+    Previous    = 162
+    Sleep       = 223
+    Stop        = 144
+    VolumeDown  = 165
+    VolumeUp    = 158
+    Wake        = 227
+  [END KEYS]
+[END BTC-9000A]
+
+[BTC9000A]
+  brandname = "BTC"
+  modelname = "9000A"
+  [KEYS]
+    Play|Pause  = 153
+    Previous    = 162
+    Next        = 164
+    Stop        = 144
+    Eject       = 161
+    VolumeUp    = 158
+    VolumeDown  = 165
+    Mute        = 146
+    Internet    = 176
+    Home        = 166
+    Search      = 178
+    Favorites   = 160
+    Help        = 174
+    Wake        = 227
+    Sleep       = 223
+    Power       = 222
+  [END KEYS]
+[END BTC9000A]
+
+[BTC9000]
+  brandname = "BTC"
+  modelname = "9000"
+  [KEYS]
+    Documents   = 174
+    Favorites   = 160
+    Home        = 166
+    Internet    = 176
+    Search      = 178
+    Play|Pause  = 153
+    Previous    = 162
+    Next        = 164
+    Stop        = 144
+    Eject       = 161
+    Sleep       = 223
+    VolumeDown  = 165
+    VolumeUp    = 158
+    Mute        = 146
+    Sleep       = 223
+    Power       = 222
+    Wake        = 227
+  [END KEYS]
+[END BTC9000]
+
+[BTC9001A]
+  brandname = "BTC"
+  modelname = "9001A"
+  [KEYS]
+    Play|Pause       = 162
+    Previous         = 144
+    Next             = 153
+    Stop             = 164
+    Eject            = 116
+    VolumeUp         = 176
+    VolumeDown       = 174
+    Mute             = 160
+    WWW              = 178
+    Favorites        = 230
+    Search           = 229
+    Homepage         = 133
+    Help             = 115
+    Wake             = 227
+    Sleep            = 223
+    PowerOff         = 222
+  [END KEYS]
+[END BTC9001A]
+
+[BTC9110] # Contributed by Renze de Ruiter <renze@ihug.co.nz>
+  brandname = "BTC"
+  modelname = "9110"
+  [KEYS]
+    Function3   = 173
+    Function4   = 167
+    FunctionSelect = 163
+    Suspend     = 223
+  [END KEYS]
+[END 9110]
+
+[BTC9019URF] # Contributed by Ow Mun Heng <nikeow@yahoo.com>
+  brandname = "BTC"
+  modelname = "9019URF"
+  [KEYS]
+    Home               = 130
+    Favorites          = 230
+    Search             = 122
+    WWW                = 236
+    AudioLowerVolume   = 174
+    AudioRaiseVolume   = 176
+    AudioMute          = 160
+    AudioNext          = 153
+    AudioPrev          = 144
+    AudioPlay|AudioPause = 162
+    AudioStop          = 164
+    Eject              = 204
+    Sleep              = 223
+  [END KEYS]
+[END BTC9019URF]
+
+#### END BTC Keyboards ####
+
+
+#### Cherry Keyboards ####
+
+[CBLCB]
+  brandname = "Cherry"
+  modelname = "Blue Line CyBo@rd"
+  [KEYS]
+    WebBack     = 234
+    WebForward  = 233
+    WebStop     = 232
+    WebReload   = 121
+    Search      = 229
+    My Computer = 230
+    Home        = 130
+    Mail        = 236
+    Terminal    = 111
+    Calculator  = 161
+    VolumeUp    = 158
+    Mute        = 166
+    VolumeDown  = 165
+    Go          = 129
+    Previous    = 164
+    Next        = 162
+    Play        = 159
+    Stop        = 151
+    Sleep       = 227
+  [END KEYS]
+[END CBLCB]
+
+[CBLCBa]
+  brandname = "Cherry"
+  modelname = "Blue Line CyBo@rd (alternate option a)"
+  [KEYS]
+    WebBack     = 234
+    WebForward  = 233
+    WebStop     = 232
+    WebReload   = 231
+    Search      = 229
+    My Computer = 230
+    Home        = 178
+    Mail        = 236
+    Terminal    = 235
+    Calculator  = 161
+    VolumeUp    = 176
+    Mute        = 160
+    VolumeDown  = 174
+    Go          = 237
+    Previous    = 144
+    Next        = 153
+    Play        = 162
+    Stop        = 164
+    Sleep       = 223
+  [END KEYS]
+[END CBLCBa]
+
+[CBLCBb]
+  brandname = "Cherry"
+  modelname = "Blue Line Cyboard (alternate option b)"
+  [KEYS]
+    Back        = 234
+    Calculator  = 161
+    Cancel      = 232
+    Computer    = 235
+    Email       = 236
+    Folder      = 230
+    Forward     = 233
+    Home        = 178
+    Media       = 237
+    Mute        = 160
+    Play        = 162
+    Refresh     = 231
+    Search      = 229
+    Sleep       = 223
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+    VolumeUp    = 176
+    VoumeDown   = 174
+  [END KEYS]
+[END CBLCBb]
+
+[CC-CYREG]
+  brandname = "Cherry"
+  modelname = "Cybord (Regular?)"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    Stop             = 232
+    Refresh          = 231
+    Calculator       = 161
+    Mail             = 236
+    FileManager      = 230
+    WWW              = 130
+    Mute             = 160
+    Next             = 153
+    Play|Pause       = 162
+    Previous         = 144
+    Search           = 122
+    VolumeDown       = 174
+    VolumeUp         = 176
+  [END KEYS]
+[END CC-CYREG]
+
+[CCYMAST]
+  brandname = "Cherry"
+  modelname = "Cherry Cymotion Master"
+  [KEYS]
+    WebBack     = 234
+    WebForward  = 233
+    WebStop     = 232
+    WebReload   = 231
+    Search      = 229
+    My Computer = 230
+    Home        = 178
+    Mail        = 236
+    Terminal    = 235
+    Calculator  = 161
+    VolumeUp    = 176
+    Mute        = 160
+    VolumeDown  = 174
+    Media       = 237
+    Previous    = 144
+    Next        = 153
+    Play        = 162
+    Stop        = 164
+    Sleep       = 223
+    Document1   = 241
+    Document2   = 172
+    Document3   = 242
+    Eject       = 240
+    MediaUp     = 139
+    MediaDown   = 146
+    Cut         = 151
+    Copy        = 138
+    Paste       = 152
+    MediaRight  = 135
+    MediaLeft   = 136
+  [END KEYS]
+[END CCYMAST]
+
+[CCYMASTLIN]
+  brandname = "Cherry"
+  modelname = "Cherry Cymotion Master Linux"
+  [KEYS]
+    TuxKey           = 115		# Main Kbd WinKey	Tux Icon
+    AtKey            = 116		# Main Kbd WinKey2	@
+    ContextMenu      = 117		# Main Kbd WinKey3	Menusymbol
+    Back             = 234		# Oben Links 1		<-
+    Forward          = 233		# Oben Links 2		->
+    WebStop          = 232		# Oben Links 3		*
+    Reload           = 209		# Oben Links 4		?
+    Search           = 229		# Oben Links 5		?
+    Play             = 159		# Oben Rechts 1		>
+    Stop             = 151		# Oben Rechts 2		#
+    Previous         = 164		# Oben Rechts 3 	<<
+    Next             = 162		# Oben Rechts 4 	>>
+    MediaEject       = 204		# Oben Rechts 5		^
+    Calculator       = 161		# Oben Numblock 1	Rechnersymbol
+    Mail             = 236		# Oben Numblock 2	Emailsymbol
+    WWW              = 130		# Oben Numblock 3	Homesymbol
+    Terminal         = 199		# Oben Numblock 4	"An[aus" beschriftung
+    VolumeUp         = 158		# Unten Links 1		-
+    VolumeDown       = 165		# Unten Links 2		+
+    Mute             = 166		# Unten Rechts 1	Durchgestrichener Lautsprecher (mut)
+    Media            = 129		# Unten Rechts 2	"media" beschiftung
+    fnF1             = 220		# Aussen Links 1 (1)	F1  / (Media?) > ^
+    fnF2             = 143		# Aussen Links 2 (2)	F2  / (Media?) < v
+    fnF3             = 188		# Aussen Links 3 (3)	F3  / Cut Symbol
+    fnF4             = 192		# Aussen Links 4 (4)	F4  / Copy Symbol
+    fnF5             = 248		# Aussen Links 5 (5)	F5  / Paste Symbol
+    fnF6             = 159		# Aussen Rechts 1 (6)	F6  / Dokument 1
+    fnF7             = 151		# Aussen Rechts 2 (7)	F6  / Dokument 2
+    fnF8             = 171		# Aussen Rechts 3 (8)	F6  / Dokument 3
+    fnF9             = 133		# Aussen Rechts 4 (9)	F9  / Pfeil Rechts Runter
+    fnF10            = 184		# Aussen Rechts 5 (10)	F10 / Pfeil Links Runter
+  [END KEYS]
+[END CCYMASTLIN]
+
+[CCYMASTLIN2]
+  brandname = "Cherry"
+  modelname = "Cherry Cymotion Master Linux Alternate"
+  [KEYS]
+    TuxKey           = 168		# Main Kbd WinKey	Tux Icon
+    AtKey            = 116		# Main Kbd WinKey2	@
+    ContextMenu      = 117		# Context Menu Key
+    Back             = 234		# Browser Back Key
+    Forward          = 233		# Browser Forward Key
+    WebStop          = 232		# Browser Stop Key
+    Reload           = 231		# Browser Reload Key
+    Search           = 122		# Search Key
+    Play             = 162		# Media Play Key
+    Stop             = 164		# Media Stop Key
+    Previous         = 144		# Media Previous Key
+    Next             = 153		# Media Next Key
+    MediaEject       = 204		# Eject Key
+    Calculator       = 161		# Calculator Key
+    Mail             = 236		# Email Key
+    WWW              = 130		# Home/Homepage Key
+    Power            = 199		# Power Key
+    VolumeUp         = 176		# Media Raise Volume Key
+    VolumeDown       = 174		# Media Lower Volume Key
+    Mute             = 160		# Media Mute Key
+    Media            = 129		# Media Open Application Key
+    fnF1             = 220		# Function 1 - Scroll Up
+    fnF2             = 143		# Function 2 - Scroll Down
+    fnF3             = 188		# Function 3 - Cut
+    fnF4             = 192		# Function 4 - Paste
+    fnF5             = 248		# Function 5 - Copy
+    fnF6             = 159		# Function 6 - Switch to Desktop 1
+    fnF7             = 151		# Function 7 - Switch to Desktop 2
+    fnF8             = 171		# Function 8 - Switch to Desktop 3
+    fnF9             = 133		# Function 9 - Redo
+    fnF10            = 135		# Function 10 - Undo
+  [END KEYS]
+[END CCYMASTLIN2]
+
+[CCYMAST9]
+  brandname = "Cherry"
+  modelname = "CyMotion Master Plus 9"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop          = 232
+    Refresh          = 231
+    Search           = 229
+    WWW              = 178
+    Mail             = 236
+    Stop             = 164
+    Mute             = 160
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Play|Pause       = 162
+    Previous         = 144
+    Next             = 153
+    Media            = 237
+    MyComputer       = 235
+    Calculator       = 161
+    An               = 227
+    NewFolder        = 230
+   [END KEYS]
+[END CYMAST9]
+
+[CCYMPRO]
+  brandname = "Cherry"
+  modelname = "Cherry Cymotion Pro G85-20050"
+  [KEYS]
+    WebBack     = 234
+    WebForward  = 233
+    WebStop     = 232
+    WebReload   = 231
+    Search      = 229
+    Play        = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+    Sleep       = 223
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Media       = 237
+  [END KEYS]
+[END CCYMPRO]
+
+[CYTLC]
+  brandname = "Cherry"
+  modelname = "Trend Line CyBoard"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop          = 232
+    Reload           = 231
+    Search           = 122
+    MyComputer       = 230
+    WWW              = 130
+    Mail             = 236
+    Terminal         = 111
+    Calculator       = 161
+    VolumeUp         = 176
+    Mute             = 160
+    VolumeDown       = 174
+    Go               = 129
+    Previous         = 144
+    Next             = 153
+    Play|Pause       = 162
+    Stop             = 164
+    Sleep            = 227
+  [END KEYS]
+[END CYTLC]
+
+#### END Cherry Keyboards ####
+
+
+#### Chic Keyboards ####
+
+[Chic-WL]
+  brandname = "Chic"
+  modelname = "Wireless Keyboard"
+  [KEYS]
+    Back             = 234
+    Bookmark         = 230
+    Close            = 232
+    Forward          = 233
+    WWW              = 178
+    Mail             = 236
+    Mute             = 160
+    Next             = 153
+    Play|Pause       = 162
+    PowerOff         = 222
+    Previous         = 144
+    Refresh          = 231
+    Search           = 229
+    Stop             = 164
+    Suspend          = 223
+    VolumeDown       = 174
+    VolumeUp         = 176
+  [END KEYS]
+[END Chic-WL]
+
+#### END Chic Keyboards ####
+
+
+#### Chicony Keyboards ####
+
+[CY0350] # by Konrad Materka
+  brandname = "Chicony"
+  modelname = "Chicony KB-0350 (18 keys)"
+  [KEYS]
+    Search           = 229
+    Favorites        = 230
+    Back             = 234
+    Forward          = 233
+    WebStop             = 232
+    Refresh          = 231
+    VolumeDown = 174
+    VolumeUp = 176
+    Play|Pause  = 162
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    Mute        = 160
+    Mail             = 236
+    WWW              = 178
+    Calculator       = 161
+    Power            = 222
+    Sleep            = 223
+  [END KEYS]
+[END CY0350]
+
+[CY0108]
+  brandname = "Chicony"
+  modelname = "Chicony KB-R0108 & KU-0108"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    Search           = 122
+    Favorites        = 230
+    WWW              = 130
+    Mail             = 236
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+    Play|Pause  = 162
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    Calculator       = 161
+    Sleep            = 223
+    Copy             = 248
+    Cut              = 188
+  [END KEYS]
+[END CY0108]
+
+[CY0173]
+  brandname = "Chicony"
+  modelname = "Chicony KB-0173 (5 keys)"
+  [KEYS]
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Sleep       = 223
+    Internet    = 178
+    Mail        = 236
+  [END KEYS]
+[END CY0173]
+
+[CY8993]
+   brandname = "other"
+   modelname = "Chicony KB-8993 (14 keys)"
+   RAWCOMMAND[INITIALIZE] = "ea 71"
+   [KEYS]
+     Moon        = 165
+     WWW         = 178
+     DOS         = 176
+     MyDOC       = 151
+     Menu        = 166
+     zzZ         = 158
+     Close       = 174
+     Stop        = 164
+     Back        = 163
+     Play|Pause  = 162
+     Forward     = 161
+     Mute        = 160
+     Volumedown  = 146
+     Volumeup    = 153
+   [END KEYS]
+ [END CY8993]
+ # end Chicony KB-8993 (14 keys) [Thomas Kilde Krath]
+
+[CY9810]
+  brandname = "Chicony"
+  modelname = "Chicony KB-9810"
+  [KEYS]
+    Power       = 222
+    Wake        = 227
+    Sleep       = 223
+  [END KEYS]
+[END CY9810]
+
+[CY9885]
+  brandname = "Chicony"
+  modelname = "Chicony KB-9885 (17 keys)"
+  [KEYS]
+    VolumeDown  = 153
+    Mute        = 146
+    VolumeUp    = 163
+    Previous    = 162
+    Stop        = 164
+    Play        = 161
+    Next        = 160
+    Power       = 222
+    Sleep       = 223
+    Wake        = 227
+    Internet    = 178
+    Mail        = 151
+    UserDefined1 = 176
+    UserDefined2 = 166
+    UserDefined3 = 174
+    WebBack     = 165
+    WebForward  = 158
+  [END KEYS]
+[END CY9885]
+
+#### END Chicony Keyboards ####
+
+
+#### Clevo Keyboards ####
+
+[CL-D470V]
+  brandname = "Clevo laptop"
+  modelname = "D470V"
+  [KEYS]
+    Launch0          = 129
+    WWW              = 178
+    Mail             = 236
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+[END KEYS]
+[END CL-D470V]
+
+#### END Clevo Keyboards ####
+
+
+#### Clone Keyboards ####
+
+[CLONE-ABNT2]   
+  brandname = "Clone"   
+  modelname = "MM Keyboard ABNT2 PS/2 (21 keys)"   
+  [KEYS]   
+    Back             = 234   
+    Forward          = 233   
+    WebStop             = 232   
+    Refresh          = 231   
+    Search           = 229   
+    Favorites        = 230   
+    WWW              = 178   
+    Mail             = 236   
+    Media       = 237   
+    Mute        = 160   
+    Previous        = 144   
+    Play|Pause  = 162   
+    Stop        = 164   
+    Next        = 153   
+    VolumeDown = 174   
+    VolumeUp = 176   
+    MyComputer       = 235   
+    Calculator       = 161   
+    PowerOff         = 222   
+    Sleep            = 223   
+    WakeUp           = 227   
+  [END KEYS]   
+[END CLONE-ABNT2]
+
+### END Clone Keyboards ####
+
+
+#### CodeGen Keyboards ####
+
+[CG-KB2625]
+  brandname = "Codegen"
+  modelname = "KB-2625 (29 keys)"
+  [KEYS]
+    Logoff           = 150
+    Calculator       = 161
+    MyComputer       = 135
+    Sleep            = 223
+    Favorites        = 230
+    Search           = 229
+    Refresh          = 231
+    Forward          = 233
+    Back             = 234
+    Mail             = 236
+    Homepage         = 178
+    Next        = 153
+    Previous        = 144 
+    Stop        = 164
+    Play|Pause  = 162
+    VolumeDown = 174
+    VolumeUp = 176
+    Mute        = 160
+    Calendar         = 149
+    Spreadsheet      = 148
+    Wordprocessor    = 147
+    PowerOff         = 222
+    MediaUp          = 159
+    MediaDown        = 145
+    Close            = 116
+    Launch0          = 137
+    Cut              = 151
+    Paste            = 138
+    Copy             = 152
+  [END KEYS]
+[END CG-KB2625]
+
+#### END CodeGen Keyboards ####
+
+
+#### Compaq keyboards ####
+
+[CEA4]
+  brandname = "Compaq"
+  modelname = "Compaq (eg. Armada) Laptop Keyboard (4 keys)"
+  [KEYS]
+    Internet    = 163
+    Home        = 159
+    Search      = 154
+    Mail        = 158
+  [END KEYS]
+[END CEA4]
+
+[CIKP800]
+  brandname = "Compaq"
+  modelname = "Compaq (eg. Persario) Laptop Internet Keyboard"
+  [KEYS]
+    Play        = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    UserDefined1 = 159
+    UserDefined2 = 152
+    Media       = 245
+    Internet    = 163
+    Q           = 148
+    Shop        = 178
+    Mail        = 158
+    Mute        = 160
+    Sleep       = 223
+  [END KEYS]
+[END CIKP800]
+
+[CP-Q125KB]
+  brandname = "Compaq"
+  modelname = "CPQ125KB (21 hotkeys)"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop          = 232
+    Refresh          = 231
+    Search           = 229
+    Favorites        = 230
+    WWW              = 178
+    Mail             = 236
+    Mute             = 160    
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Previous         = 144
+    Stop             = 164
+    Play|Pause       = 162
+    Next             = 153
+    Media            = 237
+    Calculator       = 161
+    My Computer      = 235
+    Power            = 222
+    Sleep            = 223
+    WakeUp           = 227
+  [END KEYS]
+[END CP-Q125KB]
+
+[CEAK8]
+  brandname = "Compaq"
+  modelname = "Easy Access Keyboard (8 keys)"
+  [KEYS]
+    Internet    = 163
+    Home        = 159
+    Search      = 154
+    Mail        = 158
+    Communities = 147
+    Market      = 148
+    Meeting     = 149
+    News        = 155
+  [END KEYS]
+[END CEAK8]
+
+[CEAK8S]
+  brandname = "Compaq"
+  modelname = "Easy Access Keyboard (8 keys) Silver"
+  [KEYS]
+    Info        = 110
+    Home        = 130
+    Search      = 229
+    Mail        = 236
+    Communities = 197
+    Market      = 196
+    Meeting     = 101
+    News        = 202
+  [END KEYS]
+[END CEAK8S]
+
+[CP-EVON610C]
+  brandname = "Compaq"
+  modelname = "Evo N610C Notebook"
+  [KEYS]
+    Information      = 163
+    WWW              = 159
+    Mail             = 158
+    Search           = 154
+    VolumeUp = 176
+    VolumeDown = 174
+  [END KEYS]
+[END CP-EVON610C] 
+
+[CP-EVON620C-NB]
+     brandname = "Compaq"
+     modelname = "Evo N620C Notebook"
+     [KEYS]
+       Information = 253
+       Mail        = 203
+       Search      = 146
+       VolumeDown  = 174
+       VolumeUp    = 176
+       WWW         = 166
+     [END KEYS]
+[END CP-EVON620C-NB]
+
+[CP-EVON620C]
+  brandname = "Compaq"
+  modelname = "EVO N620c Internet Keyboard"
+  [KEYS]
+    Play|Pause  = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    Search      = 154
+    Custom1     = 159
+    Custom2     = 152
+    Media       = 245
+    WWW         = 163
+    Q           = 148
+    Shop        = 178
+    Mail        = 158
+    Mute        = 160
+    Sleep       = 223
+    VolumeUp    = 176
+    VolumeDown  = 174
+  [END KEYS]
+[END CP-EVON620C]
+
+[CIK13]
+  brandname = "Compaq"
+  modelname = "Internet Keyboard (13 keys)"
+  [KEYS]
+    Play        = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+    Sleep       = 223
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Go          = 159
+    Internet    = 163
+    Search      = 161
+    Mail        = 158
+    Shop        = 178
+  [END KEYS]
+[END CIK13]
+
+[CIK18b]
+  brandname = "Compaq"
+  modelname = "Internet Keyboard (18 keys, blue)"
+  [KEYS]
+    Play        = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    Eject       = 152
+    Mail        = 158
+    Communities = 166
+    VendorHome  = 165
+    Internet    = 163
+    Search      = 161
+    Lightbulb   = 146
+    Shop        = 178
+    Print       = 232
+    Go          = 159
+    VolumeDown  = 174
+    Mute        = 160
+    VolumeUp    = 176
+    Sleep       = 223
+  [END KEYS]
+[END CIK18b]
+
+[CIK18g]
+  brandname = "Compaq"
+  modelname = "Internet Keyboard (18 keys, grey)"
+  [KEYS]
+    Play        = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    Eject       = 152
+    Mail        = 158
+    Communities = 166
+    VendorHome  = 165
+    Internet    = 163
+    Search      = 161
+    Lightbulb   = 146
+    Shop        = 178
+    Print       = 232
+    Go          = 159
+    VolumeDown  = 174
+    Mute        = 160
+    VolumeUp    = 176
+    Sleep       = 223
+  [END KEYS]
+[END CIK18g]
+
+[CiP]
+  brandname = "Compaq"
+  modelname = "iPaq Keyboard (7 keys)"
+  [KEYS]
+    Mail        = 236
+    Back|Next   = 233
+    Q           = 234
+    Standby     = 130
+    Search      = 229
+    Travel      = 230
+    Shop        = 121
+  [END KEYS]
+[END CiP]
+
+[COM-nx9010]
+  brandname = "Compaq"
+  modelname = "nx9010 (User Defined)"
+  [KEYS]
+    WWW        = 178
+    Mail       = 236
+    VolumeDown = 174
+    VolumeUp   = 176
+  [END KEYS]
+[END COM-nx9010]
+
+
+[CPR3000Z]
+  brandname = "Compaq"
+  modelname = "Presario R3000Z"
+  [KEYS]
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    WWW         = 178
+    Sleep       = 223
+    Play|Pause  = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+  [END KEYS]
+[END CPR3000Z]
+
+[CP90x]
+  brandname = "Compaq"
+  modelname = "Presario 90x"
+  [KEYS]
+    Internet    = 163
+    Mail        = 158
+    Search      = 154
+    Media       = 239
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Play        = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+  [END KEYS]
+[END CP90x]
+
+[CP-R3000Z]
+  brandname = "Compaq"
+  modelname = "Presario R3000Z"
+  [KEYS]
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    WWW         = 178
+    Sleep       = 223
+    Play|Pause  = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+  [END KEYS]
+[END CP-R3000Z]
+
+[CP-X1000]
+  brandname = "Compaq"
+  modelname = "X1000"
+  [KEYS]
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END CP-X1000]
+
+#### END Compaq Keyboards ####
+
+
+#### Creative Keyboards ####
+
+[CR-WCPAOD]
+  brandname = "Creative"
+  modelname = "Desktop Wireless WCPA0D"
+  [KEYS]
+    Back        = 233
+    Mail        = 161
+    Favorites   = 153
+    Forward     = 232
+    Mute        = 176
+    Next        = 144
+    Play|Pause  = 160
+    Previous    = 164
+    Refresh     = 230
+    Stop        = 162
+    WebStop     = 231
+    Search      = 130
+    Suspend     = 223
+    VolumeDown  = 129
+    VolumeUp    = 174
+    WWW         = 234
+  [END KEYS]
+[END CR-WCPAOD]
+
+#### END Creative Keyboards ####
+
+
+#### Dell Keyboards ####
+#  NOTE:  The Dell USB multiMedia keyboard patch is used to translate the
+#         following keys below 256:
+#
+#           messenger  256 -> 240
+#           webcam     257 -> 241
+#           iTouch     258 -> 242
+#           Shopping   259 -> 243
+#
+#         The Dell USB multiMedia keyboard patch can be found at
+#         http://Internet.ece.utexas.edu/~jlang/linux-keyboard/
+#
+########################
+
+[DELLI-4000]
+  brandname = "Dell"
+  modelname = "Inspiron-4000"
+  [KEYS]
+    DellKey          = 129
+  [END KEYS]
+[END DELLI-4000]
+
+[DELL-6000] #added by dba(crxyem) manual input
+  brandname = "Dell"
+  modelname = "Dell Inspiron 6000"
+  [KEYS]
+    AudioMute        = 160
+    AudioNext        = 153
+    AudioPlay|Pause  = 162
+    AudioPrev        = 144
+    AudioStop        = 164
+    AudioLowerVolume = 174
+    AudioRaiseVolume = 176
+  [END KEYS]
+[END DELL-6000]
+
+[DELL-8600]
+  brandname = "Dell"
+  modelname = "Dell Inspiron 8600"
+  [KEYS]
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END DELL-8600]
+
+[DELL-9100]
+  brandname = "Dell"
+  modelname = "Dell Inspiron 9100"
+  [KEYS]
+    Play|Pause  = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Mute        = 160
+  [END KEYS]
+[END DELL-9100]
+
+[DELLI-9200]
+  brandname = "Dell"
+  modelname = "Inspiron 9200"
+  [KEYS]
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+    Play|Pause  = 162
+    Previous        = 144
+    Next        = 153
+    Stop        = 164
+  [END KEYS]
+[END DELLI-9200]
+
+[DELL-D600]
+  brandname = "Dell"
+  modelname = "D600"
+  [KEYS]
+    VolumeDown = 174
+    VolumeUp = 176
+    Mute        = 160
+  [END KEYS]
+[END DELL-D600]
+
+[DRT7D00] # By Oscar Urra CuairaÂ¡n
+  brandname = "Dell"
+  modelname = "RT7D00"
+  [KEYS]
+    WWW              = 166
+    Mail             = 146
+    Search           = 158
+    Sleep            = 223
+  [END KEYS]
+[END DRT7D00]
+
+[DI8K]
+  brandname = "Dell"
+  modelname = "Dell Inspiron 8xxx"
+  [KEYS]
+    Play        = 129
+    Previous    = 131
+    Next        = 132
+    Stop        = 130
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Mute        = 160
+  [END KEYS]
+[END DI8K]
+
+[DELL-I8600]
+  brandname = "Dell"
+  modelname = "Dell Inspiron 8600"
+  [KEYS]
+    Previous        = 144
+    Play|Pause  = 162
+    Stop        = 164
+    Next        = 153
+    VolumeUp = 176
+    VolumeDown = 174
+    Mute        = 160
+  [END KEYS]
+[END DELL-I8600]
+
+[DELL-XPS-GEN-2] # By Liganic
+   brandname = "Dell"
+   modelname = "Inspiron XPS Generation 2"
+   [KEYS]
+     Mute           = 160
+     VolumeDown     = 174
+     VolumeUp       = 176
+     Play|Pause     = 162
+     Previous       = 144
+     Next           = 153
+     Stop           = 164
+   [END KEYS]
+[END DELL-XPS-GEN-2]
+
+[DELL-SK-8100] # By Akshoslaa
+  brandname = "Dell"
+  modelname = "SK-8100"
+  RAWCOMMAND[SETKEYCODES] = "e012 155 e026 150 e01e 217"
+  [KEYS]
+    Mail        = 155
+    WWW        = 178
+    Search      = 217
+    Sleep       = 223
+  [END KEYS]
+[END DELL-SK-8100]
+
+[DELL-SK-8125] # By Rich Boakes
+  brandname = "Dell"
+  modelname = "SK-8125"
+  [KEYS]
+    Back        = 234
+    Fwd         = 233
+    Stop        = 232
+    Reload      = 231
+    Home        = 130
+    VolumeDown  = 97
+    VolumeUp    = 176
+    Mute        = 174
+  [END KEYS]
+[END DELL-SK-8125]
+
+[DELL-SK-8135] # By Ryan Chase
+  brandname = "Dell"
+  modelname = "SK-8135"
+  [KEYS]
+    WebBack        = 234
+    WebFwd         = 233
+    WebStop        = 232
+    WebRefresh     = 231
+    WebHome        = 130
+    Mail           = 236
+    MyComputer     = 198
+    Menu           = 161
+    Mute           = 160
+    Stop           = 164
+    Previous       = 144
+    Next           = 153
+    Play|Pause     = 162
+    Music          = 129
+  [END KEYS]
+[END DELL-SK-8125]
+
+[DELL-SK-8135] # Brad Bonkoski
+  brandname = "Dell"
+  modelname = "SK-8135 Alternate Option"
+  [KEYS]
+    Back        = 234
+    Fwd         = 233
+    Web|Stop    = 232
+    Reload      = 231
+    Web|Home    = 130
+    Mail        = 236
+    Sleep       = 198
+    Calculator  = 161
+    Mute        = 160
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+    Play|Pause  = 162
+    Media       = 129
+    [END KEYS]
+[END DELL-SK-8135]
+
+[DELL-WL] # Craig Robinson
+  brandname = "Dell"
+  modelname = "Wireless Keyboard"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop             = 232
+    Refresh          = 121
+    WWW              = 130
+    Mail             = 236
+    Mute        = 166
+    VolumeDown = 165
+    VolumeUp = 158
+    Play|Pause  = 159
+    Stop        = 151
+    Previous        = 164
+    Next        = 162
+    Media       = 129
+    MyComputer       = 111
+    Calculator       = 161
+  [END KEYS]
+[END DELL-WL]
+
+[DELL-LT-D800]
+   brandname = "Dell"
+   modelname = "Latitude D800/D810"
+   [KEYS]
+     Mute = 160
+     VolumeUp = 176
+     VolumeDown = 174
+   [END KEYS]
+[END DELL-LT-D800]
+
+[DELL-M90]
+  brandname = "Dell"
+  modelname = "Precision M90"
+  [KEYS]
+    Mute|Unmute = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Play|Pause  = 162
+    Back        = 144
+    Forward     = 153
+    Stop        = 164
+    WWW         = 178
+  [END KEYS]
+[END DELL-M90]
+
+#### END Dell Keyboards ####
+
+#### DELUX (Chinese) Keyboards ####
+
+[DELUX-K9876]
+ brandname = "DELUX"
+ modelname = "9876"
+ [KEYS]
+  WWW           = 178
+  Back          = 234
+  Forward       = 233
+  Stop          = 232
+  Refresh       = 231
+  Search        = 229
+  Favorites     = 230
+  Play|Pause    = 162
+  Stop          = 164
+  PreTrack      = 144
+  NextTrak      = 153
+  Mail          = 236
+  Mute          = 160
+  Volume-       = 174
+  Volume+       = 176
+  Calculator    = 161
+  Media         = 237
+  MyComputer    = 235
+  Power         = 222
+  Sleep         = 223
+  Wake          = 227
+ [END KEYS]
+[END DELUX-K9876]
+
+[DELUX-5003] # Contributed by Zloster(Mikhail Andonov)-Bulgaria
+   brandname = "Delux"
+   modelname = "DLK-5003"
+   [KEYS]
+     E-mail      = 236
+     VolumeDown  = 174
+     VolumeUp    = 176
+     Media       = 237
+   [END KEYS]
+[END DELUX-5003]
+
+#### End DELUX (Chinese) Keyboards ####
+
+#### Dexxa Keyboards ####
+
+[DEXXIK]
+  brandname = "Dexxa"
+  modelname = "Internet Keyboard (23 keys, model Y-SH16)"
+  [KEYS]
+    Go          = 158
+    Undo        = 173
+    Redo        = 177
+    Calculator  = 161
+    Shopping    = 152
+    Refresh     = 231
+    WebStop     = 232
+    Favorites   = 230
+    Home        = 178
+    Search      = 229
+    Mail        = 236
+    Mute        = 160
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Previous    = 144
+    Stop        = 164
+    Record      = 147
+    Play        = 162
+    Next        = 153
+    Eject       = 148
+    Back        = 234
+    Forward     = 233
+    Sleep       = 223
+  [END KEYS]
+[END DEXXIK]
+
+[DEXXWD]
+  brandname = "Dexxa"
+  modelname = "Wireless Desktop Keyboard (9 keys)"
+  [KEYS]
+    WebReload   = 231
+    Favorites   = 230
+    Search      = 229
+    Mail        = 236
+    Internet    = 178
+    Play        = 162
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Mute        = 160
+  [END KEYS]
+[END DEXXWD]
+
+#### END Dexxa Keybaords ####
+
+
+#### Diamond Keyboards ####
+
+[DIA9801]
+  brandname = "Diamond"
+  modelname = "Diamond 9801 / 9802 series (22 keys)"
+  [KEYS]
+    WebBack     = 234
+    WebForward  = 233
+    WebStop     = 232
+    Favorites   = 230
+    Search      = 229
+    WebReload   = 231
+    Home        = 178
+    Mail        = 236
+    Mute        = 160
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Go          = 237
+    Stop        = 164
+    Play        = 162
+    Next        = 153
+    Previous    = 144
+    Calculator  = 161
+    My Computer = 235
+    Power       = 222
+    Sleep       = 223
+    Wake        = 227
+  [END KEYS]
+[END DIA9801]
+
+#### END Diamond Keybaords ####
+
+
+#### DTK Keyboards ####
+
+[DTK006] # By Daugirdas
+  brandname = "DTK"
+  modelname = "006"
+  [KEYS]
+    Back        = 234
+    Calculator  = 161
+    File        = 235
+    Forward     = 233
+    Home        = 178
+    Mail        = 236
+    Play|Pause  = 162
+    PowerOff    = 222
+    Search      = 229
+    Sleep       = 227
+    Stop        = 164
+    VolumeDown  = 174
+    Volumeup    = 176
+    Lamp        = 232
+    Media       = 237
+    Mute        = 160
+    Next        = 153
+    Previous    = 144
+    Reconnect   = 231
+  [END KEYS]
+[END DTK006]
+
+#### END DTK Keybaords ####
+
+
+#### ECS Keyboards ####
+
+[ECS-DN]
+  brandname = "ECS Elitegroup"
+  modelname = "DeskNote (User Defined)"
+  [KEYS]
+    Mail             = 236
+    WWW              = 178
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+  [END KEYS]
+[END ECS-DN]
+
+#### END ECS Keyboards ####
+
+#### Electrovaya Keyboards ####
+
+[ELECTROVAYA-800]
+  brandname = "Electrovaya"
+  modelname = "scribbler 800"
+  #setkeycodes e06e 238    # for the key symbol
+  #setkeycodes e077 247    # Windows start
+  #setkeycodes e062 226    # journal
+  #setkeycodes e064 228    # screen keyboard
+  #setkeycodes e05a 218    # rotate
+  #setkeycodes 55 93          # function
+  RAWCOMMAND[SETKEYCODES] = "55 93 e06e 238 e077 247 e062 226 e064 228 e05a 218"
+  [KEYS]
+    Key              = 243
+    WinStart         = 214
+    Journal          = 237
+    Keyboard         = 215
+    Rotate           = 194
+    FnF1             = 120
+  [END KEYS]
+[END ELECTROVAYA-800]
+
+#### End Electrovaya Keyboards ####
+
+#### E-Machines Keyboards ####
+
+[EM-KB0108]
+  brandname = "E-Machines"
+  modelname = "KB-0108"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop             = 232
+    Search           = 229
+    Favorites        = 230
+    WWW              = 178
+    Mail             = 236
+    Mute        = 160      
+    VolumeDown = 174
+    VolumeUp = 176
+    Play|Pause  = 162
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    Calculator       = 161
+    Sleep            = 223
+  [END KEYS]
+[END EM-KB0108] 
+
+#### END E-Machines Keyboards ####
+
+
+#### Ennyah Keyboards ####
+
+[ENNYAHKBD-1008] #Contrib by RÃÂ©mi Colomb
+  brandname = "Ennyah"
+  modelname = "Ennyah Slim Style Keyboard Internet & Multimedia USB"
+  [KEYS]
+    Home        = 130
+    Mail        = 236
+    WebBack     = 234
+    WebForward  = 233
+    Search      = 229
+    Refresh     = 121
+    Bookmark    = 230
+    WebStop     = 232
+    VolumeDown  = 165
+    VolumeUp    = 158
+    Mute        = 166
+    Stop        = 151
+    Previous    = 164
+    Play|Pause  = 159
+    Next        = 162
+    Option      = 129
+    Wake        = 112
+    Sleep       = 227
+    Power       = 222
+  [END KEYS]
+[END ENNYAHKBD-1008]
+
+#### END Ennyah Keyboards ####
+
+
+#### EZ Keyboards ####
+
+[EZ3000]
+  brandname = "EZKey"
+  modelname = "EZ3000"
+  [KEYS]
+    Calculator  = 165
+    Home        = 159
+    Internet    = 178
+    CD          = 162
+    Mail        = 161
+    Mute        = 160
+    PPP         = 163
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END EZ3000]
+
+[EZ8000]
+  brandname = "EZKey"
+  modelname = "Smart Office Keyboard XP EZ8000"
+  [KEYS]
+    WWW              = 178
+    Mail             = 236
+    Favorite         = 230
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    PowerOff         = 222
+    Previous        = 144
+    Refresh          = 231
+    Search           = 229
+    Sleep            = 223
+    Stop        = 164
+    VolumeDown = 174
+    VolumeUp = 176
+    Back             = 234
+    Forward          = 233
+    WebStop             = 232
+  [END KEYS]
+[END EZ8000]
+
+#### END EZ Keyboards ####
+
+#### FMK Keyboards ####
+
+#### FMK-3068 - Contributed by Andrew Dight
+
+[FMK-3068]
+  brandname = "Generic"
+  modelname = "FMK-3068"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop          = 232
+    Refresh          = 231
+    ScreenShot       = 230
+    Home             = 178
+    Mute             = 160    
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Play|Pause       = 162
+    Stop             = 164
+    Previous         = 144
+    Next             = 153
+    Rotate           = 237
+    Sleep            = 223
+  [END KEYS]
+[END FMK-3068]
+
+#### ENDFMK Keyboards ####
+
+#### Fujitsu/Siemens Keyboards ####
+
+[Fuj-A1310G]
+  brandname = "Fujitsu-Siemens"
+  modelname = "Amilo 1310G"
+  RAWCOMMAND[SETKEYCODES] = "67 141 6d 140"
+  [KEYS]
+    Fan  = 193 
+    Info = 178
+    Wireless = 161
+  [END KEYS]
+[END Fuj-A1310G]
+
+[Fuj-A7600]
+  brandname = "Fujitsu-Siemens"
+  modelname = "Amilo A7600+"
+  [KEYS]
+    Mail = 236
+    WWW  = 178
+  [END KEYS]
+[END Fuj-A7600]
+
+[Fuj-A2010]
+  brandname = "Fujitsu-Siemens"
+  modelname = "Amilo-Pro V 2010"
+  [KEYS]
+    Mail             = 236
+    WWW              = 178
+    VolumeDown = 174
+    VolumeUp = 176
+    Mute        = 160
+  [END KEYS]
+[END Fuj-A2010]
+
+[Fuj-ADCY23]
+  brandname = "Fujitsu-Siemens"
+  modelname = "Amilo D CY-23"
+  [KEYS]
+    UserDefined1      = 241
+    UserDefined2      = 242
+    Mail              = 244
+    WWW               = 243
+    VolumeDown  = 246
+    VolumeUp  = 245
+  [END KEYS]
+[END Fuj-ADCY23]
+
+[Fuj-KBW]
+  brandname = "Fujitsu-Siemens"
+  modelname = "Keyboard Wireless"
+  [KEYS]
+    VolumeDown       = 174
+    Home             = 178
+    VolumeUp         = 176
+    Mail             = 236
+    Mute             = 160
+    Next             = 153
+    Play|Pause       = 162
+    Previous         = 144
+    Sleep            = 223
+    Stop             = 164
+  [END KEYS]
+[END Fuj-KBW]
+
+[Fuj-KBPCMFS]
+  brandname = "Fujitsu-Siemens"
+  modelname = "KBPC MF S"
+  [KEYS]
+    Sleep            = 223
+    WWW              = 178
+    Mail             = 236
+    Previous         = 144
+    Stop             = 164
+    Play|Pause       = 162
+    Next             = 153
+    VolumeDown       = 174
+    Mute             = 160
+
+  [END KEYS]
+[END Fuj-KBPCMFS]
+
+[Fuj-SlimRFD]
+  brandname = "Fujitsu-Siemens"
+  modelname = "Slim Wireless Keyboard"
+  [KEYS]
+    Play|Pause  = 159
+    Next        = 162
+    Mute        = 166
+    VolumeUp = 158
+    VolumeDown = 165
+    WWW              = 130
+    Mail             = 236
+    Sleep            = 223
+    WakeUp           = 227
+    PowerOff         = 222
+  [END KEYS]
+[END Fuj-SlimRFD]
+
+[Fuj-SS4500]
+  brandname = "Fujitsu Siemens"
+  modelname = "KBPC MF D"
+  [KEYS]
+    Mail   = 236
+    WWW    = 178
+  [END KEYS]
+[END Fuj-SS4500]
+
+[Fuj-FSKW]
+     brandname = "Fujitsu-Siemens"
+     modelname = "Keyboard Wireless"
+     [KEYS]
+         VolumeDown = 174
+         Home     = 178
+         VolumeUp = 176
+         Mail     = 236
+         Mute     = 160
+         Next     = 153
+         Play     = 162
+         Previous = 144
+         Sleep    = 223
+         Stop     = 164
+     [END KEYS]
+[END Fuj-FSKW]
+
+# Jose Jorge jjorge at free dot fr
+[Fuj-E8020D]
+     brandname = "Fujitsu-Siemens"
+     modelname = "Lifebook E8020D"
+     [KEYS]
+         VolumeDown = 174
+         VolumeUp = 176
+         Mute     = 160
+     [END KEYS]
+[END Fuj-E8020D]
+
+#### END Fujitsu/Siemens Keyboards ####
+
+#### Gateway Keyboards ####
+
+[GW-USRpG6]
+  brandname = "Gateway"
+  modelname = "600YG2"
+  [KEYS]
+    Next        = 153
+    Mail             = 236
+    Media       = 237
+    WWW              = 162
+    Play|Pause  = 162
+    Previous        = 144
+    Stop        = 164
+  [END KEYS]
+[END GW-600YG2]
+
+
+[GWSK9920]
+  brandname = "Gateway SK"
+  modelname = "SK-9920"
+  [KEYS]
+    Internet    = 178
+    Mail        = 236
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END GWSK9920]
+
+#### END Gateway Keyboards ####
+
+#### Gateway Laptop ####
+
+[GATEWAY7415] # Contributed by CX-Rom
+  brandname = "Gateway"
+  modelname = "Laptop Gateway 7415GX"
+  [KEYS]
+    WWW			= 178
+    Mail		= 236
+    Search		= 229
+    Media		= 237
+    Play|Pause		= 162
+    Stop		= 164
+    Previous		= 144
+    Next		= 153
+    VolumeDown		= 174
+    VolumeUp		= 176
+    Sleep		= 223
+  [END KEYS]
+[END GATEWAY7415]
+
+#### END Gateway Laptop ####
+
+#### General Keys Keyboards ####
+ 
+[GK-IK]
+  brandname = "GeneralKeys"
+  modelname = "Illuminated Keyboard"
+  [KEYS]
+    Computer    = 235
+    Favorites   = 230
+    Home        = 178
+    InstantMsgr = 237
+    Mail        = 236
+    Mute        = 160
+    Forward     = 233
+    Next        = 153
+    Open        = 232
+    Play        = 162
+    Back        = 234
+    Previous    = 144
+    Reload      = 231
+    Search      = 229
+    Sleep       = 223
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END GK-IK]
+
+#### END General Keys Keyboards ####
+
+
+#### Genius Keyboards ####
+
+[GENKB-ComfyKB-09]
+        brandname               = "Genius"
+        modelname               = "Comfy KB-09"
+        [KEYS]
+                Back            = 234
+                Mail            = 236
+                Favorites       = 230
+                Forward         = 233
+                Refresh         = 231
+                Search          = 229
+                Sleep           = 223
+                Stop            = 232
+                WWW             = 178
+        [END KEYS]
+[END GENKB-ComfyKB-09]
+
+[GENKB-138]
+  brandname = "Genius"
+  modelname = "Genius Internet Keyboard KB-138 (9 keys)"
+  [KEYS]
+    Mail             = 236
+    Stop             = 232
+    Refresh          = 231
+    Back             = 234
+    WWW              = 178
+    Forward          = 233
+    Search           = 229
+    Favorites        = 230
+    Sleep            = 223
+  [END KEYS]
+[END GENKB-138]
+
+[GENKB-16E] #
+  brandname = "Genius"
+  modelname = "KB-16E Scroll Multimedia Keyboard (16 keys)"
+  [KEYS]
+    Spreadsheet      = 128
+    WordProcessor    = 123
+    ScrollDown       = 104
+    ScrollUp         =  98
+    ScrollClick      = 163
+    Sleep            = 223
+    Back             = 234
+    Forward          = 233
+    WWW              = 178
+    VolumeUp = 176
+    Media       = 237
+    VolumeDown = 174
+    Play|Pause  = 162
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    Mail             = 236
+    MyComputer       = 235
+    Calculator       = 161
+  [END KEYS]
+[END GENKB-16E]
+
+[GENKB-16M] # Mute and ScreenSaver dont report scancodes
+  brandname = "Genius"
+  modelname = "KB-16M Scroll Multimedia Keyboard (16 keys)"
+  [KEYS]
+    Wake             = 227
+    Sleep            = 223
+    Back             = 234
+    Forward          = 233
+    WWW              = 178
+    VolumeUp = 176
+    VolumeDown = 174
+    Play|Pause  = 162
+    Stop        = 164
+    Mute        = 160
+    Previous        = 144
+    Next        = 153
+    Mail             = 236
+    Calculator       = 161
+  [END KEYS]
+[END GENKB-16M]
+
+[GENKB-19e]
+  brandname = "Genius"
+  modelname = "KB-19e"
+  [KEYS]
+    Calculator       = 161
+    Home             = 130
+    Mail             = 236
+    Media       = 129
+    Mute        = 160
+    My Computer      = 198
+    Next        = 153
+    Play|Pause  = 162
+    Previous        = 144
+    Sleep            = 223
+    Stop        = 164
+    VolumeDown = 174
+    VolumeUp = 176
+    Back             = 234
+    Bookmarks         = 230
+    Forward          = 233
+    Refresh          = 231
+    WebStop             = 164
+    Zoom             = 122
+  [END KEYS]
+[END GENKB-19e]
+
+[GENKB-21E]
+     brandname = Genius
+     modelname = KB-12M
+     [KEYS]
+          VolumeDown=174
+          Next=153
+          Play|Pause=162
+          Previous=144
+          VolumeUp=176
+          Stop=164
+          Back=234
+          Forward=233
+          Home=230
+          Mail=236
+          Sleep=223
+          WWW=178
+     [END KEYS]
+[END GENKB-21E]
+
+
+[GEN-KL0210]
+brandname = "Genius"
+modelname = "KL-0210"
+[KEYS]
+    Calculator       = 161
+    Mail             = 236
+    Favorites        = 230
+    Media       = 237
+    Previous        = 144
+    Next        = 153
+    Play|Pause  = 162
+    Stop        = 164
+    Mute        = 160
+    MyComputer       = 235
+    Refresh          = 231
+    Search           = 229
+    Sleep            = 223
+    WebStop             = 232
+    VolumeDown = 174
+    VolumeUp = 176
+    WWW              = 178
+    Back             = 234
+    Forward          = 233
+  [END KEYS]
+[END GEN-KL0210]
+
+[GEN-LuxScroll]
+  brandname = "Genius"
+  modelname = "Luxemate Scroll"
+  [KEYS]
+    Calculator       = 161
+    Mail             = 236
+    MyComputer       = 235
+    Media       = 237
+    Play|Pause  = 162
+    Stop        = 164
+    VolumeDown = 174
+    VolumeUp = 176
+    Sleep            = 223
+    WWW              = 178
+    Back             = 234
+    Forward          = 233
+  [END KEYS]
+[END Gen-LuxScroll]
+
+[GENKB-19E]
+  brandname = "Genius"
+  modelname = "MM Keyboard KB-19e (19 keys)"
+  [KEYS]
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Media       = 237
+    Play|Pause  = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 232
+    Mail        = 236
+    WebStop     = 232
+    Refresh     = 231
+    Back        = 234
+    Web         = 178
+    Forward     = 233
+    Search      = 229
+    Favorites   = 230
+    Sleep       = 223
+    Calculator  = 161
+    My Computer = 235
+  [END KEYS]
+[END GENKB-19E]
+
+[GENKB-21E]
+  brandname = "Genius"
+  modelname = "MM Keyboard KB-21E (21 keys)"
+  [KEYS]
+    Word        = 147
+    Excel       = 148
+    VolumeDown  = 174
+    Mute        = 160
+    VolumeUp    = 176
+    Previous    = 144
+    Next        = 153
+    Media       = 237
+    Play        = 162
+    Stop        = 164
+    Mail        = 236
+    WebStop     = 232
+    WebRefresh  = 231
+    WebBack     = 234
+    Internet    = 178
+    WebForward  = 233
+    Search      = 229
+    Favorites   = 230
+    Sleep       = 223
+    Calculator  = 161
+    MyComputer  = 235
+  [END KEYS]
+[END GENKB-21E]
+
+[GENKWD-910]
+  brandname = "Genius"
+  modelname = "MM Keyboard KWD-910 (16 keys)"
+  [KEYS]
+    Back        = 163
+    Play        = 162
+    Stop        = 164
+    Forward     = 161
+    Eject       = 176
+    VolumeDown  = 153
+    VolumeUp    = 146
+    Mute        = 160
+    Screensaver = 166
+    Calculator  = 151
+    Mail        = 174
+    WebBack     = 165
+    Internet    = 178
+    WebForward  = 158
+    Sleep       = 223
+    Wake        = 227
+  [END KEYS]
+[END GENKWD-910]
+
+[GEN-KKB2050U]
+  brandname = "Genius"
+  modelname = "Slimstar KKB-2050U (12 keys)"
+  [KEYS]
+    Sleep            = 223
+    Mute        = 237
+    Play|Pause  = 162
+    Stop        = 164
+    VolumeDown = 174
+    VolumeUp = 176
+    Back             = 234
+    WWW              = 178
+    Forward          = 233
+    Mail             = 236
+    Calculator       = 161
+    MyComputer       = 235
+  [END KEYS]
+[END GEN-KKB2050U]
+
+[GEN-KKB2050HS]
+  brandname = "Genius"
+  modelname = "Slimstar KKB-2050HS (12 keys)"
+  [KEYS]
+    Sleep            = 223
+    AudioMute        = 129
+    AudioPlay|Pause  = 162
+    AudioStop        = 164
+    AudioLowerVolume = 174
+    AudioRaiseVolume = 176
+    Back             = 234
+    WWW              = 130
+    Forward          = 233
+    Mail             = 236
+    Calculator       = 161
+    MyComputer       = 198
+  [END KEYS]
+[END GEN-KKB2050HS]
+
+[GENK-WTTOV]
+  brandname = "Genius"
+  modelname = "Wireless Twin Touch+ Optical Value"
+  [KEYS]
+    Back             = 234
+    Mail             = 236
+    Forward          = 233
+    MyFavorites      = 230
+    Next             = 162
+    Play|Pause       = 159
+    Previous         = 164
+    Sleep            = 223
+    Stop             = 151
+    VolumeUp         = 158
+    VolumeDown       = 165
+    WWW              = 130
+[END GENK-WTTOV]
+
+#### END Genius Keyboards ####
+
+
+#### GPT Keyboards ####
+
+[GPT-Intl]
+  brandname = "GPT"
+  modelname = "Intelligent Keyboard"
+  [KEYS]
+    Previous         = 144
+    Stop             = 164
+    Play|Pause       = 162
+    Next             = 153
+    Mute             = 160
+    VolumeDown       = 174
+    VolumeUp         = 176
+    WWW              = 178
+    Back             = 234
+    Forward          = 233
+    WebStop          = 232
+    Refresh          = 231
+    Search           = 229
+    Favorites        = 230
+    Mail             = 236
+    MyComputer       = 235
+    Calculator       = 161
+    Sleep            = 223
+    Wake             = 227
+  [END KEYS]
+[END GPT-Intl]
+
+[GPT-Logic]
+  brandname = "GPT"
+  modelname = "Logic3 / SpectraVideo plc"
+  [KEYS]
+    Back = 234
+    Forward     = 233
+    WebStop     = 232
+    Refresh     = 231
+    WWW         = 122
+    Favorites   = 230
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Previous    = 144
+    Next        = 153
+    Play|Pause  = 162
+    Stop        = 164
+    Mute        = 160
+    Home        = 130
+    Mail        = 236
+    LockScreen  = 198
+    Media       = 129
+    Calculator  = 161
+  [END KEYS]
+[END GPT-Logic]
+
+#### END GPT Keyboards ####
+
+
+#### Graytion Keyboards ####
+
+[GTN-GP9110]
+  brandname = "Gyration"
+  modelname = "GP9110 Keyboard"
+  [KEYS]
+    Back        = 234
+    Favorites   = 230
+    Forward     = 233
+    Mail        = 236
+    Mute        = 166
+    Next        = 162
+    Play|Pause  = 159
+    Previous    = 164
+    Refresh     = 121
+    Search      = 229
+    Stop        = 151
+    WebStop     = 232
+    VolumeDown  = 165
+    VolumeUp    = 158
+    WebHome     = 130
+  [END KEYS]
+[END GTN-GP9110]
+
+[GTN-Mobile]
+  brandname = "Gyration"
+  modelname = "Mobile & Ultra Cordless Keyboard"
+  [KEYS]
+    Back        = 234
+    Favorites   = 230
+    Forward     = 233
+    Mail        = 236
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Refresh     = 231
+    Search      = 122
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Web|Home    = 130
+    WebStop     = 232
+  [END KEYS]
+[END GTN-Mobile]
+
+#### END Graytion Keyboards ####
+
+
+#### Hama Keyboards ####
+
+[Hama-sl100]
+  brandname = "Hama"
+  modelname = "sl100"
+  [KEYS]
+    Calculator       = 161
+    Favorite         = 230
+    Mail             = 236
+    Mute             = 160
+    MyComputer       = 235
+    Next             = 153
+    Play|Pause       = 162
+    Previous         = 144
+    Refresh          = 231
+    Sleep            = 223
+    Stop             = 164
+    VolumeDown       = 174
+    VolumeUp         = 176
+    WWW              = 178
+  [END KEYS]
+[END Hama-sl100]
+
+#### END Hama Keyboards ####
+
+
+
+#### Hewlett-Packard  Keyboards ####
+
+[HP-NC6230]
+  brandname = "Hewlett Packard"
+  modelname = "Compaq NC6230"
+  [KEYS]
+    Information      = 232
+    Wireless         = 133
+    Presentation     = 134
+    Mute             = 160
+    VolumeDown       = 174
+    VolumeUp         = 176
+  [END KEYS]
+[END HP-NC6230]
+
+[HP-DV1067EA]
+  brandname = "Hewlett Packard"
+  modelname = "DV1067EA"
+  [KEYS]
+    Browser     = 178
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END HP-DV1067EA]
+
+[HP0113]
+  brandname = "Hewlett Packard"
+  modelname = "HP KB-0133 keyboard"
+  [KEYS]
+    Internet    = 163
+    Home        = 159
+    Search      = 154
+    Mail        = 158
+    Communities = 147
+    Market      = 148
+    Meeting     = 149
+    News        = 155
+  [END KEYS]
+[END HP0113]
+
+[HPMCEK] #Indiboi
+  brandname = "Hewlett Packard"
+  modelname = "Media Center Edition Keyboard (24 keys)"
+  [KEYS]
+    Standby     = 223
+    User        = 172
+    HP          = 148
+    Help        = 166
+    Photo       = 159
+    Music       = 150
+    Video       = 185
+    Shopping    = 158
+    Sports      = 146
+    Finance     = 167
+    Connect     = 178
+    Search      = 229
+    Chat        = 149
+    Email       = 236
+    Eject1      = 152
+    Eject2      = 131
+    Record      = 134
+    Play|Pause  = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+  [END KEYS]
+[END HPMCEK]
+
+[HP-NX7000]
+  brandname = "Hewlett Packard"
+  modelname = "NX 7000"
+  [KEYS]
+    LockScreen  = 115
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Sleep       = 223
+    Stop        = 164
+    WWW         = 178
+  [END KEYS]
+[END HP-NX7000]
+
+[HP-NX7010]
+  brandname = "Hewlett packard"
+  modelname = "NX 7010"
+  [KEYS]
+    LockScreen       = 115
+    AudioNext        = 153
+    AudioPlay|AudioPause  = 162
+    AudioPrev        = 144
+    Sleep            = 223
+    AudioStop        = 164
+    WWW              = 178
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Mute             = 160
+  [END KEYS]
+[END HP-NX7010]
+
+[HP-NX9020]
+  brandname = "Hewlett Packard"
+  modelname = "NX 9020"
+  [KEYS]
+    Mail        = 120
+    Mute        = 160
+    Search      = 229
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END HP-NX9020]
+
+[HP-OBXE4500]
+  brandname = "Hewlett Packard"
+  modelname = "Omnibook XE-4500"
+  [KEYS]
+    WWW        = 178
+    VolumeDown = 174
+    VolumeUp   = 176
+  [END KEYS]
+[END HP-OBXE4500]
+
+[HPdv1000]
+   brandname = "Hewlett-Packard"
+   modelname = "Pavilion dv1000"
+   [KEYS]
+     AudioMute        = 160
+     AudioLowerVolume = 174
+     AudioRaiseVolume = 176
+     Next        = 153
+     Play|Pause  = 162
+     Previous    = 144
+     Stop|Eject  = 164
+   [END KEYS]
+ [END HPdv1000]
+
+[HPzv5000]
+  brandname = "Hewlett-Packard"
+  modelname = "Pavilion zv5000"
+  [KEYS]
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    WWW         = 178
+    Play        = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+  [END KEYS]
+[END HPzv5000]
+
+[HP2501]
+  brandname = "Hewlett-Packard"
+  modelname = "SK-2501 MultiMedia Keyboard (13 keys)"
+  [KEYS]
+    Internet    = 178
+    Search      = 151
+    Tools       = 146
+    Mail        = 158
+    UserDefined1 = 163
+    UserDefined2 = 162
+    UserDefined3 = 164
+    UserDefined4 = 161
+    Lock        = 165
+    Info        = 166
+    Mute        = 160
+    VolumeUp    = 176
+    VolumeDown  = 174
+  [END KEYS]
+[END HP2501]
+
+[HP2505]
+  brandname = "Hewlett-Packard"
+  modelname = "SK-2505 Internet Keyboard (14 keys)"
+  [KEYS]
+    Play        = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    Eject       = 152
+    Mail        = 158
+    Internet    = 178
+    VolumeDown  = 174
+    Mute        = 160
+    VolumeUp    = 176
+    Sleep       = 165
+  [END KEYS]
+[END HP2505]
+
+[HP2506] # By Hobo Johs
+  brandname = "Hewlett-Packard"
+  modelname = "SK-2506 Internet Keyboard (23 keys)"
+  [KEYS]
+    Play|Pause  = 162
+    Stop        = 164
+    Eject       = 152
+    Previous    = 163
+    Next        = 161
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Email       = 173
+    People      = 149
+    Search      = 148
+    Connect     = 150
+    Finance     = 178
+    Entertainment = 146
+    Shopping    = 158
+    Fax         = 165
+    Print       = 144
+    Find        = 153
+    Standby     = 223
+    Help        = 166
+    HP          = 151
+    UserDefined1 = 232
+    UserDefined2 = 159
+  [END KEYS]
+[END HP2506]
+
+[HP-SK-2511A]
+  brandname = "Hewlett Packard"
+  modelname = "SK-2511A Multimedia Keyboard"
+  rawcommand[SETKEYCODES] = "e01e 155 e012 157 e017 138 e023 169 e025 142 e026 141"
+  [KEYS]
+     Mail    = 236
+     Tools   = 235
+     WWW     = 178
+     Help    = 245
+     Launch2 = 190
+     Standby = 223
+     Search  = 193
+   [END KEYS]
+[END HP-SK-2511A]
+
+[HPOXE3GF] # by Gavriel Fleischer
+  brandname = "Hewlett Packard"
+  modelname = "HP Omnibook XE3-GF"
+  [KEYS]
+    Help        = 243
+    Launch      = 244
+    Mail        = 236
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Stop|Eject  = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+    WWW         = 178
+  [END KEYS]
+[END HPOXE3GF]
+
+[HPOBXE41] # Adrian Neumaier
+  brandname = "Hewlett Packard"
+  modelname = "HP Omnibook XE-4100 OneTouch Keys"
+  [KEYS]
+    WWW         = 178
+    Mail        = 236
+    TV          = 243
+    Lock        = 241
+    Help        = 240
+    Mute        = 160
+    VolumeUp    = 176
+    VolumeDown  = 174
+  [END KEYS]
+[END HPOBXE41]
+
+[HPXT1000] # by Ben Reiter
+  brandname = "Hewlett-Packard"
+  modelname = "HP Omnibook XT1000"
+  [KEYS]
+    Mp3         = 241
+    Help        = 242
+    Entertainment = 244
+    Security    = 243
+    Mail        = 232
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Stop|Eject  = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+    WWW         = 178
+    TouchpadOn  = 239
+    TouchpadOff = 238
+  [END KEYS]
+[END HPXT1000]
+
+[HP-ZV5400]
+  brandname = "Hewlett Packard"
+  modelname = "ZV 5400"
+  [KEYS]
+    WWW              = 178
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+  [END KEYS]
+[END HP-ZV5400]
+
+#### END Hewlett-Packard Keyboards ####
+
+
+#### IBM keyboards ####
+# Hermann Schmidt
+[IBM122] 
+  brandname = "IBM"
+  modelname = "IBM Model M German 122"
+  [KEYS]
+    Abruf  	= 209
+    PsAus       = 210
+    ErAus       = 219
+    Druck	= 111
+    leerLinks	= 220
+    Loesch	= 221
+    Pause	= 110
+    LoeschFeld	= 205
+    Wdgab	= 207
+    leerRechts	= 204
+    F13		= 181
+    F14		= 126
+    F15		= 182
+    F16		= 190
+    F17		= 191
+    F18		= 192
+    F19		= 193
+    F20		= 198
+    F21		= 199
+    F22		= 200
+    F23		= 201
+    F24    	= 203
+  [END KEYS]
+[END IBM122]
+
+[IBMRA7993]
+  brandname = "IBM"
+  modelname = "Rapid Access Keyboard"
+  RAWCOMMAND[INITIALIZE] = "ea 71"
+  [KEYS]
+    WWW              = 178
+    WorldBook        = 151
+    Option           = 176
+    Help             = 166
+    Standby          = 165
+    Mute        = 146
+    Stop        = 164
+    Play|Pause  = 153
+    Back             = 163
+    Forward          = 161
+    VolumeDown = 158
+    VolumeUp = 160
+    Custom1          = 174
+  [END KEYS]
+[END IBMRA7993] 
+
+[IBMRAII]
+  brandname = "IBM"
+  modelname = "Rapid Access II"
+  [KEYS]
+    Internet    = 165
+    InternetShopping = 166
+    IBMWebSupport = 178
+    WorldBook   = 151
+    Option      = 176
+    Help        = 174
+    Standby     = 223
+    Mute        = 158
+    Stop        = 160
+    Play|Pause  = 162
+    Back        = 164
+    Forward     = 146
+    VolumeDown  = 161
+    VolumeUp    = 163
+    UserDefined1 = 117
+  [END KEYS]
+[END IBMRAII]
+
+[IBMULTRANAV]
+  brandname = "IBM"
+  modelname = "USB Keyboard with UltraNav"
+  [KEYS]
+    VolumeDown = 174
+    VolumeUp   = 176
+    Mute       = 160
+  [END KEYS]
+[END IBMULTRANAV]
+
+#### END IBM Keyboards ####
+
+#### IBox Keyboards ####
+
+[IBKB-2625]
+        brandname               = "Ibox"
+        modelname               = "KB-2625 (User Defined)"
+        [KEYS]
+                calc            = 161
+                devices         = 235
+                favorites               = 230
+                forward         = 233
+                home            = 178
+                mail            = 236
+                mute            = 160
+                next            = 153
+                play/pause              = 162
+                power           = 222
+                prev            = 144
+                refresh         = 231
+                search          = 229
+                stop            = 164
+                vol             = 174
+                vol-up          = 174
+        [END KEYS]
+[END IBKB-2625]
+
+#### END Ibox Keyboards ####
+#### IDream Keyboards ####
+
+[ID-KBF21]
+  brandname = "IDream"
+  modelname = "ID-KBF21 Keyboard"
+  [KEYS]
+    Back             = 234
+    Calculator       = 161
+    VolumeDown = 174
+    Mail             = 236
+    Favorites        = 230
+    Forward          = 233
+    VolumeUp = 176
+    Media       = 237
+    Stop        = 164
+    Mute        = 160
+    MyComputer       = 235
+    Next        = 153
+    Play|Pause  = 162
+    Previous        = 144
+    Refresh          = 231
+    Search           = 229
+    Sleep            = 223
+    WebStop             = 232
+    WWW              = 178
+  [END KEYS]
+[END ID-KBF21]
+
+#### END IDream Keyboards ####
+
+
+#### Itron Keyboards ####
+
+#This is the same as Scorpiuss Advance Scorpius K1 -- cut&paste
+[ITRON-GK1]
+  brandname = "Itron"
+  modelname = "Itron Gemini K1"
+  [KEYS]
+    Previous        = 144
+    Play|Pause  = 162
+    Stop        = 164
+    Next        = 153
+    Media       = 237
+    VolumeDown = 174
+    Mute        = 160
+    VolumeUp = 176
+    Wake             = 227
+    Sleep            = 223
+    PowerOff         = 222
+    Calculator       = 161
+    MyComputer       = 235
+    Mail             = 236
+    Favorites        = 230
+    WWW              = 178
+    Back             = 234
+    Forward          = 233
+    WebStop             = 232
+    Reload           = 231
+    Search           = 229
+  [END KEYS]
+[END ITRON-GK1]
+
+#### END Itron Keyboards ####
+
+
+#### JetLine Keyboards ####
+
+[JET-PTEC3]              
+  brandname = "Jetline"
+  modelname = "Platinum TEC-3 (Brazilian ABNT2)"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop             = 222
+    Refresh          = 231
+    Search           = 230
+    WWW              = 178
+    Mail             = 236
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+    Play|Pause  = 162
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    Media       = 237
+    MyComputer       = 235
+    Calculator       = 161
+    Sleep            = 225
+    Wake             = 227
+ [END KEYS]
+[END JET-PTEC3]
+
+#### END JetLine Keyboards ####
+
+
+#### Kensiko Keyboards ####
+
+[KKO-MCK2000] # Contributed by Marc DellaVolpe
+  brandname = "Kensiko"
+  modelname = "mck-2000"
+  [KEYS]
+    Calculator  = 161
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END KKO-MCK2000]
+
+#### END Kensiko Keyboards ####
+
+#### Kensington Keyboards ####
+
+[KNS-CTMM]
+  brandname = "Kensington"
+  modelname = "Comfort Type Multimedia"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop             = 232
+    Refresh          = 231
+    Search           = 229
+    Favorites        = 230
+    WWW              = 178
+    Mail             = 236
+    Previous        = 144
+    Stop        = 164
+    Next        = 153
+    Play|Pause  = 162
+    VolumeDown = 174
+    VolumeUp = 176
+    Mute        = 160
+    Media       = 237
+    MyComputer       = 235
+    Calculator       = 161
+    Sleep            = 223
+  [END KEYS]
+[END KNS-CTMM]
+
+[KEN64355]
+  brandname = "Kensington"
+  modelname = "Comfort Type Wireless Keyboard 64355"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    Stop             = 232
+    Refresh          = 231
+    WWW              = 178
+    Search           = 229
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    Play|Pause  = 162
+    VolumeDown = 174
+    VolumeUp = 176
+    Mute        = 160
+    Favorites        = 230
+    Mail             = 236
+    MyComputer       = 235
+  [END KEYS]
+[END KEN64355]
+
+#### END Kensington Keyboards ####
+
+
+##### Keytronic keyboards ####
+
+[KTKTMPS202BI] # By Frank Bruder
+  brandname = "KeyTronic"
+  modelname = "KTMPS202BI"
+  [KEYS]
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Calculator  = 161
+    EMail       = 236
+    HomePage    = 178
+    Play|Pause  = 162
+    MediaPlayer = 237
+    Stop        = 164
+    Forward     = 153
+    Rewind      = 144
+    My Desktop  = 235
+    My Favorites = 230
+    Sleep       = 223
+    WebBack     = 234
+    WebForward  = 233
+    WebRefresh  = 231
+    WebStop     = 232
+    WebSearch   = 229
+  [END KEYS]
+[END KTMPS202BI]
+
+#### END Keytronic Keyboards ####
+
+
+#### Labtec Keyboards ####
+
+[LAB-IK] # By Joao Costa
+  brandname = "Labtec"
+  modelname = "Internet Keyboard"
+  [KEYS]
+    Sleep            = 223
+    Play|Pause  = 162
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+    WWW              = 178
+    Mail             = 236
+    Search           = 229
+    Go               = 230
+  [END KEYS]
+[END LAB-IK]
+
+[LAB-UFK]
+  brandname = "Labtec"
+  modelname = "Ultra-Flat Keyboard"
+  [KEYS]
+    WWW         = 178
+    Stop        = 164
+    Play|Pause  = 162
+    Next        = 153
+    Previous    = 144
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Mail        = 236
+  [END KEYS]
+[END LAB-UFK]
+
+[LAB-UFWD]
+  brandname = "Labtec"
+  modelname = "Ultra-Flat Wireless Desktop"
+  [KEYS]
+    Favorites        = 230	
+    Refresh          = 231
+    Search           = 229
+    MyComputer       = 235
+    Media            = 237
+    WWW              = 178
+    Stop             = 164
+    Play|Pause       = 162
+    Next             = 153
+    Previous         = 144
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Mute             = 160
+    Mail             = 236
+  [END KEYS]
+[END LAB-UFWD]
+
+[LAB-UFK-ALT]
+  brandname = "Labtec"
+  modelname = "Ultra-Flat Keyboard (Alternate Option)"
+  [KEYS]
+    WWW         = 130F
+    Stop        = 164
+    Play|Pause  = 162
+    Next        = 153
+    Previous    = 144
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Mail        = 236
+  [END KEYS]
+[END LAB-UFK]
+
+
+[LAB_WDE] # By Jose Jorge
+  brandname = "Labtec"
+  modelname = "Wireless Desktop Edge"
+  [KEYS]
+    Sleep            = 223
+    Play|Pause  = 162
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    Mute        = 160
+    VolumeUp = 176
+    VolumeDown = 174
+    WWW              = 178
+    Mail             = 236
+    Search           = 229
+    MyComputer       = 235
+  [END KEYS]
+[END LAB_WDE]
+
+#### END Labtec Keyboards ####
+
+
+#### Leadership CA Keyboards ####
+
+[LS-GS] # Contributed by Eduardo J. Ortega
+  brandname = "Leadership Computer Accesories"
+  modelname = "Goldship"
+  [KEYS]
+    CD          = 175
+    Previous    = 145
+    Stop        = 158
+    Play|Pause  = 146
+    Next        = 159
+    VolumeDown  = 152
+    VolumeUp    = 147
+    Mute        = 163
+    Menu        = 172
+    Close       = 148
+    WWW         = 168
+    Email       = 167
+    Messenger   = 173
+    Search      = 177
+    Help        = 166
+    DOS         = 165
+    User        = 151
+    Sleep       = 223
+    WakeUp      = 227
+    Power       = 222
+  [END KEYS]
+[END LS-GS]
+
+[LS-SMALL]
+  brandname = "Leadership Computer Accesories"
+  modelname = "SmallKeyboard"
+  [KEYS]
+    Forward          = 234
+    Back             = 233
+    Close            = 232
+    Refresh          = 231
+    Search           = 229
+    Mail             = 230
+    WWW              = 178
+    Documents        = 236
+    Terminal         = 235
+    Calculator       = 161
+    VolumeDown = 174
+    VolumeUp = 176
+    Previous        = 144
+    Next        = 153
+    Play|Pause  = 162
+    Stop        = 164
+    Mute        = 160
+    Media       = 237
+    PowerOff         = 222
+    Sleep            = 223
+    WakeUp           = 227
+  [END KEYS]
+[END LS-SMALL]
+
+#### END Leadership CA Keyboards ####
+
+#### Logisys Keyboards ####
+
+[LOGISYSMM]
+  brandname = "Logisys"
+  modelname = "Multimedia Keyboard"
+# Keys from left to right
+  [KEYS]
+    Calculator         = 161
+    WebBack            = 234
+    WebForward         = 233
+    Favorites          = 230
+    Search             = 229
+    WebRefresh         = 231
+    FileManager        = 235
+    Mail               = 236
+    Internet           = 178
+    Sleep              = 223
+    MediaSelect        = 237
+    Mute               = 160
+    VolumeDown         = 174
+    VolumeUp           = 176
+    Previous           = 144
+    Next               = 153
+    Stop               = 164
+    Play|Pause         = 162
+    WebStop            = 232
+  [END KEYS]
+[END LOGISYSMM]
+# end Logisys Multimedia Keyboard
+
+#### End Logisys Keyboards ####
+
+#### Logitech keyboards ####
+
+[LTAcc]
+  brandname = "Logitech"
+  modelname = "Access"
+  [KEYS]
+    Mail        = 236
+    Media       = 237
+    SMS         = 145
+    Mute        = 160
+    Home        = 178
+    WebCam      = 146
+  [END KEYS]
+[END LTAcc]
+
+[LTAK]
+  brandname = "Logitech"
+  modelname = "Access Keyboard"
+  [KEYS]
+    Sleep       = 223
+    Email       = 236
+    SMS         = 145
+    WebCam      = 146
+    My Home     = 178
+    Search      = 229
+    Mute        = 160
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Media       = 237
+    Previous    = 144
+    Next        = 153
+    Play|Pause  = 162
+    Stop        = 164
+    New         = 187
+    Reply       = 188
+    Forward     = 118
+    Send        = 119
+    My Computer = 195
+    My Documents = 196
+    My Pictures = 215
+    My Music    = 216
+  [END KEYS]
+[END LTAK]
+
+[LTCMKg] # By"raveman2000" 
+  brandname = "Logitech"
+  modelname = "Corded Media Keyboard (GERMAN) Y-BH52"
+  [KEYS]
+    Sleep            = 223
+    Mail             = 236
+    Mute             = 160
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Media            = 237
+    Favorites        = 230
+    Previous         = 144
+    Next             = 153
+    Play|Pause       = 162
+    Stop             = 164
+    Search           = 229
+    Home             = 178
+    Calculator       = 161
+    Back             = 234
+    Forward          = 233
+#no xev for the 2nd function of all Fxx and messenger
+  [END KEYS]
+[END LTCMKg]
+
+[LTC-YSG13] # by Maurizio Tancredi IK5WWX
+  brandname = "Logitech"
+  modelname = "Corded Deluxe Access Keyboard"
+  [KEYS]
+    WWW         = 178
+    Mail        = 236
+    Find        = 229
+  [END KEYS]
+[END LTC-YSG13]  
+
+[LTCDLX300]
+	brandname	= "Logitech"
+	modelname	= "Cordless Desktop LX 300"
+	[KEYS]
+		Back		= 234
+		Calculator	= 161
+		Mail		= 236
+		Favorites	= 230
+		Forward		= 153
+		Home		= 130
+		Media		= 129
+		Mute		= 160
+		Next		= 233
+		Play|Pause	= 162
+		Previous	= 144
+		Search		= 122
+		Sleep		= 223
+		Stop		= 164
+		VolumeDown	= 174
+		VolumeUp	= 176
+	[END KEYS]
+[END LTCDLX300]
+
+[LTCD-EX110]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop EX110"
+  [KEYS]
+    WebBack     = 234
+    WebStop     = 232
+    Play|Pause  = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mail        = 236
+    Home        = 178
+    Calculator  = 161
+  [END KEYS]
+[END LTCD-EX110]
+
+
+[LTCDLX500] # Contributed by Alex Brick
+ ## This stuff will initialize some keys that are not supported by 
+default.
+ ## "e01f 161" is the Eject Key
+ ## "e075 219" is the Status Key
+ ## "e055 144" is the My Documents Key
+ RAWCOMMAND[SETKEYCODES] = "e01f 161 e075 219 e055 144"
+   brandname = "Logitech"
+   modelname = "Cordless Desktop LX 500"
+ [KEYS]
+   Back                  = 234
+   Calc                  = 161
+   Eject|Close           = 204
+   Home                  = 178
+   Next                  = 153
+   Mail                  = 236
+   Media                 = 237
+   Messenger             = 121
+   Mute                  = 160
+   MyDocs                = 198
+   Play|Pause            = 162
+   Previous              = 144
+   Search                = 229
+   Sleep                 = 223
+   Status                = 195
+   Stop                  = 164
+   VolumeDown            = 174
+   VolumeUp              = 176
+   Webcam                = 187
+ [END KEYS]
+[END LTCDLX500]
+# end Logitech Cordless Desktop LX 500
+
+[LT-YRJ20] # By rysiek (mikiwoz_AT_yahoo_DOT_co_DOT_uk)
+  brandname = "Logitech"
+  modelname = "Cordless Keyboard Y-RJ20 (USB or PS/2)" # This keyboard is both for USB and PS/2
+  RAWCOMMAND[SETKEYCODES] = "e011 216 e012 212 e013 148 e014 221 e016 149 e03b 183 e03c 184 e03d 185 e03e 186 e03f 187 e040 188 e041 189 e042 190 e043 191 e044 192 e057 193 e058 194"
+  # Additional keys will work after adding to the init scripts (like bootmisc.sh) a few setkeycode lines.
+  # The lines are written below, next to the keys they concern
+  # and all of them are given at the bottom of this definition, for easy copy-and-paste operation
+  ## The setkeycodes lines needed to be added somewhere in the init scripts
+  ## [copy-and paste to an init script, without the first hash ("#") signs in each line]
+  ## --- COPY FROM HERE -----------------------------------
+  # setkeycodes e011 216 # CHAT keycode     - Messanger_SMS
+  # setkeycodes e012 212 # CAMERA keycode   - Webcam
+  # setkeycodes e013 148 # PROG1 keycode    - iTouch
+  # setkeycodes e014 221 # SHOP keycode     - Shopping
+  # setkeycodes e016 149 # PROG2 keycode    - WheelClick
+  # setkeycodes e03b 183 # F13 keycode      - New
+  # setkeycodes e03c 184 # F14 keycode      - Reply
+  # setkeycodes e03d 185 # F15 keycode    - Forward
+  # setkeycodes e03e 186 # F16 keycode      - Send
+  # setkeycodes e03f 187 # F17 keycode      - Undo
+  # setkeycodes e040 188 # F18 keycode    - Redo
+  # setkeycodes e041 189 # F19 keycode      - Print
+  # setkeycodes e042 190 # F20 keycode      - Save
+  # setkeycodes e043 191 # F21 keycode    - My Com
+  # setkeycodes e044 192 # F22 keycode    - My Doc
+  # setkeycodes e057 193 # F23 keycode    - My Pic
+  # setkeycodes e058 194 # F24 keycode    - My Music
+  ## --- COPY TO HERE -------------------------------------
+
+  [KEYS]
+# Volume controls
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Mute             = 160
+# Media Controls
+    Previous         = 144
+    Next             = 153
+    Play|Pause       = 162
+    Stop             = 164
+    Media            = 237
+# Top Left
+    Sleep            = 223
+    Mail             = 236
+    Messenger_SMS    = 121 # setkeycodes e011 216
+    Webcam           = 187 # setkeycodes e012 212
+# Top Right
+    iTouch           = 159 # setkeycodes e013 148
+    Search           = 229
+    Shopping         = 197 # setkeycodes e014 221
+    Favorites        = 230
+    WWW              = 178
+# Scroll Wheel block
+    Back             = 234
+    Go               = 233
+    WheelClick       = 151 # setkeycodes e016 149
+# F-Key Alternates
+    New              = 182 # setkeycodes e03b 183
+    Reply            = 183 # setkeycodes e03c 184
+    Forward          = 184 # setkeycodes e03d 185
+    Send             = 93  # setkeycodes e03e 186
+    Undo             = 131 # setkeycodes e03f 187
+    Redo             = 247 # setkeycodes e040 188
+    Print            = 132 # setkeycodes e041 189
+    Save             = 170 # setkeycodes e042 190
+    My Com           = 219 # setkeycodes e043 191
+    My Doc           = 249 # setkeycodes e044 192
+    My Pic           = 205 # setkeycodes e057 193
+    My Music         = 207 # setkeycodes e058 194
+  [END KEYS]
+[END LT-YRJ20]
+
+[LTCD]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop"
+  [KEYS]
+    Sleep       = 223
+    Internet    = 130
+    Mail        = 236
+    Search      = 229
+    Go          = 230
+    Mute        = 166
+    VolumeDown  = 165
+    VolumeUp    = 158
+    Play        = 159
+    Stop        = 151
+    Previous    = 164
+    Next        = 162
+  [END KEYS]
+[END LTCD]
+
+[LTCDC]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Comfort"
+  [KEYS]
+    Sleep            = 223
+    Home             = 178
+    Mail             = 236
+    Search           = 229
+    Favorites        = 230
+    Mute             = 160
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Play|Pause       = 162
+    Stop             = 164
+    Previous         = 144
+    Next             = 153
+    WinLeft          = 115
+    WinRight         = 116
+    Logitech         = 161
+  [END KEYS]
+[END LTCDC]
+
+[LTCDDO] # By"Romain BISSEY"
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Deluxe Optical"
+  [KEYS]
+    Sleep       = 223
+    Mail        = 236
+    Messenger-SMS = 145
+    Webcam      = 146
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Media       = 237
+    Recieve     = 178
+    Reload      = 229
+    F1          = 187
+    F2          = 188
+    F3          = 118
+    F4          = 119
+    F5          = 120
+    F6          = 121
+    F7          = 122
+    F8          = 194
+    F9          = 195
+    F10         = 196
+    F11         = 215
+    F12         = 216
+  [END KEYS]
+[END LTCDDO]
+
+[LTCDDOg] # Joerg Gutowski
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Deluxe Optical (German)"
+  [KEYS]
+    Mail        = 236
+    F/Bilder    = 215
+    F/Bildschirm = 195
+    F/Dateien   = 196
+    F/E-Mail    = 119
+    F/F2        = 188
+    F/F3        = 118
+    F/Musik     = 216
+    F/Play|F/Pause = 122
+    F/Stop      = 194
+    F/neues     = 187
+    F/vor       = 121
+    F/zurck     = 120
+    Media       = 237
+    Messenger   = 145
+    Startseite  = 178
+    Suchen      = 229
+    Ton         = 160
+    User        = 223
+    Webkamera   = 146
+    Lauter      = 176
+    Leiser      = 174
+  [END KEYS]
+[END LTCDDOg]
+
+[LTCDiT]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop iTouch"
+  [KEYS]
+    Sleep       = 223
+    Finance     = 147
+    My Sites    = 148
+    Communities = 149
+    Favorites   = 230
+    Previous    = 144
+    Next        = 153
+    Media       = 237
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Mute        = 160
+    Play        = 162
+    Stop        = 164
+    VendorHome  = 146
+    Mail        = 236
+    Shop        = 145
+    Search      = 229
+    Home        = 178
+  [END KEYS]
+[END LTCDiT]
+
+[LTCDE] # Christien Boettger
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Express"
+  [KEYS]
+    WWW              = 178
+    Back             = 234
+    Mail             = 236
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+    Calculator       = 147
+    LWindows         = 115
+    RWindows         = 117
+  [END KEYS]
+[END LTCDE]
+
+[LTCDE-YRQ57] #Contributed by Felix Huber
+# The Calc key must be activated in the kernel table by 'setkeycodes e013 140'
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Express Y-RQ57"
+  RAWCOMMAND[SETKEYCODES] = "e013 140"
+  [KEYS]
+    Back             = 234
+    VolumeDown = 174
+    VolumeUp = 176
+    Mute        = 160
+    Mail             = 236
+    WWW              = 178
+    Calculator       = 161
+  [END KEYS]
+[END LTCDE-YRQ47]
+
+[RD-AKMx-Cx]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Express (Other)"
+  [KEYS]
+    Mail=236
+    Lauter=176
+    Leiser=174
+    Startseite=178
+    Ton aus=160
+    ZurÃ¼ck=234
+  [END KEYS]
+[END RD-AKMx-Cx]
+
+
+[LTCDEg] # Christian Boettger
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Express (German)"
+  [KEYS]
+    Mail        = 236
+    Startseite  = 178
+    Ton         = 160
+    Lauter      = 176
+    Leiser      = 174
+    Back        = 234
+    Calculator  = 147
+    LWindows    = 115
+    RWindows    = 117
+  [END KEYS]
+[END LTCDEg]
+
+[LT-CDE2]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Express(2)"
+  [KEYS]
+    Calculator  = 161
+    Favorites   = 230
+    WWW         = 178
+    Mail        = 236
+    Media       = 237
+    Mute        = 160
+    My Computer = 235
+    Next        = 153
+    Play|Pause  = 162
+    Power       = 222
+    Previous    = 144
+    Search      = 229
+    Sleep       = 223
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Wake        = 227
+    Back        = 234
+    Forward     = 233
+    Reload      = 231
+    WebStop     = 232
+  [END KEYS]
+[END LT-CDE2]
+
+[LTCDNO]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Navigator Optical"
+  [KEYS]
+    Sleep       = 223
+    Mail        = 236
+    SMS         = 145
+    WebCam      = 146
+    iTouch      = 147
+    Search      = 229
+    Shop	= 148
+    Favorites   = 230
+    Home        = 178
+    Previous    = 144
+    Next        = 153
+    Media	= 237
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Play|Pause  = 162
+    Stop        = 164
+    FTaste-F1   = 187
+    FTaste-F2   = 188
+    FTaste-F3   = 118
+    FTaste-F4   = 119
+    FTaste-F5   = 120
+    FTaste-F6   = 121
+    FTaste-F7   = 122
+    FTaste-F8   = 194
+    FTaste-F9   = 195
+    FTaste-F10  = 196
+    FTaste-F11  = 215
+    FTaste-F12  = 216
+  [END KEYS]
+[END LTCDNO]
+
+[LTCDO]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Optical"
+  [KEYS]
+    Go           = 233
+    WebBack      = 234
+    Wheelbutton  = 150
+    Sleep        = 223
+    Finance      = 147
+    My Sites     = 148
+    Social       = 149
+    Favorites    = 230
+    Previous     = 144
+    Next         = 153
+    Media        = 237
+    VolumeDown   = 174
+    VolumeUp     = 176
+    Mute         = 160
+    Play         = 162
+    Stop         = 164
+    iTouch       = 146
+    Mail         = 236
+    Shop         = 145
+    Search       = 229
+    Home         = 178
+  [END KEYS]
+[END LTCDO]
+
+[LTCDP]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Pro"
+  [KEYS]
+    Sleep        = 223
+    Internet     = 178
+    Mail         = 236
+    Search       = 229
+    Go           = 230
+    Mute         = 160
+    VolumeDown   = 174
+    VolumeUp     = 176
+    Play|Pause   = 162
+    Stop         = 164
+    Previous     = 144
+    Next         = 153
+    VendorHome   = 161
+  [END KEYS]
+[END LTCDP]
+
+[LTCDPa]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Pro (alternate option)"
+  [KEYS]
+    Sleep        = 223
+    Internet     = 130
+    Mail         = 236
+    Search       = 229
+    Go           = 230
+    Mute         = 166
+    VolumeDown   = 165
+    VolumeUp     = 158
+    Play         = 159
+    Stop         = 151
+    Previous     = 164
+    Next         = 162
+    VendorHome   = 161
+  [END KEYS]
+[END LTCDPa]
+
+[LTCFN]
+  brandname = "Logitech"
+  modelname = "Cordless Freedom/Desktop Navigator"
+  [KEYS]
+    Finance     = 147
+    My Sites    = 148
+    Communities = 149
+    Favorites   = 230
+    Previous    = 144
+    Next        = 153
+    Media       = 237
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Play        = 162
+    Stop        = 164
+    iTouch      = 146
+    Mail        = 236
+    Shopping    = 145
+    Search      = 229
+    Home        = 178
+    Sleep       = 233
+    ScrollUp    = 98
+    ScrollDown  = 104
+    ScrollClick = 150
+    WebBack     = 234
+    WebForward  = 233
+  [END KEYS]
+[END LTCFN]
+
+[LCDN]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Navigator (with expand fuctions key)"
+  [KEYS]
+    Favorites   = 230
+    Forward     = 118
+    Home        = 178
+    iTouch      = 147
+    Mail        = 236
+    Media       = 237
+    Mute        = 160
+    MyDocuments = 196
+    MyMusic     = 216
+    MyPictures  = 215
+    New         = 187
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Print       = 122
+    Redo        = 121
+    Reply       = 188
+    Save        = 194
+    Screen      = 195
+    Search      = 229
+    Send        = 119
+    Shopping    = 148
+    Sleep       = 223
+    SMS         = 145
+    Stop        = 164
+    Undo        = 120
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Webcam      = 146
+  [END KEYS]
+[END LCDN]
+
+# Hubert Fink DG7MGY
+[LTCDPR]
+  brandname = "Logitech"
+  modelname = "Cordless Desktop Precision Y-RH35"
+  # Missing keys using kernel 2.6.13-15-default:
+  # e011: instant messenger
+  # e012: webcam
+  # e03b: AltF1
+  # e03c: AltF2
+  # e03d: AltF3
+  # e03e: AltF4
+  # e03f: AltF5
+  # e040: AltF6
+  # e041: AltF7
+  # e042: AltF8
+  # e043; AltF9
+  # e044: AltF10
+  # e057: AltF11
+  # e058: AltF12
+  RAWCOMMAND[SETKEYCODES] = "e011 147 e012 142 e03b 187 e03c 188 e03d 118 e03e 119 e03f 120 e040 121 e041 122 e042 194 e043 195 e044 196 e057 202 e058 203" 
+  [KEYS]
+     Sleep            = 223
+     Mail             = 236
+     InstantMessanger = 199
+     Webcam           = 200
+     Mute             = 160
+     VolumeUp         = 176
+     VolumeDown       = 174
+     Media            = 237
+     WWW              = 178
+     Search           = 229
+     AltF1            = 131
+     AltF2            = 247
+     AltF3            = 123
+     AltF4            = 110
+     AltF5            = 139
+     AltF6            = 134
+     AltF7            = 209
+     AltF8            = 207
+     AltF9            = 149
+     AltF10           = 150
+     AltF11           = 120
+     AltF12           = 121
+#     Custom1          = 115
+#     Custom2          = 116
+   [END KEYS]
+[END LTCDPR]
+
+[LTCoiT]
+  brandname = "Logitech"
+  modelname = "Corded iTouch Keybard (Model?)"
+  [KEYS]
+    Search      = 229
+    WWW         = 130
+    Mail        = 236
+    Mute        = 166
+    VolumeDown  = 165
+    VolumeUp    = 158
+    Play|Pause  = 159
+    Stop        = 151
+    Previous    = 164
+    Next        = 162
+    Launch0     = 230
+    Sleep       = 223
+  [END KEYS]
+[END LTCoiT]
+
+[LTCiY] # Contributed by Glen Stewart
+  brandname  = "Logitech"
+  modelname  = "Corded iTouch Y-BC9"
+  [KEYS]
+    Favorites   = 230
+    Home        = 178
+    Mail        = 236
+    Mute        = 160
+    Next        = 153
+    Play        = 162
+    Power       = 223
+    Previous    = 144
+    Search      = 229
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END LTCiY]
+
+[USRmLSCK]
+     brandname = Logitech
+     modelname = S510 Cordless Keyboard
+     [KEYS]
+          Home=130
+          MediaCentre=129
+          Mode-F1=241
+          Mute=160
+          PlayNext=153
+          PlayPause=162
+          PlayPrevious=144
+          Print=185
+          ProgrammableA=159
+          ProgrammableB=151
+          ProgrammableC=171
+          ProgrammableD=172
+          Redo=138
+          Save=213
+          Sleep=223
+          Stop=164
+          Undo=135
+          Vol_down=174
+          Vol_up=176
+#Keys not recognised by lineak -- as keys returns value >255
+#all other keys ok or are programmable
+#kernel 2.6.24-8-default, lineakd 0.9-98, lineakconfig 0.4.1b-122
+#    WordProcessor(Mode-F2)=421
+#    Spreadsheet(Mode-F3)=423
+#    Presentation(Mode-F4)=425
+#    Shuffle=410
+#    Rotate=371    (screen)
+#    Zoom+=419    (screen)
+#    Zoom-=418    (screen)
+#    100%=420    (screen)
+     [END KEYS]
+[END USRmLSCK]
+
+
+[LTCiYBA9]
+  brandname = "Logitech"
+  modelname = "Y-BA9 (User Defined)"
+  [KEYS]
+     Favorites       = 230
+     Mail            = 236
+     Mute            = 160
+     Next            = 153
+     Play|Pause      = 162
+     Previous        = 144
+     Search          = 122
+     Sleep           = 223
+     Stop            = 164
+     VolumeDown      = 174
+     VolumeUp        = 176
+     WWW             = 130
+  [END KEYS]
+[END LTCiYBA9]
+
+[LTCED]
+  brandname = "Logitech"
+  modelname = "Cordless Elite Duo"
+  [KEYS]
+    Go          = 233
+    WebBack     = 234
+    Mail        = 236
+    SMS         = 240
+    WebCam      = 241
+    Previous    = 164
+    Next        = 162
+    Media       = 129
+    VolumeUp    = 158
+    VolumeDown  = 165
+    Mute        = 166
+    Play        = 159
+    Stop        = 151
+    iTouch      = 242
+    Search      = 229
+    Shopping    = 243
+    Favorites   = 230
+    Home        = 130
+  [END KEYS]
+[END LTCED]
+
+[LTCEDB]
+  brandname = "Logitech"
+  modelname = "Cordless Elite Duo (Black)"
+  [KEYS]
+    Mail        = 236
+    Favorites   = 230
+    Media       = 237
+    SMS         = 145
+    Home        = 178
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Search      = 229
+    Shopping    = 148
+    Stop        = 164
+    UserDefined1 = 223
+    VolumeDown  = 174
+    VolumeUp    = 176
+    WebCam      = 146
+    iTouch      = 147
+  [END KEYS]
+[END LTCEDB]
+
+[LTCi3B]
+  brandname	= "Logitech"
+  modelname	= "Cordless iTouch 3 Button
+  [KEYS]
+    Mail        = 236
+    Search      = 229
+    Internet    = 178
+  [END KEYS]
+[END LTCi3B]
+
+[LTCiT]
+  brandname = "Logitech"
+  modelname = "Cordless iTouch Keyboard Y-RB6"
+  [KEYS]
+    Play|Pause  = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    Mail        = 236
+    Home        = 178
+    Search      = 229
+    Favorites   = 230
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Sleep       = 223
+  [END KEYS]
+[END LTCiT]
+
+[LTCLiPro]
+     brandname = Logitech
+     modelname = Cordless Internet Pro
+     [KEYS]
+          Mail       = 236
+          Favorites  = 230
+          Media      = 129
+          Mute       = 160
+          Play|Pause = 162
+          VolumeUp   = 176
+          VolumeDown = 174
+          WWW        = 130
+     [END KEYS]
+[END LTCLiPro]
+
+[LTCLiPro-ALT]
+	brandname = "Logitech"
+	modelname = "Cordless Internet Pro (Alternate)"
+	[KEYS]
+		AudioMedia       = 129
+		AudioPlay|Pause  = 162
+		AudioMute        = 160
+		AudioLowerVolume = 174
+		AudioRaiseVolume = 176
+		Favorites        = 230
+		Mail             = 236
+		WWW              = 160
+	[END KEYS]
+[END LTCLiPro-ALT]
+
+[LCOF]
+  brandname = "Logitech"
+  modelname = "Cordless Optical Freedom"
+  [KEYS]
+    Back            = 234
+    Mail            = 236
+    Favorites       = 230
+    Go              = 233
+    Previous       = 144
+    Media      = 237
+    Mute       = 160
+    HomePage        = 178
+    Next       = 153
+    Play|Pause = 162
+    Search          = 229
+    Sleep           = 223
+    Stop       = 164
+  [END KEYS]
+[END LCOF]
+
+[LTDAK]
+  brandname= "Logitech"
+  modelname = "Deluxe Access Keyboard"
+  [KEYS]
+    Sleep           = 223
+    Mail            = 236
+    SMS             = 145
+    WebCam          = 146
+    Mute       = 160
+    VolumeUp        = 176
+    VolumeDown      = 174
+    Media      = 237
+    WWW             = 178
+    Search          = 229
+    New             = 187
+    Reply           = 188
+    Forward         = 118
+    Send            = 119
+    Previous        = 144
+    Next            = 153
+    Play|Pause      = 162
+    Stop            = 164
+    MyComputer      = 195
+    Documents       = 196
+    Pictures        = 215
+    Music           = 216
+  [END KEYS]
+[END LTDAK]
+
+[LTdinovo]
+  brandname = "Logitech"
+  modelname = "diNovo Cordless Desktop for Notebooks"
+  [KEYS]
+    Sleep      = 227
+    Home       = 130
+    Email      = 236
+    Search     = 122
+    VolumeUp   = 176
+    VolumeDown = 174
+    Mute       = 160
+    Media      = 129
+    Play|Pause = 162
+    Stop       = 164
+    Previous   = 144
+    Next       = 153
+  [END KEYS]
+[END LTdinovo]
+
+[LT-DINOVO-2-BT]
+  brandname = "Logitech"
+  modelname = "DiNovo 2.0 Bluetooth"
+  [KEYS]
+    Sleep            = 223
+    Home             = 130
+    Mail             = 236
+    Search           = 122
+    VolumeUp = 176
+    Mute        = 160
+    VolumeDown = 174
+    Media       = 129
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    Play|Pause  = 162
+  [END KEYS]
+[END LT-DINOVO-2-BT]
+
+[LTDMD2]
+  brandname = "Logitech"
+  modelname = "diNovo Media Desktop 2.0"
+  [KEYS]
+    Sleep            = 146
+    HomePage         = 130
+    Mail             = 236
+    Search           = 151
+
+    VolumeUp = 161
+    Mute        = 123
+    VolumeDown = 193
+
+    Media       = 129
+    Previous        = 144
+    Next        = 153
+    Stop        = 164
+    Play|Pause  = 162
+
+# F-Keys alternate function
+    # New            = ?
+    # Reply          = ?
+    # Forward        = ?
+    # Send           = ?
+    Undo             = 199
+    # Redo           = ?
+    # Print          = ?
+    # Save           = ?
+    MyComputer       = 198
+    # MyDoc          = ?
+    # MyPic          = ?
+    # MyMusic        = ?
+  [END KEYS]
+[END LTDMD2]
+
+[LTEPS2]
+  brandname = "Logitech"
+  modelname = "Elite Keyboard (PS2)"
+  [KEYS]
+    VolumeDown = 174
+    VolumeUp = 176
+    Previous        = 144
+    Next        = 153
+    Play|Pause  = 162
+    Stop        = 164
+    Mute        = 160
+    Media       = 237
+    Mail             = 236
+    InstantMessage   = 145
+    Webcam           = 146
+    iTouch           = 147
+    Search           = 229
+    Shopping         = 148
+    Favorites        = 230
+    WWW              = 178
+    Sleep            = 223
+    Back             = 234
+    Go               = 233
+    New              = 67
+    Reply            = 68
+    Forward          = 69
+    Send             = 70
+    Undo             = 71
+    Redo             = 72
+    Print            = 73
+    Save             = 74
+    MyComputer       = 75
+    Documents        = 76
+    MediaPictures    = 95
+    MediaMusic       = 96
+  [END KEYS]
+[END LTEPS2]
+
+[LTCElite] #Contributed by Chris Johns
+  brandname = "Logitech"
+  modelname = "Elite Keyboard Y-BF38"
+  [KEYS]
+    Go          = 233
+    Arrow       = 234
+    Sleep       = 223
+    Email       = 236
+    Messenger   = 145
+    Webcam      = 146
+    Previous    = 144
+    Next        = 153
+    Media       = 237
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Mute        = 160
+    Play|Pause  = 162
+    Stop        = 164
+    iTouch      = 147
+    Search      = 229
+    Shopping    = 148
+    Favorites   = 230
+    MyHome      = 178
+  [END KEYS]
+[END LCElite]
+
+[LTOIK-SQ33]
+  brandname = "Logitech"
+  modelname = "Office Internet Keyboard Y-SQ33"
+  [KEYS]
+    Sleep            = 223
+    Documents        = 147
+    Spreadsheets     = 148
+    Webcam           = 154
+    Files            = 133
+    EMail            = 236
+    WWW              = 178
+    Calendar         = 149
+    Calculator       = 161
+    Mute             = 160
+    VolumeDown       = 174
+    VolumeUp         = 176
+    Help             = 187
+    ApplicationLeft  = 188
+    ApplicationRight = 118
+    ControlPanel     = 119
+    Search           = 120
+    Pictures         = 121
+    Desktop          = 122
+    Network          = 194
+    Previous         = 144
+    Stop             = 164
+    Play|Pause       = 162
+    Next             = 153
+    WebBack          = 234
+    WebForward       = 233
+    ParenLeft        = 101
+    ParenRight       = 228
+  [END KEYS]
+[END LTOIK-SQ33]
+
+[LT-OP-YSAB59]
+  brandname = "Logitech"
+  modelname = "Logitech Office Pro Y-SA B59"
+  [KEYS]
+    Mail             = 236
+    WWW              = 178
+    Media       = 237
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+    Play|Pause  = 162
+    Calculator       = 161
+  [END KEYS]
+[END LT-OP-YSAB59]
+
+[LIKS]
+  brandname = "Logitech"
+  modelname = "Internet Keyboard Standard"
+  [KEYS]
+    Logitech    = 165
+    Favorite    = 166
+    Back        = 144
+    Find        = 146
+    Forward     = 162
+    History     = 178
+    Home        = 163
+    Hotlinks    = 160
+    Favorites   = 152
+    Go          = 161
+    Print       = 151
+    Refresh     = 153
+    ScrollDown  = 174
+    ScrollUp    = 176
+    Search      = 158
+    Send To Back = 163
+    Stop        = 164
+    Internet    = 250
+  [END KEYS]
+[END LIKS]
+
+[LTIK]
+  brandname = "Logitech"
+  modelname = "Internet Keyboard"
+  [KEYS]
+    Play|Pause  = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    Mail        = 236
+    Home        = 178
+    Search      = 229
+    Go          = 230
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Sleep       = 223
+  [END KEYS]
+[END LTIK]
+
+[LTIK-ST39]
+  brandname = "Logitech"
+  modelname = "Internet Keyboard Y-ST39"
+  [KEYS]
+    Search           = 229
+    WWW              = 178
+    Mail             = 236
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+    Files            = 133
+  [END KEYS]
+[END LTIK-ST39]
+
+[LTIKeurope]
+  brandname = "Logitech"
+  modelname = "Internet Keyboard (European)"
+  [KEYS]
+    Search      = 229
+    Files       = 133
+    E-Mail      = 236
+    WWW         = 178
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END LTIKeurope]
+
+[LTIK-YSZ49] # Contributed by Ivan Yosifov (ivan@yosifov.net )
+  brandname = "Logitech"
+  modelname = "Internet Keyboard Pro Y-SZ49"
+  [KEYS]
+    Media       = 237
+    Play|Pause  = 162
+    Mute        = 160
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Favorites   = 230
+    Mail        = 236
+    WWW         = 178
+  [END KEYS]
+[END LTIK-YSZ49]
+
+[LTINK]
+  brandname = "Logitech"
+  modelname = "Internet Navigator Keyboard"
+  [KEYS]
+    Play|Pause  = 162
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    Mail        = 236
+    Home        = 178
+    Search      = 229
+    Go          = 233
+    Mute        = 160
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Sleep       = 223
+    WebBack     = 234
+    Finance     = 147
+    My Sites    = 148
+    Communities = 149
+    Favorites   = 230
+    Media       = 237
+    VendorHome  = 146
+    Market      = 145
+  [END KEYS]
+[END LTINK]
+
+[LTINKSE]
+  brandname = "Logitech"
+  modelname = "Internet Navigator Keyboard Special Edition"
+  [KEYS]
+  # Left-hand side:
+    Go          = 233
+    WebBack     = 234
+    Shellpress  = 150
+    Sleep       = 223
+    Mail        = 236
+    SMS         = 145
+    WebCam      = 146
+  # Right-hand side:
+    iTouch      = 147
+    Search      = 229
+    Shopping    = 148
+    Favorites   = 230
+    Home        = 178
+  # Top:
+    Previous    = 144
+    Next        = 153
+    Play|Pause  = 162
+    Stop        = 164
+    Media	= 237
+    Mute        = 160
+    VolumeUp    = 176
+    VolumeDown  = 174
+  # F-Keys UnLocked:
+    New         = 187
+    Reply       = 188
+    Forward     = 118
+    Send        = 119
+    Undo        = 120
+    Redo        = 121
+    Print       = 122
+    Save        = 194
+    My Computer = 195
+    My Documents = 196
+    My Pictures = 215
+    My Music    = 216
+  [END KEYS]
+[END LTINKSE]
+
+[LTINKSEPS2]
+  brandname = "Logitech"
+  modelname = "Internet Navigator Keyboard SE PS2"
+  [KEYS]
+    Go          = 233
+    WebBack     = 234
+    User        = 223
+    Email       = 236
+    Messenger   = 145
+    Webcam      = 146
+    MediaBack   = 144
+    MediaForward = 153
+    Media       = 237
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Play|Pause  = 162
+    Stop        = 164
+    iTouch      = 147
+    Search      = 229
+    Market      = 148
+    Favorites   = 230
+    Home        = 178
+  # 2nd functions of the F keys
+    NewFile     = 187
+    PreviousPeer = 188
+    NextPeer    = 118
+    NewMail     = 119
+    Back        = 120
+    Forward     = 121
+    Print       = 122
+    Save        = 194
+    Monitor     = 195
+    OpenFile    = 196
+    OpenPicture = 215
+    OpenMusic   = 216
+  [END KEYS]
+[END LTINKSEPS2]
+ 
+[LTINKSEUSB]
+  brandname = "Logitech"
+  modelname = "Internet Navigator Keyboard SE USB"
+  [KEYS]
+    Go          = 233
+    WebBack     = 234
+    User        = 223
+    Email       = 236
+    MediaBack   = 164
+    MediaForward = 162
+    Media       = 129
+    VolumeDown  = 165
+    VolumeUp    = 158
+    Play|Pause  = 159
+    Stop        = 151
+    Search      = 229
+    Favorites   = 230
+    Home        = 130
+  # 2nd functions of the F keys
+    NewFile     = 196
+    PreviousPeer = 197
+    NextPeer    = 110
+    NewMail     = 202
+    Back        = 103
+    Forward     = 101
+    Print       = 212
+    Save        = 213
+    Monitor     = 111
+    OpenFile    = 214
+    OpenPicture = 215
+    OpenMusic   = 216
+  [END KEYS]
+[END LTINKSEUSB]
+
+[LTIPK]
+  brandname = "Logitech"
+  modelname = "Internet Pro Keyboard"
+  [KEYS]
+    Media       = 237
+    Play|Pause  = 162
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+    Favorites        = 230
+    Mail             = 236
+    WWW              = 178
+  [END KEYS]
+[END LTIPK] 
+
+
+[LTCDLX500] # Contributed by Alex Brick
+# The following commands must be typed before attempting to use this definition:
+## setkeycodes e02f 161 # The Eject Key
+## setkeycodes e075 219 # The Status Key
+## setkeycodes e055 144 # The "My Documents" Key
+   brandname = "Logitech"
+   modelname = "Cordless Desktop LX 500"
+   RAWCOMMAND[SETKEYCODES] = "e02f 161 e075 219 e055 144"
+ [KEYS]
+   Back                  = 234
+   Calc                  = 161
+   Eject|Close           = 204
+   Home                  = 178
+   Next                  = 153
+   Mail                  = 236
+   Media                 = 237
+   Mute                  = 160
+   MyDocs                = 198
+   Play|Pause            = 162
+   Previous              = 144
+   Search                = 229
+   Sleep                 = 223
+   Status                = 195
+   Stop                  = 164
+   VolumeDown            = 174
+   VolumeUp              = 176
+ [END KEYS]
+[END LTCDLX500]
+# end Logitech Cordless Desktop LX 500
+
+
+[LOG-MK]
+  brandname = "Logitech"
+  modelname = "Media Keyboard"
+  [KEYS]
+    Back             = 234
+    Calculator       = 161
+    Mail             = 236
+    Favorites        = 230
+    Forward          = 233
+    Previous        = 144
+    Media       = 237
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    Search           = 229
+    Sleep            = 223
+    startseite       = 178
+    Stop        = 164
+    VolumeDown = 174
+    VolumeUp = 176
+  [END KEYS]
+[END LOG-MK]
+
+[LOG-MK2]
+  brandname = "Logitech"
+  modelname = "Media Keyboard (2)"
+  [KEYS]
+    Go               = 233
+    Back             = 234
+    Search           = 229
+    Sleep            = 223
+    Mail             = 236
+    WWW              = 178
+    Search           = 229
+    Favorites        = 230
+    Calculator       = 161
+    Mute             = 160
+    VolumeUp         = 176
+    VolumeDown       = 174
+    Media            = 237
+    Previous         = 144
+    Next             = 153
+    Play|Pause       = 162
+    Stop             = 164
+  [END KEYS]
+[END LOG-MK2]
+
+[LTMKE]
+# By Lev 'ktdr' Lamberov. Based on configs by raveman2000 and by rysiek.
+  brandname = "Logitech"
+  modelname = "Media Keyboard Elite (Y-BN52)"
+  RAWCOMMAND[SETKEYCODES] = "e011 216 e03b 183 e03c 184 e03d 185 e03e 186 e03f 187 e040 188 e041 189 e042 190 e043 191 e044 192 e057 193 e058 194"
+ 
+# setkeycodes e011 216
+# setkeycodes e03b 183
+# setkeycodes e03c 184
+# setkeycodes e03d 185
+# setkeycodes e03e 186
+# setkeycodes e03f 187
+# setkeycodes e040 188
+# setkeycodes e041 189
+# setkeycodes e042 190
+# setkeycodes e043 191
+# setkeycodes e044 192
+# setkeycodes e057 193
+# setkeycodes e058 194
+ 
+	[KEYS]
+	Sleep       = 223
+	Mail        = 236
+	Mute        = 160
+	VolumeDown  = 174
+	VolumeUp    = 176
+	Media       = 237
+	Messanger   = 121 # setkeycodes e011 216
+	Favorites   = 230
+	Previous    = 144
+	Next        = 153
+	Play|Pause  = 162
+	Stop        = 164
+	Home        = 178
+	Calculator  = 161
+ 
+#Fxx keys with F-mode
+	Help        = 182 # setkeycodes e03b 183
+	Word        = 183 # setkeycodes e03c 184
+	Excel       = 184 # setkeycodes e03d 185
+	Access      = 93  # setkeycodes e03e 186
+	Undo        = 131 # setkeycodes e03f 187
+	Redo        = 247 # setkeycodes e040 188
+	Print       = 132 # setkeycodes e041 189
+	Save        = 170 # setkeycodes e042 190
+	User-A      = 219 # setkeycodes e043 191
+	User-B      = 249 # setkeycodes e044 192
+	User-C      = 205 # setkeycodes e057 193
+	User-D      = 207 # setkeycodes e058 194
+ 
+  [END KEYS]
+[END LTMKE]
+ 
+
+[LTCMX3100] # By Evan Cox
+  brandname = "Logitech"
+  modelname = "MX3100 (Y-RR54 & RT7R33)"
+    [KEYS]
+	#Left Side
+	ZoomIn		= 187
+	ZoomOut		= 188
+	Percent		= 196
+	ScrollUp	= 185
+	ScrollDown	= 186
+	WheelLeft	= 187
+	WheelRight	= 188
+	CloseWindow	= 214
+	CycleWindows	= 162
+	#Top Left Side
+	Video		= 190
+	Music		= 191
+	Pictures	= 192
+	Documents	= 172
+	#Top Right Side
+	Messenger	= 193
+	Status		= 194
+	Webcam		= 195
+	Email		= 163
+	Sleep		= 150
+	Calculator	= 148
+	#Top Center
+	Previous	= 173
+	Forward		= 171
+	Play|Pause 	= 172
+	Stop		= 174
+	Remote		= 193
+	Eject		= 170
+	Mute		= 121
+	VolumeUp	= 123
+	VolumeDown	= 122
+	Burn		= 178
+	Record		= 175
+	Media		= 234
+	Preset1		= 198
+	Preset2		= 199
+	Preset3		= 200
+     [END KEYS]
+[END LTCMX3100]
+
+[LTOCK]
+  brandname = "Logitech"
+  modelname = "Office Comfort Keyboard"
+  [KEYS]
+    AudioMedia            = 237
+    AudioPlay|AudioPause  = 162
+    AudioMute             = 160
+    AudioLowerVolume      = 174
+    AudioRaiseVolume      = 176
+    Favorites        = 230
+    Mail             = 236
+    WWW              = 178
+    Sleep           = 223
+  [END KEYS]
+[END LTOCK]
+
+[LOG-OI-YSQ33]
+  brandname = "Logitech"
+  modelname = "Office Internet Keyboard Y-SQ33"
+  [KEYS]
+    Mail             =236
+    Mute        =160
+    Calculator       = 161
+    Parenthesis_Left = 144
+    Parenthesis_Right= 153
+    Play|Pause  = 162
+    Audiostop        = 164
+    VolumeDown = 174
+    VolumeUp = 176
+    WWW              = 178
+  [END KEYS]
+[END LOG-OI-YSQ33]
+
+[LTOP-SA-B59]
+  brandname = "Logitech"
+  modelname = "Logitech Office Pro"
+  [KEYS]
+    Mail             = 236
+    WWW              = 178
+    Media       = 237
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+    Play|Pause  = 162
+    Calculator       = 161    
+  [END KEYS]
+[END LogitechOP]
+
+[LPDO]
+  brandname = "Logitech"
+  modelname = "Premium Desktop Optical"
+  [KEYS]
+    Search           = 229
+    WWW              = 178
+    Mail             = 236
+    Mute             = 160
+    VolumeUp         = 176
+    VolumeDown       = 174
+    Files            = 133
+  [END KEYS]
+[END LPDO]
+ 
+#LTUF features: it has laptop keys Logitech Ultraflat keyboard is an OEM keyboard
+#If you have any information about the configuration it was ment to be sold with,
+#please let me know at snowball [at] neobee.net Contributed by -V-O-Y-A-G-E-R-
+[LTUF]
+  brandname = "Logitech"
+  modelname = "UltraX Flat / Y-SX49"
+  [KEYS]
+    Media           =237
+    Play|Pause      =162
+    Mute            =160
+    Favorites       =230
+    Mail            =236
+    WWW             =178
+  [END KEYS]
+[END LTUF]
+
+[LTUFBL] 
+  brandname = "Logitech" 
+  modelname = "UltraX Flat / Y-BL49" 
+  [KEYS] 
+    Media           =129 
+    Play|Pause      =162 
+    Mute            =160 
+    Favorites       =230 
+    Mail            =236 
+    WWW             =130 
+  [END KEYS] 
+[END LTUF] 
+
+[LTUM]
+    brandname = "Logitech"
+    modelname = "UltraX Media / Y-BL49A"
+    [KEYS]
+      AudioMedia      =129
+      Play|Pause      =162
+      AudioMute       =160
+      Favorites       =230
+      Mail            =236
+      WWW             =130
+    [END KEYS]
+[END LTUM]
+
+#### END Logitech Keyboards ####
+
+#####Perfect Choice Keyboards######
+[PCHOICEF21]
+  brandname = "Perfect Choice"
+  modelname = "Perfect Choice F21SGM"
+  [KEYS]
+    Previous            = 144
+    Play|Pause          = 162
+    Stop|Eject          = 164
+    Next                = 153
+    VolumeUp            = 176
+    VolumeDown          = 174
+    Mute                = 160
+    Internet            = 178
+    Mail                = 236
+    Favorites           = 230
+    WebBack             = 234
+    WebForward          = 233
+    WebStop             = 232
+    WebReload           = 231
+    Calculator          = 161
+  [END KEYS]
+[END PCHOICEF21]
+# end Perfect Choice F21SGM
+
+#### Maxtron keyboards ####
+
+[MAXTRON-KU9908]
+  brandname = "Maxtron"
+  modelname = "KU-9908"
+  [KEYS]
+    Internet    = 130
+    Mail        = 236
+    Mute        = 160
+    Search      = 122
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END MAXTRON-KU9908]
+
+#### End Maxtron keyboards ####
+#### Medion keyboards ####
+
+[MDKB9908]
+  brandname = "Medion"
+  modelname = "kb-9908"
+  [KEYS]
+    Internet    = 178
+    Mail        = 236
+    Mute        = 160
+    Search      = 229
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END MKB9908]
+
+[MD5351]
+  brandname = "Medion"
+  modelname = "MD5351"
+  [KEYS]
+    Calculator  = 161
+    Media       = 237 
+    Computer    = 235
+    Folder      = 230
+    Home        = 178
+    Mail        = 236
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Sleep       = 223
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+    WebBack     = 234
+    WebForward  = 233
+    WebSeload   = 231
+    WebSearch   = 229
+    WebStop     = 232
+  [END KEYS]
+[END MD5351]
+
+[MD40287]
+  brandname = "Medion"
+  modelname = "Wireless Deskset 40287"
+  [KEYS]
+    WebBack     = 234
+    Browser     = 229
+    Internet	= 122
+    WebForward  = 233
+    Home        = 178
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Stop        = 164
+    Mail        = 236
+    NewFolder   = 230
+    Media       = 237
+    Control     = 235
+    Calc        = 161
+    Reload      = 231
+    Sleep       = 223
+    WebStop     = 232
+    VolumeDown  = 174
+    Mute        = 160
+    VolumeUp    = 176
+  [END KEYS]
+[END MD40287]
+
+#### END Medion Keyboards ####
+
+
+#### Memorex keyboards ####
+
+[MX1998]
+  brandname = "Memorex"
+  modelname = "MX1998"
+  [KEYS]
+    Stop       = 164
+    Play       = 162
+    Previous   = 144
+    Next       = 153
+    VolumeUp   = 176
+    VolumeDown = 174
+    Mute       = 160
+    Power      = 222
+    Suspend    = 223
+    Coffee Break = 250
+    Wake       = 215
+    Internet   = 178
+    Calculator = 165
+    Xfer       = 152
+    Dos        = 232
+    My Documents = 161
+    Back       = 146
+    Record     = 158
+    Game       = 163
+    Close      = 151
+    Menu       = 166
+    ScrollUp   = 98
+    ScrollDown = 104
+  [END KEYS]
+[END MX1998]
+
+[MX2500]
+  brandname = "Memorex"
+  modelname = "MX2500 EZ-Access Keyboard"
+  [KEYS]
+    Sleep       =223
+    Wake        =235
+    Power Off   =222
+    Dos         =148
+    Documents   =159
+    News        =166
+    Internet    =178
+    Xfer        =152
+    Mail        =236
+    Clear       =146
+    Phone       =147
+    Calculator  =161
+    Previous    =144
+    Next        =153
+    VolumeUp    =176
+    VolumeDown  =174
+    Mute        =160
+    Play|Pause  =162
+    Rotate Windows =237
+    Stop        =164
+    Close       =151
+    Eject       =158
+    LWindows    =115
+    RWindows    =116
+    Properties  =117
+  [END KEYS]
+[END MX2500]
+
+[MX2750]
+  brandname = "Memorex"
+  modelname = "MX2750"
+  [KEYS]
+    Power      = 222
+    Sleep      = 223
+    Wake       = 227
+    Internet   = 178
+    Search     = 229
+    Favorites  = 230
+    WebBack    = 234
+    WebForward = 233
+    Mail       = 236
+    VolumeUp   = 176
+    VolumeDown = 174
+    Stop       = 164
+    Mute       = 160
+    Play|Pause = 162
+    Previous   = 144
+    Next       = 153
+  [END KEYS]
+[END MX2750]
+
+#### END Memorex Keyboards ####
+
+
+#### Micro Innovations Keyboards ####
+
+[MI-KB985W]
+  brandname = "Micro Innovations"
+  modelname = "KB985W"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop             = 232
+    Refresh          = 231
+    Search           = 229
+    Favorites        = 230
+    WWW              = 178
+    Mail             = 236
+    MyComputer       = 235
+    Sleep            = 223
+    Wake             = 227
+    Calculator       = 161
+    Mute        = 160
+    Media       = 237
+    Play|Pause  = 162
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    VolumeDown = 174
+    VolumeUp = 176
+  [END KEYS]
+[END MI-KB985W]
+
+[MI-IWKB]
+  brandname = "Micro Innovations"
+  modelname = "Intelligent Wireless Keyboard"
+  [KEYS]
+     AlarmStop       = 227
+     Back             = 234
+     Calculator       = 161
+     Close            = 232
+     Mail             = 236
+     MediaEject       = 237
+     Forward          = 233
+     WWW              = 178
+     My Computer      = 235
+     New              = 230
+     Next        = 153
+     Play|Pause  = 162
+     Previous        = 144
+     Refresh          = 231
+     Search           = 229
+     Sleep            = 223
+     Stop        = 164
+     VolumeDown = 174
+     VolumeUp = 176
+  [END KEYS]
+[END Intelligent wireless keyboard] 
+
+#### END Micro Innovations Keyboards ####
+
+#### Microedge Keyboards ####
+
+[ME-SL] # Contributed by Corrado Primier
+  brandname = "Microedge"
+  modelname = "Slim & Light"
+  [KEYS]
+    Sleep               = 223
+    Back                = 234
+    Forward             = 233
+    Internet            = 178
+    Favorites           = 230
+    Mail                = 236
+    VolumeDown    = 174
+    VolumeUp    = 176
+    Mute           = 160
+    Previous           = 144
+    Play|Pause     = 162
+    Next           = 153
+    Stop           = 164
+  [END KEYS]
+[END ME-SL]
+
+#### END Microedge keyboards ####
+
+#### Microsoft keyboards ####
+
+[MCC] # Contributed by Phill Sparks
+  brandname = "Microsoft"
+  modelname = "Comfort Curve Keyboard 2000"
+  [KEYS]
+  # Keys at the top
+    Back             = 234
+    Forward          = 233
+    Play|Pause       = 162
+    Volume Down      = 174
+    Volume Up        = 176
+    Mute             = 160
+    Web/Home         = 130
+    Search           = 122
+    Mail             = 236
+  # On the Far Right
+    Calculator       = 161
+  [END KEYS]
+[END MCC]
+
+[MDMPKFR] # MDMPKFR By Matthieu Perineau
+  brandname = "Microsoft"
+  modelname = "Digital Media Pro Keyboard (French)"
+  [KEYS]
+    My Documents  = 239
+    Mail     = 236
+    Internet   = 178
+    Mute    = 160
+    VolumeDown   = 174
+    VolumeUp = 176
+    Play|Pause  = 162
+    Stop        = 164
+    Previous        = 144
+    Next        = 153
+    Calculator       = 161
+    Sleep            = 223
+  [END KEYS]
+[END MDMPKFR]
+
+[MIK]
+  brandname = "Microsoft"
+  modelname = "Internet Keyboard"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    Stop             = 232
+    Mail             = 236
+    WWW              = 178
+    My Computer      = 235
+    Calculator       = 161
+    Search           = 229
+    Favorites        = 230
+    Sleep            = 223
+  [END KEYS]
+[END MIK]
+
+[MIKpro] # MIKpro Driver Completed By SIR_Taco <sir_taco@yahoo.ca>
+  brandname = "Microsoft"
+  modelname = "Internet Keyboard Pro"
+  [KEYS]
+  # MultiMedia Section -- Right Side
+    Previous    = 144
+    Play|Pause  = 162
+    Stop        = 164
+    Next        = 153
+    Media       = 237
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Mute        = 160
+  # Internet Section -- Left Side
+    Home        = 178
+    Mail        = 236
+    Favorites   = 230
+    Search      = 229
+    WebStop     = 232
+    WebBack     = 234
+    WebForward  = 233
+    Refresh     = 231
+  # My Computer Section -- Far Right
+    My Computer = 235
+    Calculator  = 161
+    Sleep       = 223
+  [END KEYS]
+[END MIKpro]
+
+[MIKproUSB]
+  brandname = "Microsoft"
+  modelname = "Internet Keyboard Pro USB"
+  [KEYS]
+  # MultiMedia Section -- Right Side
+    Previous    = 164
+    Play|Pause  = 159
+    Stop        = 151
+    Next        = 162
+    Media       = 129
+    VolumeUp    = 158
+    VolumeDown  = 165
+    Mute        = 166
+  # Internet Section -- Left Side
+    Home        = 130
+    Mail        = 236
+    Favorites   = 230
+    Search      = 229
+    WebStop     = 232
+    WebBack     = 234
+    WebForward  = 233
+    Refresh     = 121
+  # My Computer Section -- Far Right
+    My Computer = 111
+    Calculator  = 161
+    Sleep       = 227
+  [END KEYS]
+[END MIKproUSB]
+
+[MIKproSE] 
+  brandname = "Microsoft"
+  modelname = "Internet Keyboard Pro (Swedish)"
+  [KEYS]
+    WebBack     = 234
+    WebForward  = 233
+    WebStop     = 232
+    Refresh     = 121
+    Search      = 229
+    Favorites   = 230
+    Home        = 130
+    Mail        = 236
+    Mute        = 166
+    VolumeDown  = 165
+    VolumeUp    = 158
+    Play|Pause  = 159
+    Stop        = 151
+    Previous    = 164
+    Next        = 162
+    Media       = 129
+    My Computer = 111
+    Calculator  = 161
+    Sleep       = 227
+  [END KEYS]
+[END MIKproSE]
+
+[MMK] # By Darryl Bleau
+  brandname = "Microsoft"
+  modelname = "Multimedia Keyboard"
+  [KEYS]
+  # 'My' Keys
+    My Documents = 101
+    My Pictures = 228
+    My Music    = 188
+  # 'Media' Keys
+    Mute        = 160
+    Play|Pause  = 162
+    Stop        = 164
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Previous    = 144
+    Next        = 153
+    Media       = 237
+  # 'App' Keys
+    Mail        = 236
+    Home        = 178
+    Messenger   = 133
+  # 'Quick' Keys
+    Calculator  = 161
+    Logoff      = 150
+    Sleep       = 223
+  [END KEYS]
+[END MMK]
+
+[MMK-1A]
+  brandname = "Microsoft"
+  modelname = "Multimedia Keyboard 1.0A"
+  [KEYS]
+    Calculator       = 161
+    Next        = 153
+    Mail             = 236
+    Media       = 237
+    Mute        = 160
+    MyDocuments      = 239
+    Play|Pause  = 162
+    Previous        = 144
+    Sleep            = 223
+    Stop        = 164
+    VolumeUp = 176
+    VolumeDown = 174
+    WWW              = 178
+  [END KEYS]
+[END MMK-1A]
+
+[MMNK] # Contributed by Howard Hamlyn
+  brandname = "Microsoft"
+  modelname = "Multimedia Natural Keyboard"
+  [KEYS]
+    My Documents = 101
+    My Pictures = 228 
+    My Music    = 188
+    Mute        = 160
+    Play|Pause  = 162
+    Stop        = 164
+    VolumeUp    = 176 
+    VolumeDown  = 174
+    Previous    = 144
+    Next        = 153
+    Media       = 237 
+    Mail        = 236 
+    Web|Home    = 178  
+    Messenger   = 133 
+    Calculator  = 161 
+    Log off     = 150 
+    Sleep       = 223
+  # The alternate functions of the F1-F12 keys when F-Lock is off.
+    Help        = 187
+    Undo        = 136 
+    Redo        = 135 
+    New         = 119
+    Open        = 120
+    Close       = 121
+    Reply       = 122 
+    Forward     = 194
+    Send        = 195 
+    Spell       = 163 
+    Save        = 215
+    Print       = 216 
+  [END KEYS]
+[END MMNK]
+
+[MMNKP] # By Colin Nickerson
+  brandname = "Microsoft"
+  modelname = "Multimedia Natural Pro"
+  [KEYS]
+    Calculator  = 161
+    Close       = 121
+    Forward     = 194
+    Help        = 187
+    Log Off     = 150
+    Mail        = 236
+    Media       = 237
+    Messenger   = 133
+    Mute        = 160
+    My Documents = 101
+    My Music    = 188
+    My Pictures = 228
+    New         = 119
+    Next        = 153
+    Open        = 120
+    Play|Pause  = 162
+    Previous    = 144
+    Print       = 216
+    Redo        = 135
+    Reply       = 122
+    Save        = 215
+    Send        = 195
+    Sleep       = 223
+    Spell       = 163
+    Stop        = 164
+    Undo        = 136
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Web|Home    = 178
+  END KEYS]
+[END MMNKP]
+
+[MNEK4K] 
+   brandname = "Microsoft" 
+   modelname = "Natural Ergonomic Keyboard 4000" 
+   [KEYS] 
+         Home            = 130 
+         Search          = 122 
+         Mail            = 236 
+         Mute            = 160 
+         VolumeDown      = 174 
+         VolmeUp         = 176 
+         Play|Pause      = 162 
+         Calculator      = 161 
+         Back            = 234 
+         Forward         = 233 
+         Help            = 245 
+         Undo            = 135 
+   [END KEYS] 
+[END MNEK4K] 
+
+[MNKpro]
+  brandname = "Microsoft"
+  modelname = "Natural Keyboard Pro"
+  [KEYS]
+    WebBack     = 234
+    WebForward  = 233
+    WebStop     = 232
+    Refresh     = 231
+    Media       = 237
+    Previous    = 144
+    Stop        = 164
+    Play|Pause  = 162
+    Next        = 153
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Mute        = 160
+    Home        = 178
+    My Computer = 235
+    Mail        = 236
+    Search      = 229
+    Favorites   = 230
+    Calculator  = 161
+    Sleep       = 223
+  [END KEYS]
+[END MNKpro]
+
+[MNKproUSB-A]
+  brandname = "Microsoft"
+  modelname = "Natural Keyboard Pro USB Alternate"
+  [KEYS]
+    Back        = 234
+    Forward     = 233
+    WebStop     = 232
+    Refresh     = 231
+    Media       = 129
+    Previous    = 144
+    Stop        = 164
+    Play|Pause  = 162
+    Next        = 153
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Mute        = 160
+    WWW         = 130
+    MyComputer  = 198
+    Mail        = 236
+    Search      = 122
+    Favorites   = 230
+    Calculator  = 161
+    Sleep       = 227
+  [END KEYS]
+[END MNKproUSB-A]
+
+[MNKproUSB]
+  brandname = "Microsoft"
+  modelname = "Natural Keyboard Pro USB"
+  [KEYS]
+    WebBack     = 234
+    WebForward  = 233
+    WebStop     = 232
+    Refresh     = 121
+    Media       = 129
+    Previous    = 164
+    Stop        = 151
+    Play        = 159
+    Next        = 162
+    VolumeUp    = 158
+    VolumeDown  = 165
+    Mute        = 166
+    Web Home    = 130
+    My Computer = 111
+    Mail        = 236
+    Search      = 229
+    Favorites   = 230
+    Calculator  = 161
+    Sleep       = 227
+  [END KEYS]
+[END MNKproUSB]
+
+[MNKproUSBg] # Arthur Lorenz
+  brandname = "Microsoft"
+  modelname = "Natural Keyboard Pro USB (German)"
+  [KEYS]
+    Zurueck     = 234
+    Vorwaerts   = 233
+    Abbrechen   = 232
+    Aktual.     = 231
+    Suchen      = 122
+    Favoriten   = 230
+    Startseite  = 130
+    E-Mail      = 236
+    Ton aus     = 160
+    LautstaerkeMinus   = 174
+    LautstaerkePlus    = 176
+    Wdg|Pause   = 162
+    Stopp       = 164
+    Vorheriger  = 144
+    Naechster   = 153
+    Medien      = 129
+    Arbeitsplatz = 198
+    Rechner     = 161
+    Standby     = 223
+  [END KEYS]
+[END MNKproUSBg]
+
+[MOK]
+  brandname = "Microsoft"
+  modelname = "Office Keyboard"
+  [KEYS]
+    WebBack     = 234
+    WebForward  = 233
+    Cut         = 188
+    Copy        = 248
+    Paste       = 109
+    Application Left = 212
+    Application Right = 101
+    Word        = 196
+    Excel       = 197
+    Internet    = 130
+    Mail        = 236
+    Calendar    = 114
+    Home        = 215
+    Calculator  = 161
+    Mute        = 166
+    VolumeUp    = 165
+    VolumeDown  = 158
+    Logoff      = 202
+    Sleep       = 223
+    Help        = 226
+    Office Home = 237
+    Taskpane    = 213
+    New         = 216
+    Open        = 217
+    Close       = 218
+    Reply       = 241
+    Forward     = 242
+    Send        = 243
+    Spell       = 214
+    Save        = 228
+    Print       = 231
+    Undo        = 103
+    Redo        = 240
+  [END KEYS]
+[END MOK]
+
+[MWEDKB] # Microsoft Wired Keyboard
+  brandname = "Microsoft"
+  modelname = "Wired Keyboard"
+  [KEYS]
+    Mute = 160
+    Calculator = 161
+    Play|Pause = 162
+    VolumeDown = 174
+    VolumeUp   = 176 = raise the volume
+    Home       = 178 = home
+    Bookmarks  = 230 = bookmarks
+    My Computer = 235
+    Mail       = 236
+    Media      = 237
+  [END KEYS]
+[END MWEDKB]
+
+[MWDEK]  # Filled in by benedict@hawaii.rr.com Tom Benedict
+  brandname = "Microsoft"
+  modelname = "Wireless Desktop Excecutive Keyboard"
+  [KEYS]
+  # Multimedia
+    Play|Pause  = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+    Mute        = 160
+    Media       = 237
+    VolumeUp    = 176
+    VolumeDown  = 174
+  # Web
+    Web|Home    = 178
+    WebBack     = 234
+    WebForward  = 233
+    Show Favorites = 248
+    My Favorites 1 = 243
+    My Favorites 2 = 244
+    My Favorites 3 = 245
+    My Favorites 4 = 246
+    My Favorites 5 = 247
+  # Applications
+    My Documents = 101
+    My Pictures = 228
+    My Music    = 188
+    Mail        = 236
+    Messenger   = 133
+    Calculator  = 161
+    Logoff      = 150
+    Sleep       = 223
+  # F-Key Function
+    Help        = 187
+    Undo        = 136
+    Redo        = 135
+    New         = 119
+    Open        = 120
+    Close       = 121
+    Reply       = 122
+    Fwd         = 194
+    Send        = 195
+    Spell       = 163
+    Save        = 215
+    Print       = 216
+  [END KEYS]
+[END MWDEK]
+
+#[MWODMK]
+#   brandname = "Microsoft"
+#   modelname = "Wireless Optical Desktop® 1.00"
+#   [KEYS]
+#        VolumeDown             = 114
+#        Media                  = 171
+#        Mute                   = 113
+#	Next                    = 163
+#	Play|Pause              = 164
+#	Previous                = 165
+#	VolumeUp                = 115    
+#	Stop                    = 166
+#	Calculator              = 140
+#	Close                   = 244
+#	Documents               = 252
+#	Help                    = 138
+#	LogOff                  = 247
+#	Mail                    = 155
+#	MailReply               = 248
+#	MailSend                = 249
+#	Messenger               = 251
+#	Music                   = 254
+#	New                     = 246
+#	Open                    = 243
+#	Pictures                = 253
+#	Print                   = 242
+#	Redo                    = 240
+#	Save                    = 245
+#	Sleep                   = 142
+#	SpellCheck              = 241
+#	Undo                    = 131
+#	WWW                     = 172
+#    [END KEYS]
+#[END MWODMK]
+
+[MWMK1]
+  brandname = "Microsoft"
+  modelname = "Wireless MultiMedia Keyboard 1.0A (User Defined)"
+  [KEYS]
+    Media            = 237
+    Play|Pause       = 162
+    Stop             = 164
+    FastForward      = 153
+    Next             = 194
+    Previous         = 144
+    VolumeDown       = 174
+    VolumeUp         = 129
+    Mute             = 160
+    Documents        = 101
+    Pictures         = 228
+    Music            = 129
+    Sleep            = 223
+    LogOff           = 150
+    Calculator       = 161
+    WWW              = 178
+    Messenger        = 133
+    MailSend         = 195
+    MailReply        = 129
+    SpellCheck       = 163
+    New              = 119
+    Open             = 120
+    Close            = 121
+    Save             = 163
+    Print            = 216
+    Undo             = 136
+    Redo             = 129
+    Help             = 187
+  [END KEYS]
+[END MWMK1]
+
+[MS-WMMD]
+  brandname = "Microsoft"
+  modelname = "Wirless MultiMedia (Deutsch)"
+  [KEYS]
+    Mail             = 236
+    Home Ordner      = 239
+    Lauter           = 176
+    Leiser           = 176
+    Medien|MPlayer   = 237
+    Mute             = 160
+    Play|Pause       = 162
+    Rechner          = 161
+    Runterfahren     = 223
+    Starseite        = 178
+    Stop             = 164
+  [END KEYS]
+[END MS-WMMD]
+
+[MS-WNMK]
+  brandname = "Microsoft"
+  modelname = "Wireless Natural Multimedia Keyboard"
+  [KEYS]
+    MyDocuments      = 239
+    MyPictures       = 183
+    MyMusic          = 184
+    Mute             = 160
+    Play|Pause       = 162
+    Stop             = 164
+    VolumeUp         = 176
+    VolumeDown       = 174
+    Previous         = 144
+    Next             = 153
+    Media            = 237
+    Mail             = 236
+    WWW              = 178
+    InstantMessage   = 205
+    Calculator       = 161
+    LogOff           = 93
+    Sleep            = 223
+  # The alternate functions of the F1-F12 keys when F-Lock is off.
+    Help             = 245
+    Undo             = 135
+    Redo             = 133
+    New              = 131
+    Open             = 191
+    Close            = 175
+    Reply            = 247
+    Forward          = 132
+    Send             = 170
+    Spell            = 219
+    Save             = 249
+    Print            = 185
+  [END KEYS]
+[END MS-WNMK]
+
+#### END Microsoft Keyboards ####
+
+
+#### Micro Innovations Keyboards ####
+
+[MI-KB6501]
+  brandname = "Micro Innovations"
+  modelname = "KB6501"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop          = 232
+    Refresh          = 231
+    Search           = 229
+    Favorites        = 230
+    WWW              = 178
+    Mail             = 236
+    MyComputer       = 235
+    PowerOff         = 222
+    Sleep            = 223
+    Wake             = 227
+    Calculator       = 161
+    Mute             = 160
+    Media            = 237
+    Play|Pause       = 162
+    Stop             = 164
+    Previous         = 144
+    Next             = 153
+    VolumeDown       = 174
+    VolumeUp         = 176
+  [END KEYS]
+[END MI-KB6501]
+
+#### END Micro Innovations Keyboards ####
+
+
+#### Mijuki Keyboards ####
+
+[MCK-2000]
+  brandname = "Mijuki"
+  modelname = "MCK-2000 Multimedia Keyboard" 
+  [KEYS]
+    Mudo             = 160
+    VolMenos         = 174
+    VolMas           = 176
+    Anterior         = 144
+    Reproducir       = 162
+    Siguiente        = 153
+    Parar            = 164
+    Calculadora      = 161
+    Apagar           = 222
+    Suspender        = 223
+    Despertar        = 227
+  [END KEYS]
+[END MCK-2000]
+
+#### END Mijuki Keyboards ####
+
+
+#### Minowa Keyboards ####
+
+[MINOWCK] #Tobias Schlottke
+  brandname = "Minowa"
+  modelname = "Cordless Keyboard"
+  [KEYS]
+    Calculator  = 161
+    Home        = 178
+    Mail        = 236
+    Media       = 237
+    Mute        = 160
+    My Computer = 235
+    Next        = 153
+    Play|Pause  = 162
+    Power       = 222
+    Previous    = 144
+    Stand By    = 223
+    Stop        = 164
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Wake Up     = 227
+  [END KEYS]
+[END MINOWCK]
+
+#### END Minowa Keyboards ####
+
+
+#### Mitsubishi keyboards ####
+
+[MITSUDT]
+  brandname = "Mitsubishi"
+  modelname = "Diamond Touch"
+  [KEYS]
+    Back        = 151
+    Bookmarks   = 165
+    Email       = 159
+    Forward     = 148
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    S1          = 163
+    Search      = 149
+    Stop        = 152
+    VolumeDown  = 176
+    VolumeUp    = 174
+    Previous    = 144
+    WWW         = 178
+  [END KEYS]
+[END MITSUDT]
+
+#### END Mitsubishi Keyboards ####
+
+
+#### Mitsumi Keyboards ####
+
+[MITSUAPXU] # Contributed by Carl Hudkins
+  brandname = "Mitsumi"
+  modelname = "Apple Extended USB Keyboard"
+  [KEYS]
+    VolumeDown = 174
+    VolumeUp   = 176
+    Mute       = 160
+    Eject      = 204
+    F13        = 223
+    F14        = 224
+    F15        = 225
+  [END KEYS]
+[END MITSUAPXU]
+
+
+[MITSUHK] # Contributed by James Errico
+  brandname = "Mistumi"
+  modelname = "Hot Key"
+  [KEYS]
+    WebBack     = 234
+    WebForward  = 233
+    WebStop     = 232
+    WebRefresh  = 231
+    Search      = 229
+    Home        = 178
+    Mail        = 236
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Play|Pause  = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+    Sleep       = 223
+  [END KEYS]
+[END MITSUHK]
+
+#### END Mitsumi Keyboards ####
+
+
+#### MS-Tech keyboards ####
+
+## Cotributed by Stephan Gans
+[LT-210]
+  brandname     = "MS-TECH"
+  modelname     = "LT-210"
+  [KEYS]
+    WebBack       = 234
+    WebForward    = 233
+    WebRefresh    = 231
+    WebStop       = 232
+    Search        = 229
+    WebHome       = 178
+    Favorites     = 230
+    Mail          = 236
+    Media         = 237
+    Mute          = 160
+    VolumeDown    = 174
+    VolumeUp      = 176
+    Play|Pause    = 162
+    Stop          = 164
+    Previous      = 144
+    Next          = 153
+    Sleep         = 235
+    Power         = 223
+    Wake          = 227
+  [END KEYS]
+[END LT-210]
+
+[LT300]
+  brandname = "MS-TECH"
+  modelname = "LT-300 Design Multimedia Keyboard"
+  [KEYS]
+    Previous	= 144
+    Stop        = 162
+    Next        = 153
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Home        = 178
+    Mail        = 236
+    WebBack     = 234
+    WebForward  = 233
+    Sleep       = 223
+  [END KEYS]
+[END LT300]
+
+#### END MS-Tech Keyboards ####
+
+
+#### NEC Keyboards ####
+
+[NEC-vM300]
+  brandname = "NEC-Laptop"
+  modelname = "Nec Versa M300"
+  [KEYS]
+    Internet    = 178
+    Mail        = 236
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Stop        = 164
+  [END KEYS]
+[END NEC-vM300]
+
+#### END NEC Keyboards ####
+
+
+#### NEOLEC Keyboards ####
+
+[NEO-WDST] # Contributed by Mathias Monse
+  brandname = "NEOLEC"
+  modelname = "Wireless Desktop ST"
+  [KEYS]
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Calculator  = 161
+    Mail        = 236
+    Home        = 178
+    Play|Pause  = 162
+    Media       = 237
+    Stop        = 164
+    Next        = 153
+    Previous    = 144
+    My Desktop  = 235
+    Favorites   = 230
+    Sleep       = 223
+    WebBack     = 234
+    WebForward  = 233
+    WebRefresh  = 231
+    WebStop     = 232
+    WebSearch   = 229
+  [END KEYS]
+[END NEO-WDST]
+
+#### END NEOLEC Keyboards ####
+
+
+#### Nexxtech Keyboards ####
+
+[NT-2619690]
+  brandname = "Nexxtech"
+  modelname = "261-9690"
+  [KEYS]
+    Favorites   = 230
+    Mail        = 236
+    WWW         = 130
+    Mute        = 160
+    Play|Pause  = 162
+    Refresh     = 231
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Zoom        = 122
+  [END KEYS]
+[END NT-2619690]
+
+#### END Nexxtech Keyboards ####
+
+
+#### Oretec Keyboards ####
+
+[MCK-800]
+  brandname = "Oretec"
+  modelname = "MCK-800 MM/Internet keyboard"
+  [KEYS]
+    Internet    = 161
+    Mute        = 158
+    VolumeDown  = 232
+    VolumeUp    = 176
+    ScrollDown  = 152
+    ScrollUp    = 144
+    Previous    = 151
+    Play        = 146
+    Next        = 174
+    Stop        = 163
+    Zoom Out    = 153
+    Zoom In     = 178
+    Calculator  = 164
+    Xfer        = 165
+    Menu        = 162
+    Mail        = 166
+    Power       = 222
+    Suspend     = 223
+    Wake        = 227
+  [END KEYS]
+[END MCK-800]
+
+#### END Oretec Keyboards ####
+
+#### Plantronics Keyboards ####
+
+[PLA-DSP400]
+  brandname = "Plantronics"
+  modelname = "DSP 400 headset"
+  [KEYS]
+    VolumeDown = 174
+    VolumeUp   = 176
+  [END KEYS]
+[END PLA-DSP400]
+
+#### END Plantronics Keyboards ####
+
+#### Polaroid Keyboards ####
+[Polaroid 8190A]
+     brandname = Polaroid
+     modelname = 8190A
+     [KEYS]
+          VolumeDown =174
+          AudioNext  =153
+          Play|Pause =162
+          AudioPrev  =144
+          VolumeUp   =176
+          AudioStop  =164
+          Home       =178
+          Magnify    =229
+          Mail       =236
+          Mute       =160
+          MyDocuments=230
+          PowerOff   =223
+          Sleep      =222
+          Undo       =231
+          WWWNext    =233
+          WWWPrev    =234
+          X          =232
+     [END KEYS]
+[END Polaroid 8190A]
+
+#### END Polaroid Keyboards ####
+
+
+#### Prismabook Keyboards ####
+
+[PBN750]
+  brandname = "Prismabook"
+  modelname = "N750 / Mitac 8080 Laptop Keyboard"
+  [KEYS]
+    VolumeDown = 174
+    VolumeUp   = 176
+  [END KEYS]
+[END PBN750]
+
+#### END Prismabook Keyboards ####
+
+
+#### Propeller Keyboards ####
+
+[KTEZ-1000]
+  brandname = "Propeller"
+  modelname = "Voyager (KTEZ-1000)"
+  [KEYS]
+    Calculator  = 165
+    Xfer        = 152
+    Dos         = 232
+    My Documents = 161
+    Internet    = 178
+    Menu        = 166 
+    Game        = 163
+    Play|Pause  = 162
+    Rewind      = 146
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    Close       = 151
+    Record      = 158
+    VolumeDown  = 174
+    Mute        = 160
+    VolumeUp    = 176
+    Sleep       = 250 
+  [END KEYS]
+[END KTEZ-1000]
+
+#### END Propeller Keyboards ####
+
+
+#### QTronix keyboards ####
+
+[SCORPIUSKI]
+  brandname = "QTronix"
+  modelname = "Advance Scorpius KI"
+  [KEYS]
+    Previous    = 144
+    Play        = 162
+    Stop        = 164
+    Next        = 153
+    Media       = 237
+    VolumeDown  = 174
+    Mute        = 160
+    VolumeUp    = 176
+    Wake        = 227
+    Sleep       = 223
+    Power       = 222
+    Calculator  = 161
+    My Computer = 235
+    Mail        = 236
+    Favorites   = 230
+    Home        = 178
+    WebBack     = 234
+    WebForward  = 233
+    WebStop     = 232
+    WebReload   = 231
+    Search      = 229
+  [END KEYS]
+[END SCORPIUSKI]
+
+[QTSC98N+]
+  brandname = "QTronix"
+  modelname = "Scorpius 98N+ & 990P"
+  [KEYS]
+    Previous    = 161
+    Play        = 162
+    Stop        = 164
+    Next        = 163
+    Record      = 176
+    VolumeDown  = 174
+    Mute        = 166
+    VolumeUp    = 160
+    Wake        = 147
+    Sleep       = 152
+    Power       = 177
+    Calculator  = 232
+    WebReload   = 159
+    Home        = 165
+    WebBack     = 158
+    Search      = 151
+    WebStop     = 178
+    WebForward  = 146
+    ScrollUp    = 153
+    ScrollDown  = 144
+  [END KEYS]
+[END QTSC98N+]
+
+[QTSC98NHP] # By Andreas Steinel
+  brandname = "QTronix"
+  modelname = "Scorpius 98NH Plus"
+  [KEYS]
+    Arrow       = 121
+    Calculator  = 161
+    Coffe-Key   = 146
+    Filemanager = 223
+    History     = 232
+    WebBack     = 234
+    WebForward  = 233
+    Mute        = 166
+    Play|Pause  = 159
+    Search      = 229
+    VolumeDown  = 158
+    VolumeUp    = 165
+    Web         = 178
+  [END KEYS]
+[END QTSC98NHP]
+
+[QTSCSK2]
+  brandname = "QTronix"
+  modelname = "Scorpius SKII (2 ACPI keys)"
+  [KEYS]
+    Sleep       = 223
+    Standby     = 222
+  [END KEYS]
+[END QTSCSK2]
+
+[QTSCSK2P]
+  brandname = "QTronix"
+  modelname = "Scorpius SKIIP (3 ACPI keys)"
+  [KEYS]
+    Resume      = 227
+    Sleep       = 223
+    Standby     = 222
+  [END KEYS]
+[END QTSCSK2P]
+
+#### END Qtronix Keyboards ####
+
+
+#### RealDigital Keyboards ####
+
+# Contributed by Guillaume Bailey gvb013000<->utdallas.edu
+# FCC ID = HQX-AKMC35 Looks identical to Creative's Desktop Wireless 8000
+# except for scrollwheel on the Creative model Word/Excel buttons don't 
+# create scancodes in showkey -s linux problem?
+[RD-AKMx-Cx]
+brandname = "RealDigital"
+modelname = "AKM96/C35\AKM93/C35 (Incomplete)"
+[KEYS]
+#   Word       = ?
+#   Excel      = ?
+    Search     = 229
+    Favorites  = 230
+    Previous   = 234
+    Forward    = 233
+    Stop       = 232
+    Refresh    = 231
+    VolumeDown = 174
+    VolumeUp   = 176
+    Play|Pause = 162
+    Stop       = 164
+    Next       = 153
+    Previous   = 144
+    Mute       = 160
+    Mail       = 236
+    Home       = 178
+    Calculator = 161
+    PowerOff   = 222
+    Sleep      = 223
+  [END KEYS]
+[END RD-AKMx-Cx]
+
+#### END RealDigital Keyboards ####
+
+
+#### SafeWay Keyboards ####
+
+[SW20P] # Contributed by Rodrigo Araujo
+  brandname = "SafeWay"
+  modelname = "SW-20-P"
+  [KEYS]
+    Back        = 234
+    Calculator  = 161
+    Favorites   = 230
+    Forward     = 233
+    Mail        = 236
+    Media       = 237
+    MediaStop   = 164
+    Mute        = 160
+    My Computer = 235
+    Next        = 153
+    Play|Pause  = 162
+    Power       = 222
+    Previous    = 144
+    Refresh     = 231
+    Search      = 229
+    Sleep       = 223
+    Stop        = 232
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Wake        = 227
+    Web|Home    = 178
+  [END KEYS]
+[END SW20P]
+
+#### END SafeWay Keyboards ####
+
+#### Samsung Keyboards ####
+
+[SS4500]
+  brandname = "Samsung"
+  modelname = "Samsung SDM 4500P"
+  [KEYS]
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Eject       = 152
+    Play|Pause  = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+    Internet    = 178
+    Mail        = 236
+    Sleep       = 223
+    Help        = 166
+    Explorer    = 217
+    Close       = 137
+    Bookmark    = 138
+    UserDefined1 = 130
+    UserDefined2 = 131
+    UserDefined3 = 132
+    UserDefined4 = 133
+    UserDefined5 = 134
+  [END KEYS]
+[END SS4500]
+
+[SSX50]
+  # set the keycodes with the following command: 
+  # setkeycodes 74 148 75 150 78 155 e074 183 e075 184
+  brandname = "Samsung"
+  modelname = "Samsung X50"
+  RAWCOMMAND[SETKEYCODES] = "74 148 75 150 78 155 e074 183 e075 184"
+  [KEYS]
+    Internet     = 178
+    # use Mail   = 128 if you dont use setkeycodes for this key
+    Mail         = 236
+    Mute         = 160
+    VolumeDown   = 174
+    VolumeUp     = 176
+    UserDefined1 = 159
+    UserDefined2 = 182 # "etiquette mode on"
+    UserDefined3 = 183 # "etiquette mode off"
+  [END KEYS]
+[END SX50]
+
+#### END Samsung Keyboards ####
+
+
+#### Sharp Keyboards ####
+
+[SHARP-MM20]
+  brandname = "Sharp"
+  modelname = "MM20 Laptop Keyboard"
+  [KEYS]
+    VolumeDown = 174
+    VolumeUp   = 176
+    Sleep      = 223
+  [END KEYS]
+[END SHARP-MM20]
+
+#### END Sharp Keyboards ####
+#### Sharp Zaurus Remotes ####
+
+[CE-RH2]
+  brandname = "Sharp"
+  modelname = "Sharp CE-RH2"
+  [KEYS]
+    Play|Pause = 72
+    VolumeUp   = 126
+    VolumeDown = 127
+    Mute       = 128
+    Stop       = 76
+    Previous   = 124
+    Next       = 116
+  [END KEYS]
+[END CE-RH2]
+
+#### END Sharp Zaurus Remotes ####
+
+
+#### Sigma Keyboars ####
+
+[SIG-KMS400]
+  brandname = "Sigma"
+  modelname = "KMS400"
+  [KEYS]
+    Previous   = 144
+    Play|Pause = 162
+    Stop       = 164
+    Next       = 153
+    VolumeDown = 174
+    VolumeUp   = 176
+    Mute       = 160
+    Mail       = 236
+    Back       = 234
+    Forward    = 233
+    WebStop    = 232
+    Favorites  = 230
+    Search     = 229
+    Refresh    = 231
+    WWW        = 178
+    Media      = 237
+  [END SIG-KMS400]
+[END SIGMA]
+
+#### END Sigma Keyboards ####
+
+
+#### Silitek Keyboards ####
+
+[SK720H]
+  brandname = "Silitek"
+  modelname = "SK-720H"
+  [KEYS]
+    Eject       =  152 
+    Internet    =  178
+    Previous    =  144
+    Play        =  162
+    Stop        =  164
+    Next        =  153
+    VolumeDown  =  174
+    VolumeUp    =  176
+    Mute        =  160
+    Help        =  166 
+    Dos         =  161
+    Cut         =  163
+    Wake        =  227
+    Power       =  222
+    Sleep       =  223
+  [END KEYS]
+[END SK720H]
+
+[SK1300]
+  brandname = "Silitek"
+  modelname = "SK-1300 (and clones)"
+  [KEYS]
+    Internet    = 160
+    WebBack     = 166
+    WebForward  = 158
+    WebStop     = 178
+    Sleep       = 165
+    Previous    = 144
+    Next        = 153
+    Play        = 162
+    Stop        = 164
+    Eject       = 146
+    VolumeUp    = 176
+    VolumeDown  = 174
+  [END KEYS]
+[END SK1300]
+
+[SK2500]
+  brandname = "Silitek"
+  modelname = "SK-2500 (and clones)"
+  [KEYS]
+    Power       = 165
+    Screensaver = 250
+    Internet    = 178
+    Calculator  = 161
+    Xfer        = 163
+    Close       = 151
+    Previous    = 144
+    Play        = 162
+    Stop        = 164
+    Next        = 153
+    Record      = 158
+    Rewind      = 146
+    Menu        = 166
+    Eject       = 152
+    Mute        = 160
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Next        = 153
+    Eject       = 152
+  [END KEYS]
+[END SK2500]
+
+[SK6200]
+  brandname = "Silitek"
+  modelname = "SK-6200 (and clones)"
+  [KEYS]
+    Stop        = 164
+    Play        = 162
+    Previous    = 163
+    Next        = 161
+    VolumeUp    = 150
+    VolumeDown  = 148
+    Mute        = 160
+    Power       = 222
+    Sleep       = 223
+    Internet    = 158
+    Favorites   = 146
+    Mail        = 178
+    WebBack     = 151
+    WebForward  = 153
+  [END KEYS]
+[END SK6200]
+
+[SK7100]
+  brandname = "Silitek"
+  modelname = "SK-7100"
+  [KEYS]
+    Close       = 151
+    CD          = 165
+    Video       = 152
+    Internet    = 178
+    Up          = 158
+    Previous    = 144
+    Pause       = 146
+    Play        = 162
+    Stop        = 164
+    Next        = 153
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Display     = 166
+  [END KEYS]
+[END SK7100]
+
+#### END Silitek Keyboards ####
+
+
+#### Speedlink Keyboards ####
+
+[SL-6446]
+   brandname = "SpeedLink"
+   modelname = "SL-6446TBK Crystal"
+   [KEYS]
+     Back             = 234
+     Forward          = 233
+     Mail             = 236
+     AudioStop        = 164
+     AudioMute        = 160
+     AudioNext        = 153
+     AudioPlay|AudioPause = 162
+     AudioPrev        = 144
+     Sleep            = 223
+     AudioLowerVolume = 174
+     AudioRaiseVolume = 176
+     WWW              = 178
+   [END KEYS]
+[END SL-6446]
+
+[SL-6451]
+  brandname = "SpeedLink"
+  modelname = "SL-6451PWT"
+  [KEYS]
+    Back        = 234
+    Favorites   = 230
+    Forward     = 233
+    Mail        = 236
+    Media       = 129
+    WebStop     = 164
+    Mute        = 160
+    My Computer = 111
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Refresh     = 231
+    Search      = 122
+    Sleep       = 223
+    Stop        = 232
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Wake        = 227
+    WWW         = 130
+  [END KEYS]
+[END SL-6451PWT]
+
+### END Speedlink Keyboards ####
+
+
+#### Sun Microsystems Keyboards ####
+
+[SUN6]
+  brandname = "Sun Microsystems"
+  modelname = "Sun Type 6 USB"
+  [KEYS]
+     Help        = 245
+     Stop        = 232
+     Retry       = 133
+     Properties  = 134
+     Undo        = 135
+     Foreground  = 140
+     Copy        = 248
+     Open        = 108
+     Paste       = 109
+     Search      = 122
+     Cute        = 188
+     Mute        = 160
+     VolumeDown  = 174
+     VolumeUp    = 176
+     Sleep       = 222
+     SuperL      = 115 #( SUN special keys Left )
+     SuperR      = 116 #( SUN special keys Right)
+  [END KEYS]
+[END SUN6]
+
+#### END Sun Microsystems Keyboards ####
+
+
+#### SVEN Keyboards ####
+
+[SVEN2500]
+  brandname = "SVEN"
+  modelname = "ErGonomic 2500"
+  [KEYS]
+    WebBack     = 232
+    WebForward  = 146
+    WebStop     = 163
+    WebReload   = 169
+    Search      = 174
+    Favorites   = 176
+    Home        = 158
+    Previous    = 153
+    Stop        = 154
+    Play        = 144
+    Next        = 226
+    Mute        = 166
+    VolumeDown  = 165
+    VolumeUp    = 151
+    Zoom Out    = 152
+    Zoom In     = 161
+    ScrollDown  = 178
+    ScrollUp    = 177
+    Mail        = 160
+    My Computer = 162
+    Calculator  = 168
+    Screensaver = 164
+    Power       = 222
+    Sleep       = 223
+    Wake        = 227
+  [END KEYS]
+[END SVEN2500]
+
+[SVEN650]
+  brandname = "SVEN"
+  modelname = "Internet 650"
+  [KEYS]
+    Previous    = 144
+    Stop        = 164
+    Play|Pause  = 162
+    Next        = 153
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Calculator  = 161
+    PowerOff    = 222
+    Sleep       = 223
+    Wake        = 227
+  [END KEYS]
+[END SVEN650]
+
+#### END SVEN Keyboards ####
+
+
+#### Sweex Keyboards ####
+
+[SWX-TM]
+  brandname = "Sweex"
+  modelname = "Turbo-Media Keyboard"
+  [KEYS]
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Back        = 234
+    Calculator  = 161
+    Favorites   = 230
+    Forward     = 233
+    WWW         = 178
+    Mail        = 236
+    Media       = 237
+    Mute        = 160
+    MyComputer  = 235
+    Next        = 153
+    Play|Pause  = 162
+    PowerOff    = 222
+    Previous    = 144
+    Refresh     = 231
+    Search      = 229
+    Sleep       = 223
+    Stop        = 232
+    Wake        = 227
+  [END KEYS]
+[END SWX-TM]
+
+[SWX-MM]
+   brandname = "Sweex"
+   modelname = "Multimedia Keyboard SW20"
+   [KEYS]
+     Back             = 234
+     Forward          = 233
+     WebStop          = 232
+     Refresh          = 231
+     Search           = 229
+     Favorites        = 230
+     WWW              = 178
+     Mail             = 236
+     Media            = 237
+     Mute             = 160
+     Previous         = 144
+     Play|Pause       = 162
+     Stop             = 164
+     Next             = 153
+     VolumeDown       = 174
+     VolumeUp         = 176
+     MyComputer       = 235
+     Calculator       = 161
+     Power            = 222
+     Sleep            = 223
+     Wake             = 227
+   [END KEYS]
+[END SWX-MM]
+
+### END Sweex Keyboards ####
+
+
+#### Symplon Keyboards ####
+
+[SPPB]
+  brandname = "Symplon"
+  modelname = "PaceBook (Tablet PC)"
+  [KEYS]
+    RotationPB  = 97
+    MenuPB      = 98
+    UserPB      = 110
+    RotationKB  = 165
+    MenuKB      = 166
+    Splitscreen = 147
+    User1KB     = 235
+    User2KB     = 161
+    Sleep       = 223
+    New         = 151
+    Mail        = 236
+    Internet    = 178
+    Support     = 148
+  [END KEYS]
+[END SPPB]
+
+#### END Symplon Keyboards ####
+
+#### TechSolo Keyboards ####
+
+[TKM-220]
+  brandname = "TechSolo"
+  modelname = "TKM-220"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    Stop             = 232
+    Refresh          = 231
+    Search           = 229
+    Favorites        = 230
+    WWW              = 178
+    Mail             = 236
+    AudioMute        = 160
+    AudioLowerVolume = 174
+    AudioRaiseVolume = 176
+    AudioPlay|Pause  = 162
+    AudioStop        = 164
+    AudioPrev        = 144
+    AudioNext        = 153
+    AudioMedia       = 237
+    MyComputer       = 235
+    Sleep            = 223
+  [END KEYS]
+[END TKM-220]
+
+#### End TechSolo Keyboards ####
+
+#### Tevion Keyboards ####
+
+[TV-CK]
+  brandname = "Tevion"
+  modelname = "Cordless Keyboard"
+  [KEYS]
+    Mute        = 160
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Calculator  = 161
+    Mail        = 236
+    WWW         = 178
+    Play|Pause  = 162
+    Media       = 237
+    Stop        = 164
+    Next        = 153
+    Previous    = 144
+    MyComputer  = 235
+    Sleep       = 225
+    Back        = 233
+    Forward     = 234
+    Refresh     = 231
+    Stop        = 222
+    Search      = 230
+ [END KEYS]
+[END TV-CK]
+
+[TV-MD40273]
+  brandname = "Tevion"
+  modelname = "MD40273"
+  [KEYS]
+    Calculator  = 161
+    CdPlayer    = 237
+    WWW         = 178
+    Mail        = 236
+    MyComputer  = 235
+    NewFolder   = 230
+    Sleep       = 223
+    Previous    = 144
+    Next        = 153
+    Mute        = 160
+    Play|Pause  = 162
+    Stop        = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Back        = 234
+    Forward     = 233
+    Reload      = 231
+    Search      = 229
+    WebStop     = 232
+  [END KEYS]
+[END TV-MD40273]
+
+#### Tevion Keyboards ####
+
+
+#### 'The Best Choice' Keyboards ####
+
+[TBC-MKHK820]
+  brandname = "The Best Choice"
+  modelname = "Multimedia Keyboard HK-820"
+  [KEYS]
+    Email       = 121
+    Search      = 229
+    Explorer    = 230
+    Home        = 130
+    Play|Pause  = 236
+    Stop        = 159
+    VolumeDown  = 151
+    VolumeUp    = 165
+    Mute        = 158
+    TV          = 166
+    Power       = 222
+    Sleep       = 223
+    WakeUp      = 227
+  [END KEYS]
+[END TBCM-KHK820]
+
+#### END 'The Best Choice' Keyboards ####
+
+
+#### Toshiba Keyboards ####
+
+[TOSHIBA2430]
+  brandname = "Toshiba"
+  modelname = "2430 notebook keyboard"
+  [KEYS]
+    Mute        = 160
+    Lock        = 238
+    Sleep       = 151
+    Suspend     = 152
+    BrightnessLower = 239
+    BrightnessHigher = 217
+    RadioNetwork = 150
+    RadioNetworkRelease = 248
+    TouchpadOn  = 158
+    TouchpadOff = 159
+    Internet    = 178
+    Toshiba     = 236
+    ModeCD      = 237
+    ModeMediaPlayer = 147
+    ModeOff     = 180
+    Previous    = 144
+    Next        = 153
+    Play|Pause  = 162
+    Stop        = 164
+  [END KEYS]
+[END TOSHIBA2430]
+
+#### END Thosiba Keyboards ####
+
+
+### Trust Keyboards ####
+
+[T2KWOM] # Vytvoril Soban Petr
+  brandname = "Trust"
+  modelname = "280KS/270KD Keyboard Wireless Optical Mouse"
+  [KEYS]
+    Back        = 234
+    Forward     = 233
+    Stop        = 232
+    Refresh     = 231
+    Search      = 229
+    Favorites   = 230
+    WebHome     = 178
+    Mail        = 236
+    MMForward   = 153
+    MMPlay      = 162
+    MMRewind    = 144
+    MMStop      = 164
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Mute        = 160
+    Media       = 237
+    MyComputer  = 235
+    Calculator  = 161
+    Sleep       = 223
+  [END KEYS]
+[END T2KWOM]
+
+[T3ESWD] # Contributed by Martin Rademacher
+  brandname = "Trust"
+  modelname = "370B Easy Scroll Wireless Deskset"
+  [KEYS]
+    WebBack     = 234
+    Browser     = 229
+    WebForward  = 233
+    Home        = 178
+    Next        = 153
+    Play|Pause  = 162
+    Previous    = 144
+    Stop        = 164
+    Mail        = 236
+    NewFolder   = 230
+    OBack       = 234
+    OForward    = 233
+    Power       = 222
+    Reload      = 231
+    ScrollDown  = 139
+    ScrollUp    = 139
+    Sleep       = 223
+    Stop        = 232
+    VolumeDown  = 174
+    Mute        = 160
+    VolumeUp    = 176
+  [END KEYS]
+[END T3ESWD]
+
+[TRUST-KB-1800S]
+ brandname = "Trust"
+ modelname = "KB-1800S Slimline Keyboard Aluminium"
+ [KEYS]
+    Play|Pause       = 162
+    Mute             = 160
+    Previous         = 144
+    Next             = 153
+    WWW              = 178
+    Favorites        = 230
+    Mail             = 236
+    Sleep            = 223
+ [ENDKEYS]
+[END TRUST-KB-1800S]
+
+[TDAK]
+  brandname = "Trust"
+  modelname = "Direct Access Keyboard"
+  [KEYS]
+    Calc        = 161
+    Close       = 151
+    Eject       = 152
+    Menu        = 166
+    Mute        = 160
+    Next        = 153
+    Play        = 162
+    Prev        = 144
+    Record      = 158
+    Rew         = 146
+    ScreenSaver = 250
+    Stop        = 164
+    Suspend     = 165
+    VolumeDown  = 174
+    VolumeUp    = 176
+    WWW         = 178
+    XFer        = 163
+  [END KEYS]
+[END TDAK]
+
+[TEZS] # by Nico Troost
+  brandname = "Trust"
+  modelname = "Easy Scroll Silverline Keyboard"
+  [KEYS]
+    Back             = 234
+    Forward          = 233
+    WebStop          = 232
+    WWW              = 178
+    Mail             = 236
+    Favorites        = 230
+    Refresh          = 231
+    Search           = 229
+    Stop             = 164
+    Play|Pause       = 162
+    VolumeDown       = 174
+    Mute             = 160
+    VolumeUp         = 176
+    Previous         = 144
+    Next             = 153
+    PowerOff         = 222
+    Sleep            = 223
+
+#    Scroll-Up/Down/Press doesnt give a keycode
+#    Switch app  = Alt+Shift+Tab
+#    Close app   = Alt+F4
+#    Mark        = Shift press
+#    Cut         = Ctrl+x
+#    Copy        = Ctrl+c
+#    Paste       = Ctrl+v
+#    Word        = Ctrl+Alt+d
+#    Excel       = Ctrl+Alt+e
+#    PPoint      = Ctrl+Alt+p
+#    Calendar    = Ctrl+Alt+o
+#    Calculator  = Ctrl+Alt+c
+#  With Office lock key
+#    Help        = F1
+#    New         = Ctrl+n
+#    Open        = Ctrl+o
+#    Save        = Ctrl+s
+#    Replace     = Ctrl+h
+#    Spell       = F7
+#    Undo        = Ctrl+z
+#    Redo        = Ctrl+y
+#    Reply       = Ctrl+r
+#    Reply All   = Ctrl+Shift+r
+#    Forward     = Ctrl+f
+#    Send        = Alt+s
+#    Print       = Ctrl+p
+  [END KEYS]
+[END TEZS] 
+
+[TPPK]
+  brandname = "Trust"
+  modelname = "Power Plus Keyboard"
+  [KEYS]
+    PowerOff = 222
+    Sleep    = 223
+    Wake     = 227
+  [END KEYS]
+[END TPPK]
+
+[TRUST-SK-2690]
+  brandname = "Trust"
+  modelname = "SK2690 Keyboard"
+  [KEYS]    
+        Stop             = 222
+        Sleep            = 223
+        Mail             = 236
+        Search           = 229
+        Favorites        = 230
+        WWW              = 178
+        AudioPlay|Pause  = 162
+        AudioStop        = 164
+        AudioMute        = 160
+        AudioPrev        = 144
+        AudioNext        = 153
+        AudioRaiseVolume = 176
+        AudioLowerVolume = 174
+  [END KEYS]
+[END TRUST-SK-2690]
+
+[T270-KD]
+  brandname = "Trust"
+  modelname = "270-KD Silverline Keyboard"
+  [KEYS]
+    Calculator       = 161
+    Favorites        = 230
+    Mail             = 236
+    Media            = 237
+    Mute             = 160
+    MyComputer       = 235
+    Next             = 153
+    Play|Pause       = 162
+    Previous         = 144
+    Search           = 229
+    Sleep            = 223
+    Stop             = 164
+    VolumeUp         = 176
+    VolumeDown       = 174
+    WWW              = 178
+    Back             = 234
+    Forward          = 233
+    Refresh          = 231
+    WebStop          = 232
+  [END KEYS]
+[END T270-KD]
+
+[TWK3] # Contributed by ChriStoph Federer
+  brandname = "Trust"
+  modelname = "Wireless Keyboard 300KD"
+  [KEYS]
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    Mail        = 236
+    Home        = 178
+    Mixer       = 160
+    Play|Pause  = 162
+    VolumeDown  = 174
+    VolumeUp    = 176
+    Go          = 230
+    Sleep       = 223
+    Zoom        = 229
+  [END KEYS]
+[END TWK3]
+
+[TWC]
+  brandname = "Trust"
+  modelname = "Wireless Keyboard Classic"
+  [KEYS]
+    Internet    = 178
+    WebBack     = 234
+    WebForward  = 233
+    Mail        = 236
+    Calculator  = 161
+    VolumeUp    = 176
+    Mute        = 160
+    VolumeDown  = 174
+    Previous    = 144
+    Next        = 153
+    Play|Pause  = 162
+    Stop        = 164
+    Eject       = 158
+    Sleep       = 223
+    Wake        = 227
+    Screensaver = 145
+  [END KEYS]
+[END TWC]
+
+[T3011A]
+  brandname = "Trust"
+  modelname = "3011A Wireless Optical Deskset"
+  [KEYS]
+    Sleep       = 223
+    Back        = 234
+    Forward     = 233
+    Stop        = 232
+    Reload      = 231
+    Search      = 122
+    NewFolder   = 230
+    Home        = 130
+    Mail        = 236
+    MyComputer  = 111
+    Calc        = 161
+    CDPlay      = 129
+    Mute        = 160
+    VolumeDown     = 174
+    VolumeUp       = 176
+    Play|Pause  = 162
+    Stop        = 164
+    Prev        = 144
+    Next        = 153
+  [END KEYS]
+[END T3011A]
+
+#### END Trust Keyboards ####
+
+
+#### Tsunami Keyboards ####
+
+[TSU-SK2000]
+  brandname = "Tsunami"
+  modelname = "SK2000 Keyboard"
+  [KEYS]
+    Back             = 234
+    Calculator       = 161
+    Favorites        = 230
+    Forward          = 233
+    Mail             = 236
+    Media       = 237
+    Mute        = 160
+    MyComputer       = 235
+    Next        = 153
+    Play|Pause  = 162
+    PowerOff         = 222
+    Previous        = 144
+    Refresh          = 231
+    Search           = 229
+    Sleep            = 223
+    Stop        = 232
+    VolumeDown = 174
+    VolumeUp = 176
+    Wake             = 227
+    WWW              = 178
+  [END KEYS]
+[END TSU-SK2000]
+
+#### END Tsunami Keyboards ####
+
+
+### Typhoon Keyboards ####
+
+[TYP-DWKB] # By Vassilis Virivilis
+  brandname = "Typhoon"
+  modelname = "Design Wireless Keyboard"
+  [KEYS]
+    Back             = 234
+    Calculator       = 161
+    Mail             = 236
+    Favorites        = 230
+    Forward          = 233
+    MyComputer       = 235
+    Refresh          = 231
+    Search           = 229
+    WebStop             = 232
+    WWW              = 178
+    Previous        = 144
+    Next        = 153
+    Stop        = 164
+    Mute        = 160
+    Play|Pause  = 162
+    VolumeDown = 174
+    VolumeUp = 176
+    Sleep            = 223
+    Wake             = 227
+    Media       = 237
+    PowerOff         = 222
+  [END KEYS]
+[END TYP-DWKB]
+
+[TYPHONN] # By Roi Pin Trigo
+  brandname = "Typhoon"
+  modelname = "Navigator"
+  [KEYS]
+    WebBack     = 234
+    Calculator  = 161
+    Email       = 236
+    Favorites   = 230
+    WebForward  = 233
+    My Computer = 235
+    Refresh     = 231
+    Search      = 229
+    WebStop     = 232
+    Web|Home    = 178
+    Previous    = 144
+    Next        = 153
+    Stop        = 164
+    Mute        = 160
+    Play|Pause  = 162
+    VolumeDown  = 174
+    VolumeUp    = 176
+  [END KEYS]
+[END TYPHONN]
+
+[TYP-NOXP]
+  brandname = "Typhoon"
+  modelname = "Navigator Office XP"
+  [KEYS]
+    WWW              = 178
+    Mail             = 236
+    Favorite         = 230
+    Mute        = 160
+    Next        = 153
+    Play|Pause  = 162
+    PowerOff         = 222
+    Previous        = 144
+    Refresh          = 231
+    Search           = 229
+    Sleep            = 223
+    Stop        = 164
+    VolumeDown = 174
+    VolumeUp = 176
+    Back             = 234
+    Forward          = 233
+    WebStop             = 232
+  [END KEYS]
+[END TYP-NOXP]
+
+[TYP-WMKB]
+  brandname = "Typhoon"
+  modelname = "Wireless Multimedia Keyboard"
+  [KEYS]
+    WWW              = 178
+    Mail             = 236
+    Favorite         = 230
+    Mute        = 160
+    Next        = 153
+    Previous        = 144
+    Play|Pause  = 162
+    Refresh          = 231
+    Search           = 229
+    Sleep            = 223
+    Stop        = 164
+    VolumeDown = 174
+    VolumeUp = 176
+    Media       = 237
+    WebStop             = 232
+    Back             = 234
+    Forward          = 233
+    Calculator       = 161
+    MyComputer       = 235
+ [END KEYS]
+[END TYP-WMKB]
+
+#### END Typhoon Keyboards ####
+
+
+#### Turbo Media Keyboards ####
+
+[TURBOTK9801R]
+  brandname = "Turbo-Media"
+  modelname = "KB-9801R+"
+  [KEYS]
+    Eject       = 241
+    Next        = 233
+    Play|Pause  = 194
+    Previous    = 217
+    Stop        = 228
+    Calculator  = 238
+    Close       = 195
+    Copy        = 254
+    Cut         = 253
+    Terminal    = 196
+    Game        = 249
+    Menu        = 234
+    My Documents = 176
+    Paste       = 255
+    Recorder Stop = 169
+    Recorder Rewind|Recorder Play = 121
+    Rotate      = 160
+    Sleep       = 163
+    VolumeDown  = 218
+    Mute        = 216
+    VolumeUp    = 240
+    WWW         = 247
+    XFer        = 119
+  [END KEYS]
+[END TURBOTK9801R]
+
+#### END Turbo Media Keyboards ####
+
+
+#### UMAX Keyboards ####
+
+[UMAXOK] # Contributed by Josef Hajas
+  brandname = "Umax"
+  modelname = "Office Keyboard"
+  [KEYS]
+    Back        = 234
+    Forward     = 233
+    BlueLeft    = 166
+    BlueRight   = 168
+    BlueUp|BlueDown = 139
+    Stop        = 232
+    WWW         = 178
+    Email       = 236
+    Favorites   = 230
+    Refresh     = 231
+    Search      = 229
+    PowerOff    = 222
+    Sleep       = 223
+    Mute        = 160
+    VolumeUp    = 176
+    VolumeDown  = 174
+    Play|Pause  = 162
+    Stop        = 164
+    Previous    = 144
+    Next        = 153
+#   APP         = xxx Alt+Shift+TAB
+#   Close       = xxx Alt+F4
+#   Mark        = xxx Shift (switch - on/off)
+#   Cut         = xxx Shift+Del
+#   Paste       = xxx Ctrl+v
+#   Copy        = xxx Ctrl+c
+#   Word        = xxx Ctrl+Alt+d
+#   Excel       = xxx Ctrl+Alt+e 
+#   PPoint      = xxx Ctrl+Alt+p
+#   Calendar    = xxx Ctrl+Alt+o 
+#   Calc        = xxx Ctrl+Alt+c
+#   MyCom       = xxx Meta+e 
+#   LogOff      = xxx Meta Meta Up Up Up Return
+# With F function    
+#   Help        = xxx F1
+#   New         = xxx Ctrl+n
+#   Open        = xxx Ctrl+o
+#   Save        = xxx F12
+#   Replace     = xxx F5
+#   Spell       = xxx F7
+#   Undo        = xxx Alt+BackSpace
+#   Redo        = xxx Alt+Return
+#   Reply       = xxx Ctrl+r
+#   Forward     = xxx Ctrl+f
+#   Send        = xxx Ctrl+Return
+#   Print       = xxx Shift+F12
+  [END KEYS]
+[END UMAXOK]
+
+#### END UMAX Keyboards ####
+
+
+#### Unitek Keyboards ####
+
+[UNI3616] # Contributed by Balthazar of Damones
+  brandname = "Unitek"
+  modelname = "Internet & Multimedia Keyboard KB-3616 (9 keys)"
+  [KEYS]
+    Mute        = 160
+    Media       = 237
+    Email       = 236
+    Home        = 178
+    Power       = 222
+    Sleep       = 223
+    Wake        = 227
+    MyComputer  = 235
+    Calculator  = 161
+  [END KEYS]
+[END UNI3616]
+
+#### END Unitek Keyboards ####
+
+
+#### Viewsonic Keyboards ####
+
+[VS-KU201]
+  brandname = "ViewSonic"
+  modelname = "KBM-KU-201"
+  [KEYS]
+    WWW              = 130
+    Mail             = 236
+    Previous        = 234
+    Next        = 233
+    Search           = 229
+    Refresh          = 121
+    MyComputer       = 230
+    Stop        = 232
+    Mute        = 166
+    VolumeDown = 165
+    VolumeUp = 158
+    WebStop             = 151
+    Back             = 164
+    Play|Pause  = 159
+    Forward          = 162
+  [END KEYS]
+[END VS-KU201]
+
+[VS-KU206]
+  brandname = "ViewSonic"
+  modelname = "ViewMate USB KBM-KU-206"
+  [KEYS]
+    WWW              = 130
+    Mail             = 236
+    Back             = 234
+    Forward          = 233
+    Search           = 122
+    Refresh          = 231
+    Favorites        = 230
+    WebStop             = 222
+    Mute        = 160
+    VolumeDown = 174
+    VolumeUp = 176
+    Stop        = 164
+    Previous        = 144
+    Play|Pause  = 162
+    Next        = 153
+  [END KEYS]
+[END VS-KU206]
+
+#### END Viewsonic Keyboards ####
+
+
+#### Vivanco Keyboards ####
+
+[VIV-ProLight]
+  brandname = "Vivanco"
+  modelname = "Pro Light Keyboard"
+  [KEYS]
+    Favorites        = 230
+    WWW              = 178
+    Mail             = 236
+    Media       = 237
+    Mute        = 160
+    Refresh          = 231
+    Search           = 229
+    Stop        = 164
+    VolumeDown = 174
+    VolumeUp = 176
+    Back             = 234
+    Forward          = 233
+    Logoff           = 222
+    Next        = 153
+    Play|Pause  = 162
+  [END KEYS]
+[END VIV-ProLight]
+
+[VIV-SNW]
+  brandname = "Vivanco"
+  modelname = "Snowboard USB"
+  [KEYS]
+    Mute        = 160
+    VolumeUp = 176
+    VolumeDown = 174
+    Sleep            = 223
+  [END KEYS]
+[END VIV-SNW]
+
+#### END Vivanco Keyboards ####
+
+
+#### Yahoo Keyboards ####
+
+[YAHOO]
+  brandname = "Yahoo"
+  modelname = "Yahoo! Internet Keyboard (16 keys)"
+  [KEYS]
+    Previous    = 145
+    Play        = 146
+    Stop        = 158
+    Next        = 159
+    Record      = 160
+    VolumeDown  = 161
+    VolumeUp    = 162
+    Mute        = 163
+    Close       = 164
+    Calculator  = 165
+    Help        = 166
+    Mail        = 167
+    Internet    = 168
+    Power       = 222
+    Sleep       = 223
+    Wake        = 227
+  [END KEYS]
+[END YAHOO]
+
+#### END Yahoo Keyboards ####
+
+
+#### Zippy Keyboards ####
+
+[ZIP-WK711] # Alex Thomsen Leth (Denmark)
+  brandname = "Zippy"
+  modelname = "wk-711"
+  [KEYS]
+    Play|Pause  = 159
+    Previous    = 164
+    Next        = 162
+    Stop        = 151
+    VolumeUp    = 158
+    VolumeDown  = 165
+    Mute        = 166
+    Home        = 130
+    Mail        = 236
+    WebBack     = 234
+    WebForward  = 233
+    WebRefresh  = 121
+    WebStop     = 232
+    Search      = 229
+    Favorites   = 230
+    Wake        = 112
+    Sleep       = 227
+    Power       = 222
+  [END KEYS]
+[END ZIP-WK711]
+
+[ZIP-WK712]
+  brandname = "Zippy"
+  modelname = "WK-712"
+  [KEYS]
+    Back             = 234
+    Bookmarks        = 230
+    Next        = 153
+    Forward          = 233
+    WWW              = 178
+    Mail             = 236
+    Mute        = 160
+    Play|Pause  = 162
+    Power            = 222
+    Reload           = 231
+    Previous        = 144
+    Search           = 229
+    Sleep            = 223
+    Stop        = 164
+    VolumeDown = 174
+    VolumeUp = 176
+    Wake             = 227
+  [END KEYS]
+[END ZIP-WK712]
+
+#### END Zippy Keyboards ####
+
+
+#### X-Tensions Keyboards ####
+
+[XT-XK240]
+  brandname = "X-Tensions"
+  modelname = "XK-240"
+  [KEYS]
+    Back             = 234
+    Calculator       = 161
+    Cancel           = 232
+    VolumeDown = 176
+    Desktop          = 198
+    Forward          = 233
+    Homepage         = 230
+    VolumeUp = 174
+    WWW              = 130
+    Mail             = 236
+    Mute             = 160
+    Next        = 153
+    Open             = 129
+    Play|Pause  = 162
+    Previous        = 144
+    Search           = 122
+    Stop        = 164
+    Update           = 231
+  [END KEYS]
+[END XT-XK240]
+
+[XT-XK243]
+  brandname = "X-Tensions"
+  modelname = "XK-243"
+  [KEYS]
+    Previous        = 234
+    Next        = 233
+    WebStop        = 232
+    Refresh          = 231
+    MyComputer       = 235
+    Calculator       = 161
+    Media       = 237
+    Stop        = 160
+    Play|Pause  = 162
+    VolumeDown = 174
+    VolumeUp = 176
+    Stop             = 164
+    Back             = 144
+    Forward          = 153
+    Search           = 229
+    favorites        = 230
+    Mail             = 236
+    WWW              = 178
+    Sleep            = 223
+    WakeUp           = 227
+    PowerOff         = 222
+  [END KEYS]
+[END XT-XK243]
+
+#### END X-Tensions Keyboards ####

@@ -1,0 +1,65 @@
+# LinEAK - Linux support for Easy Access and Internet Keyboards
+#  Copyright (c) 2001,2002, 2003  Sheldon Lee Wen <leewsb@hotmail.com> (Current Maintainer)
+#  	and Mark Smulders <Mark@PIRnet.nl>
+#  http://lineak.sourceforge.net
+#
+# lineakd configuration file
+#
+# example key configuration:
+# 	play	= "xmms --play-pause"
+# 	eject	= EAK_EJECT
+#
+# Lineakd supports the following modifier keys:
+#    control alt shift mod2 mod3 mod4 mod5
+
+CdromDevice = /dev/cdrom
+Display_align = center
+Display_color = 4185EE
+Display_font = -*-courier-*-*-*-*-17-*-*-*-p-*-iso8859-*
+Display_hoffset = 0
+Display_plugin = xosd
+Display_pos = bottom
+Display_soffset = 1
+Display_timeout = 3
+Display_voffset = 50
+KeyboardType = USRsMN
+MixerDevice = /dev/mixer
+Screensaver = 
+conffilename = /home/sheldonl/.lineak/lineakd.conf
+deffilename = /etc/lineakkb.def
+keystate_capslock = 
+keystate_numlock = 
+keystate_scrolllock = 
+userdeffile = /home/sheldonl/.lineak/lineakkb.def
+
+[Previous Desktop] Back+shift = KDESKTOP_PREVIOUS
+[Previous Tab] Back+alt = KONQUEROR(PreviousTab)
+[Web Back] Back = KONQUEROR_BACK
+[Calculator] Calculator = kcalc
+[My Computer] MyComputer = KONQUEROR_SETURL(settings:/)
+[Bookmarks] Favourites = KONQUEROR(bookmark)
+[Next Desktop] Forward+shift = KDESKTOP_NEXT
+[Next Tab] Forward+alt = KONQUEROR(NextTab)
+[Web Forward] Forward = KONQUEROR(Forward)
+[Home Directory: /home/sheldonl] Home+shift = kfmclient exec /home/sheldonl
+[Home] Home = KONQUEROR(Home)
+[Composing Email] Mail = KMAIL_COMPOSE
+[Amarok] Media = amarok
+#[Amarok] Media = EAK_SENDKEYS("alt+f") 
+#[Amarok] Media = /bin/bash && /usr/local/bin/xsendkey 37 1 && /usr/local/bin/xsendkey 23 1 && /usr/local/bin/xsendkey 23 0 && /usr/local/bin/xsendkey 37 0 
+Mute = KMIX_MUTE
+Next = EAK_MEDIADETECT(NEXT)
+Play|Pause = EAK_MEDIADETECT(PLAYPAUSE)
+Prev = EAK_MEDIADETECT(PREVIOUS)
+Stop = EAK_MEDIADETECT(STOP)
+VolumeDown = KMIX_VOLDOWN(1)
+VolumeUp = KMIX_VOLUP(1)
+[Web Refresh] Refresh = KONQUEROR_REFRESH
+[Refresh All Pages] Refresh+shift = KONQUEROR_RELOAD_ALL_TABS
+[Search Google] Search = KONQUEROR_SETURL(http://www.google.com)
+[Locking the Desktop] Sleep = KDE_LOCK_DESKTOP
+[Closing CDROM] Stop+alt = EAK_CLOSE_TRAY
+[Eject CDROM] Stop+shift = EAK_OPEN_TRAY
+[Web Stop] WebStop = KONQUEROR(Stop)
+[Menu] Winkey = KMENU(200,1100)
+

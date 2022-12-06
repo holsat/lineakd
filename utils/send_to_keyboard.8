@@ -1,0 +1,23 @@
+.TH SEND_TO_KEYBOARD 8 "March 2, 2005"
+.\" NAME should be all caps, SECTION should be 1-8, maybe w/ subsection
+.\" other parms are allowed: see man(7), man(1)
+.SH NAME
+send_to_keyboard \- send to the keyboard device
+.SH SYNOPSIS
+.B send_to_keyboard
+
+.SH "DESCRIPTION"
+send_to_keyboard is a simple program which allows you to send actual control codes to the keyboard device to enable or disable certain functions. For example, some of the IBM keyboards require:
+  send_to_keyboard ea 17
+.PP
+in order to enable the extra keys. This helper application is actually used from lineakd(1).
+.PP
+.SH NOTES
+Some keyboard functionality can be turned on at boot time using kernel parameters. An owner of the Chicony Multimedia keyboard mentions that booting with the kernel parameters set to: i8042.direct=1 atkbd.set=3 atkbd.extra=1 will enable functionality of the extra keys on his keyboard. Put those in your lilo.conf or grub menu.lst and special functionality may be enabled at boot time.
+
+.SH SEE ALSO
+evtest(8),
+lineakd(1).
+.SH AUTHOR
+.B send_to_keyboard
+was written by Dennis Bjorklund.
