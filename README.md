@@ -1,19 +1,17 @@
                  
-   Lineakd - The Linux Easy Access Keyboard Daemon
+# Lineakd - The Linux Easy Access Keyboard Daemon
 
-   This is a quick guide to the lineakd package 
+This is a quick guide to the lineakd package.
 
-    Status
-    --------
-    This project is here for historical purposes. It no longer builds on modern linux distrubutions due to it's usage of old versions of the gnu libtool and autotools. Anyone is welcome to update the build files to something more modern.
+## Status
 
-   History
-   -------
+This project is here for historical purposes. It no longer builds on modern linux distrubutions due to it's usage of old versions of the gnu libtool and autotools. Anyone is welcome to update the build files to something more modern.
+
+## History
    
 Lineakd was originally written by Mark Smulders. However, at around version 0.4 Mark became too busy to continue to maintain and develop lineakd. At about that time, I was already adding functionality to lineakd, enough so that I had a fairly decent grasp on the code base. As Mark dropped off, I picked up the slack, but at the expense of my own project, klineakconfig, a GUI configuration tool for lineakd.
 
-   Quick Setup
-   -----------
+## Quick Setup
    
 For those who want to setup their configuration quickly, here are the steps:
 
@@ -29,8 +27,7 @@ For those who want to setup their configuration quickly, here are the steps:
   If you have a key on your keyboard that is not in the file, please post a definition file for it to lineak-devel@lists.sourceforge.net.
 
     
-   Usage
-   -----
+## Usage
 
 Below is the usage message of lineakd:
 
@@ -109,13 +106,11 @@ Valid options are:
     
 
 
-   Configuration
-   --------------
+## Configuration
    
 Lineak uses two types of configuration files: lineakkb.def files and lineakd.conf files.
 
-lineakkb.def
--------------
+### lineakkb.def
 
 lineakkb.def files contain keyboard descriptions that map key and button names, to keycodes and button codes respectively. A lineakkb.def file can be placed either in a system directory, or in a users home directory (in the .lineak/ subdirectory). The lineakd daemon will first read the system lineakkb.def file, usually at /etc/lineakkb.def and then read the ~/.lineak/lineakkb.def file. It will attempt to reconcile the entries, using the local entries to override the system entries.
 	      
@@ -136,14 +131,12 @@ Here is an example of a keyboard definition from a lineakkb.def file:
 	
 The structure is important. Adding a new keyboard is as easy as determining the special keys that you keyboard has, using something like xev, and writing your own definition file. Note that the daemon will only register keys that you also have defined in your lineakd.conf file.
 
-lineakd.conf
-------------
+### lineakd.conf
 
 lineakd.conf files can live either in a system directory, or in the users home directory under the .lineak subdirectory. lineakd will attempt to load a users config file before looking for a system wide configuration file.
 
-   Directives
-   ----------
-
+####   Directives
+   
 Lineakd supports various configuration file directives. Plugins also can specify their own directives. The standard directives that are supported follow with their defaults:
 
 KeyboardType            = 
@@ -181,8 +174,7 @@ The Display_* directives control the functioning of the on screen display.
     
 The keystate_* directives control modifiers. By default, lineakd does not pay attention to the modifiers NumLock, CapsLock and ScrollLock. Set these directives to "enable" to use modifiers. (Note: as of beta3, these options do nothing. We automatically use modifiers if they are defined on a per command basis.)
 
-   Toggleable keys
-   ---------------
+#### Toggleable keys
    
 lineakd supports toggle keys. A toggleable key is one that can have a various number of states for each push of the key. For example, on many keyboards the  Play and Pause keys are the same. When you push the key once it plays, the next time it pauses. The same thing goes for the Mute key. You must define a toggle key as key1|key2 in the definition (lineakkb.def) file. We can define a single action for this key in the config file by specifying the keyname in the form key1|key2 - this effectively treats the toggleable key as a normal key. It tells lineakd that we don't want to use this a a toggleable key, maybe because the command we are going to bind to it supports the notion of toggling. We can also specify seperate actions for the Play and Pause 	states by assigning actions to key1 and key2. eg. 
 
@@ -199,8 +191,7 @@ lineakd supports toggle keys. A toggleable key is one that can have a various nu
    
 Note that there can be more than two states for a toggleable key. For example key1|key2|key3 could be defined.
 
-   Modifiers
-   ---------
+#### Modifiers
    
 lineakd now supports a variable number of modifiers to a key. However, this only applies to non-toggleable keys so a key such as Play|Pause will not work with modifiers if you use it as a toggleable key by putting entries like this:
 	Play = something
@@ -226,8 +217,7 @@ To use a modifier, we do something like this in the config file:
 
 Modifiers to buttons, if they are defined in the lineakkb.def file, work the same way.
 
-   On-Screen Display
-   -----------------
+#### On-Screen Display
 
 lineakd supports custom on screen display messages through the configuration file. However, some plugins may choose to disregard custom on screen display messages if they feel it does not apply. Currently you specify the on screen display message for a command by placing it within square brackets at the beginning of the line. E.g.
         [On Screen Message] Go = some command
@@ -235,16 +225,14 @@ lineakd supports custom on screen display messages through the configuration fil
         [Boring Message] Home = some command
 
 
-   Plugins
-   -------
+#### Plugins
 
 The lineakd daemon does not contain any internal macros or actual on screen display functionality. This functionality is implemented in plugins that are loaded when the lineakd daemon is first run. NOTE: Restarts of the daemon with lineakd -r will not reload plugins, or load new plugins. 
 
 The previous functionality that existed in versions of lineakd up uptin 0.8 has been moved into two plugins: lineak_defaultplugin, which contains all of the EAK_* macros and lineak_xosdplugin which contains all of the XOSD on screen display functionality. There is now also a lineak_kdeplugin plugin that brings with it a total of 23 macros or more for handling KDE funtionality via dcop. Some of these macros themselves take arguments which expands their functionality. See the respective plugin packages for more information on MACRO usage.
 
 
-   Helper Applications
-   -------------------
+## Helper Applications
 
 The lineakd package now installs two helper applications, send_to_keyboard and evtest. 
 
@@ -279,11 +267,9 @@ e.g.
 [END IBMRA7993]
 
 
-   Notes
-   ------
+# Notes
 
-How to get lineakd to send keyevent from easy access keys
----------------------------------------------------------
+## How to get lineakd to send keyevent from easy access keys
 
 You have a few options.
 1) Try the EAK_SENDKEYS or EAK_SENDKEYS_ROOT macros in the lineak_defaultplugins package.
@@ -301,8 +287,7 @@ e.g.
 	fnF4 = "xvkbd -xsendevent -text "\\Cv""
 	fnF5 = "xvkbd -xsendevent -text "\\Cc""
 
-How to kill lineakd
--------------------
+## How to kill lineakd
 
 In the event that lineakd hangs (which it probably will at some point), you have to kill all of the processes manually. You can do this by executing the following command:
 
@@ -330,8 +315,7 @@ so, for the example type:
 
 If you have a keyboard defined in lineakkb.def that has a toggle key like the one for the LTCDP keyboard, please update the file with the new key format and send it back to me.
 
-Known bugs
------------
+## Known bugs
 
 Linux 2.6 can cause changes in how the keycodes are interpreted. In some cases, keys that use to work, no longer work at all. If this happens to you try the following:
 1) run xev and see if X reports any keycodes for the key(s) that is/are not working. If there are keycodes being produced, you'll have to update the lineakkb.def file (usually in /etc) with the correct keycodes for your keyboard. 
@@ -355,14 +339,9 @@ Due to the fact that not all IDE CD-ROM drives provide status info on the tray p
 Not everything may be platform independant. There may be some things specific to linux or an X11 version.
 
 
----------
+## Helper Applications
 
-Helper Applications
-
---------
-
-evtest
--------
+### evtest
 
 evtest is an event device testing program for Linux. It allows you to determine
 the event layer events that your keyboard is generating. This is for debugging
@@ -371,8 +350,7 @@ events it is sending. This program uses the event layer on the linux 2.6 series
 of kernels.
 
 
-send_to_keyboard  
-----------------
+### send_to_keyboard  
 
 send_to_keyboard is  a  simple program which allows you to send actual control 
 codes to the keyboard device to enable or disable certain functions. For example, 
@@ -392,10 +370,9 @@ installed suid root. This can be done by compiling lineakd with the:
    For more information, please read the send_to_keyboard man page.
 
 
-xsendkeycode
-------------
+### xsendkeycode
 
-This program sends a key event to X using a keycode and a flag that specifies 
+This program sends a key event to X11 using a keycode and a flag that specifies 
 the keydown or keyup state. It is not used from lineakd, but exists as a tool 
 for scripting, or as a command to use in a lineakd configuration file. It can
 be run as follows:
@@ -405,15 +382,10 @@ be run as follows:
 This will send the letter 'a'. For more infomation on detailed usage, please 
 read the xsendkeycode manpage.
 
-xsendkeys
----------
+### xsendkeys
 
 xsendkeys  is  a  simple program which allows you to send a key or key 
-combination to X. For example: xsendkeys a will send the letter a. If you 
+combination to X11. For example: xsendkeys a will send the letter a. If you 
 wanted to send a capital a ’A’ you would have to send: xsendkeys Shift_L+a`
 For detailed usage please read the xsendkeys manpage.
-
-
-
-Cheers, Sheldon. <leewsb@hotmail.com>
 	
