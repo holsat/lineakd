@@ -2,7 +2,10 @@
    Lineakd - The Linux Easy Access Keyboard Daemon
 
    This is a quick guide to the lineakd package 
-	   
+
+    Status
+    --------
+    This project is here for historical purposes. It no longer builds on modern linux distrubutions due to it's usage of old versions of the gnu libtool and autotools. Anyone is welcome to update the build files to something more modern.
 
    History
    -------
